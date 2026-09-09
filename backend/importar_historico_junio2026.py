@@ -185,6 +185,7 @@ def main(commit, ruta_excel=None, hoja=None):
     equipos_sin_mapear = {}
     tecnicos_sin_mapear = {}
     numeros_invalidos = []
+    omitidas_por_tecnico = []
     filas_omitidas = 0
 
     clientes_cache = {}  # clave -> Cliente (o dict de datos en dry-run)
@@ -215,6 +216,13 @@ def main(commit, ruta_excel=None, hoja=None):
                 filas_omitidas += 1
                 continue
             numeros_vistos.add(numero)
+
+            # RCP pidió NO importar estas órdenes (técnico "Técnico 2" y
+            # "Cristopher Fons.": 1 + 2 filas que no corresponden).
+            if _norm(fila[46]) in ("técnico 2", "tecnico 2", "cristopher fons.", "cristopher fons"):
+                omitidas_por_tecnico.append((i, _texto(fila[46]), numero))
+                filas_omitidas += 1
+                continue
 
             total_ordenes += 1
 
@@ -390,6 +398,10 @@ def main(commit, ruta_excel=None, hoja=None):
         print("TIPO DE SERVICIO sin mapear (se importaron como OTRO, texto conservado):", tipos_sin_mapear)
     if tecnicos_sin_mapear:
         print("Técnicos sin mapear (se dejó tecnico=None):", tecnicos_sin_mapear)
+    if omitidas_por_tecnico:
+        print(f"Órdenes NO importadas por técnico excluido ({len(omitidas_por_tecnico)}):")
+        for fila_n, tec, num in omitidas_por_tecnico:
+            print(f"  fila {fila_n}: {num} — {tec!r}")
 
     if not commit:
         print()
