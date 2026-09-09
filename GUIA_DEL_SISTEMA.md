@@ -174,3 +174,5 @@ Todo gira alrededor del **Inventario**: es la base que usan tanto Ventas como Co
 - Reportes (ventas por periodo, productos más vendidos, etc.).
 
 <!-- servidor: auto-deploy activo desde 2026-09-09 -->
+<!-- dev: entorno de desarrollo local preparado en C:\dev
+exus-erp 2026-09-09 -->
