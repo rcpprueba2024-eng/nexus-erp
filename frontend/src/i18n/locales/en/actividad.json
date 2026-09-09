@@ -1,0 +1,32 @@
+{
+  "titulo": "System Activity",
+  "subtitulo": "Log of everything each user creates, edits, or deletes, plus every login — recorded automatically, without any module having to report it by hand.",
+  "totalRegistros": "{{n}} records",
+  "sinRegistros": "No activity matches this filter.",
+  "filtro": {
+    "todosUsuarios": "All users",
+    "todasAcciones": "All actions",
+    "todosModulos": "All modules",
+    "desde": "From",
+    "hasta": "To",
+    "buscarPlaceholder": "Search route or summary…",
+    "limpiar": "Clear filters"
+  },
+  "accion": {
+    "LOGIN": "Login",
+    "CREAR": "Create",
+    "EDITAR": "Edit",
+    "ELIMINAR": "Delete"
+  },
+  "tabla": {
+    "fecha": "Date & time",
+    "usuario": "User",
+    "accion": "Action",
+    "modulo": "Module",
+    "ruta": "Route",
+    "resumen": "Summary",
+    "codigo": "Code",
+    "ip": "IP",
+    "usuarioBorrado": "(deleted user)"
+  }
+}

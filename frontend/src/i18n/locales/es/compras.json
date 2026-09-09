@@ -1,0 +1,91 @@
+{
+  "titulo": "Compras",
+  "subtitulo": "Proveedores, órdenes de compra y cotizaciones a clientes",
+  "selector": {
+    "volver": "Volver",
+    "compras": {
+      "titulo": "Compras",
+      "descripcion": "Proveedores y órdenes de compra confirmadas."
+    },
+    "cotizacionesClientes": {
+      "titulo": "Cotizaciones a Clientes",
+      "descripcion": "Presupuestos (PPTO) para darle a un cliente — mismo formato de Excel que ya usa RCP."
+    }
+  },
+  "proveedores": {
+    "tituloNuevo": "Nuevo proveedor",
+    "nombre": "Nombre",
+    "documento": "RFC/NIT/RUC",
+    "email": "Email",
+    "telefono": "Teléfono",
+    "botonAgregar": "Agregar proveedor",
+    "columnas": {
+      "nombre": "Nombre",
+      "documento": "Documento",
+      "email": "Email",
+      "telefono": "Teléfono"
+    }
+  },
+  "ordenes": {
+    "tituloNueva": "Nueva orden de compra",
+    "numero": "N° Orden",
+    "proveedorPlaceholder": "Proveedor...",
+    "productoPlaceholder": "Producto...",
+    "cantidad": "Cantidad",
+    "botonCrear": "Crear orden",
+    "vacio": "No hay órdenes registradas.",
+    "columnas": {
+      "numero": "N°",
+      "proveedor": "Proveedor",
+      "fecha": "Fecha",
+      "total": "Total",
+      "estado": "Estado"
+    }
+  },
+  "estados": {
+    "RECIBIDA": "Recibida",
+    "CANCELADA": "Cancelada",
+    "PENDIENTE": "Pendiente"
+  },
+  "cotizacionesClientes": {
+    "botonNueva": "Nueva cotización",
+    "botonEditar": "Editar cotización",
+    "vacio": "No hay cotizaciones a clientes registradas.",
+    "excel": "Excel",
+    "pdf": "PDF",
+    "confirmarEliminar": "¿Eliminar esta cotización?",
+    "columnas": {
+      "numero": "No. PPTO",
+      "cliente": "Cliente",
+      "fecha": "Fecha",
+      "totalUsd": "Total (US$)"
+    },
+    "form": {
+      "subtitulo": "Se llena el mismo formato de Excel (PPTO) que ya usa RCP con sus clientes — al descargarlo se ve exactamente igual.",
+      "pptoNumero": "No. de PPTO (ej. PPTO-7006-210826/KP)",
+      "titulo": "Título del PPTO",
+      "cliente": "Cliente",
+      "equipoMarca": "Equipo / Marca",
+      "servicioProducto": "Servicio / Producto",
+      "tipoTrabajo": "Tipo de trabajo",
+      "periodo": "Periodo (ej. Q3)",
+      "tipoCambio": "Tipo de cambio",
+      "ruc": "No. RUC",
+      "datosContacto": "Otros datos del cliente",
+      "contactoNombre": "Nombre",
+      "contactoPuesto": "Puesto",
+      "contactoTelefono": "Teléfono",
+      "contactoEmail": "Email",
+      "lineas": "Artículos cotizados",
+      "agregarLinea": "Agregar línea",
+      "descripcion": "Descripción",
+      "precioUsd": "Precio unitario (US$)",
+      "proveedorOpcional": "Proveedor (opcional)",
+      "costoProveedorOpcional": "Costo proveedor (opcional)",
+      "notaGarantia": "Nota de garantía (opcional)",
+      "observaciones": "Observaciones (tipo de cambio, notas fiscales, etc.)",
+      "errorSinLineas": "Agrega al menos un artículo con descripción y precio.",
+      "errorGenerico": "Ocurrió un error, intenta de nuevo."
+    }
+  }
+}

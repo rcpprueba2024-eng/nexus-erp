@@ -1,0 +1,83 @@
+{
+  "titulo": "Taller",
+  "subtitulo": "Órdenes de servicio, técnicos e insumos",
+  "filtro": {
+    "todas": "Todas"
+  },
+  "tablero": {
+    "titulo": "Técnicos y pasantes",
+    "sinPersonal": "No hay técnicos ni pasantes registrados.",
+    "equiposCount": "{{n}} equipos",
+    "estados": {
+      "EN_ESPERA": "En espera",
+      "EN_PROCESO": "En proceso",
+      "TERMINADO": "Terminado"
+    }
+  },
+  "nuevaOrden": {
+    "titulo": "Nueva orden de taller (manual)",
+    "numeroOrden": "N° Orden",
+    "clienteDefault": "Cliente...",
+    "equipoPlaceholder": "Equipo (ej. Laptop HP Pavilion)",
+    "tipoOrdenCCA": "CCA — Celular/Tablet",
+    "tipoOrdenCOM": "COM — Computadora",
+    "tecnicoDefault": "Técnico...",
+    "costoEstimado": "Costo estimado",
+    "problemaReportado": "Problema reportado",
+    "crear": "Crear orden"
+  },
+  "insumo": {
+    "titulo": "Registrar insumo usado",
+    "ordenDefault": "Orden...",
+    "insumoDefault": "Insumo...",
+    "stock": "(stock: {{stock}})",
+    "cantidad": "Cantidad",
+    "registrar": "Registrar"
+  },
+  "vacio": "No hay órdenes en este estado.",
+  "mostrandoRecientes": "Mostrando las {{n}} más recientes de {{total}}.",
+  "tabla": {
+    "numero": "N°",
+    "cliente": "Cliente",
+    "equipo": "Equipo",
+    "tecnico": "Técnico",
+    "ingreso": "Ingreso",
+    "estado": "Estado",
+    "asesor": "Asesor",
+    "asignar": "Asignar",
+    "cambiarEstado": "Cambiar estado",
+    "sinAsignar": "Sin asignar"
+  },
+  "servicios": {
+    "MANTENIMIENTO": "Mantenimiento",
+    "DIAGNOSTICO": "Diagnóstico",
+    "REPARACION": "Reparación"
+  },
+  "ficha": {
+    "cliente": "Cliente",
+    "asesorAsignado": "Asesor asignado",
+    "recibidoPor": "Recibido por",
+    "valor": "Valor",
+    "adelanto": "Adelanto",
+    "fechaHoraRecepcion": "Fecha y hora de recepción",
+    "tiempoReparacionEstimado": "Tiempo de reparación estimado",
+    "marcaModelo": "Marca / Modelo",
+    "color": "Color",
+    "numeroSerie": "No. de serie",
+    "imei": "IMEI",
+    "accesorios": "Accesorios",
+    "contrasenaEquipo": "Contraseña del equipo",
+    "especificaciones": "Especificaciones",
+    "fallaReportada": "Falla reportada",
+    "diagnosticoTitulo": "Diagnóstico del técnico",
+    "diagnosticoPlaceholder": "Escribe qué encontraste y cuál fue el diagnóstico...",
+    "diagnosticoVacio": "Todavía no hay diagnósticos registrados.",
+    "agregarDiagnostico": "Agregar diagnóstico",
+    "diagnosticoFotosAyuda": "{{n}} de {{max}} fotos para este diagnóstico.",
+    "guardarDiagnostico": "Guardar diagnóstico",
+    "fotosTitulo": "Fotos del equipo",
+    "checklistEntrada": "Check list de entrada",
+    "checklistSalida": "Check list de salida (al entregar)",
+    "guardarChecklistSalida": "Guardar check list de salida"
+  }
+}

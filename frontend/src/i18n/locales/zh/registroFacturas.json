@@ -1,0 +1,41 @@
+{
+  "titulo": "发票记录",
+  "subtitulo": "所有已开票记录 — 维修单和产品，现金或赊账。",
+  "buscarPlaceholder": "按编号或客户搜索…",
+  "stats": {
+    "totalFacturado": "开票总额",
+    "facturasOt": "维修单发票",
+    "facturasProducto": "产品发票",
+    "aCredito": "有余额（赊账）"
+  },
+  "filtros": {
+    "tipoTodas": "全部",
+    "tipoOt": "维修单",
+    "tipoProducto": "产品",
+    "estadoTodas": "全部",
+    "estadoPagada": "已付款",
+    "estadoPendiente": "赊账中",
+    "estadoAnulada": "已作废"
+  },
+  "tabla": {
+    "numero": "编号",
+    "fecha": "日期",
+    "cliente": "客户",
+    "tipo": "类型",
+    "total": "总计",
+    "saldo": "余额",
+    "estado": "状态",
+    "verRecibo": "查看小票"
+  },
+  "tipo": {
+    "OT": "维修单",
+    "PRODUCTO": "产品"
+  },
+  "estado": {
+    "PAGADA": "已付款",
+    "PENDIENTE": "赊账中",
+    "ANULADA": "已作废"
+  },
+  "sinResultados": "没有匹配的发票。",
+  "mostrandoRecientes": "显示 {{total}} 条中的 {{n}} 条。使用搜索查找其他记录。"
+}

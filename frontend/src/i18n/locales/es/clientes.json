@@ -1,0 +1,116 @@
+{
+  "titulo": "Gestión de Clientes",
+  "subtitulo": "Historial y datos de contacto de cada cliente",
+  "botonNuevo": "+ Nuevo cliente",
+  "botonNuevaEmpresa": "+ Nueva empresa",
+  "buscarPlaceholder": "Buscar por nombre, teléfono, correo o cédula…",
+  "sinResultados": "Sin resultados.",
+  "frecuenteSi": "Frecuente",
+  "frecuenteNo": "Ocasional",
+  "banderaRoja": {
+    "badge": "Problemático",
+    "avisoTitulo": "Este cliente está marcado como problemático",
+    "avisoSinMotivo": "No se especificó un motivo."
+  },
+  "tabs": {
+    "clientes": "Clientes",
+    "empresas": "Empresas"
+  },
+  "tabla": {
+    "nombre": "Nombre",
+    "telefono": "Teléfono",
+    "correo": "Correo",
+    "ordenes": "Órdenes",
+    "frecuente": "Frecuente"
+  },
+  "form": {
+    "tituloNuevo": "Nuevo cliente",
+    "tituloEditar": "Editar cliente",
+    "nombre": "Nombre",
+    "cedula": "Cédula / ID",
+    "ruc": "RUC",
+    "correo": "Correo",
+    "telefono": "Teléfono",
+    "telefonoAlterno": "Teléfono alterno",
+    "direccion": "Dirección",
+    "direccionEntrega": "Dirección de entrega",
+    "empresa": "Empresa",
+    "sinEmpresa": "Sin empresa",
+    "tipoClienteSeleccionar": "Tipo de cliente…",
+    "notasPlaceholder": "Notas internas (preferencias, historial, observaciones)…",
+    "notasAyuda": "Uso interno — nunca aparece en impresiones ni facturas.",
+    "whatsapp": "WhatsApp",
+    "esEmpresa": "¿Es empresa?",
+    "operadoraSeleccionar": "Operadora…",
+    "departamentoPais": "Departamento / País",
+    "problematico": "Marcar como cliente problemático 🚩",
+    "problematicoBadge": "Problemático",
+    "problematicoAyuda": "Cliente marcado como problemático",
+    "motivoProblematicoPlaceholder": "¿Por qué? (ej. no se llevó el equipo, decidió no proceder con la reparación…)"
+  },
+  "tiposCliente": {
+    "PARTICULAR": "Particular",
+    "EMPRESA": "Empresa",
+    "GOBIERNO": "Gobierno",
+    "MAYORISTA": "Mayorista",
+    "REVENDEDOR": "Revendedor"
+  },
+  "historial": {
+    "titulo": "Historial de órdenes",
+    "sinOrdenes": "Sin órdenes registradas."
+  },
+  "seleccionaCliente": "Selecciona un cliente de la lista, o crea uno nuevo.",
+  "detalle": {
+    "saldoTitulo": "Saldo pendiente",
+    "saldoSinDeuda": "Sin saldo pendiente.",
+    "historialTitulo": "Historial de compras y servicios",
+    "historialSinRegistros": "Sin compras ni servicios registrados.",
+    "credito": "Crédito",
+    "contado": "Contado",
+    "tipoProducto": "Producto",
+    "tipoServicio": "Servicio",
+    "cxc": {
+      "numeroFactura": "N.º factura",
+      "monto": "Monto",
+      "vencimiento": "Vencimiento",
+      "asesor": "Asesor",
+      "referenciaOt": "OT de referencia",
+      "agregar": "+ Agregar saldo pendiente",
+      "marcarPagado": "Marcar pagado"
+    },
+    "tabla": {
+      "factura": "Factura",
+      "fecha": "Fecha",
+      "item": "Producto / servicio",
+      "cantidad": "Cant.",
+      "subtotal": "Subtotal",
+      "forma": "Forma de pago"
+    }
+  },
+  "empresas": {
+    "sinResultados": "Sin empresas registradas.",
+    "tabla": {
+      "nombre": "Empresa",
+      "ruc": "RUC",
+      "contactos": "Contactos",
+      "equipos": "Equipos"
+    },
+    "tituloNuevo": "Nueva empresa",
+    "tituloEditar": "Editar empresa",
+    "form": {
+      "nombre": "Nombre de la empresa",
+      "ruc": "RUC",
+      "telefono": "Teléfono",
+      "correo": "Correo",
+      "direccion": "Dirección",
+      "contactoTitulo": "Contacto de la empresa",
+      "contactoNombre": "Nombre del contacto",
+      "contactoPuesto": "Puesto del contacto",
+      "contactoCorreo": "Correo del contacto",
+      "contactoTelefono": "Teléfono del contacto"
+    },
+    "contactosTitulo": "Contactos",
+    "sinContactos": "Sin contactos registrados.",
+    "seleccionaEmpresa": "Selecciona una empresa de la lista, o crea una nueva."
+  }
+}

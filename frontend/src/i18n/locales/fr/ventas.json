@@ -1,0 +1,29 @@
+{
+  "titulo": "Ventes",
+  "subtitulo": {
+    "texto": "Vente de téléphones, ordinateurs, pièces détachées et articles. Pour la maintenance, le diagnostic ou la réparation, utilisez",
+    "enlace": "+ Nouvel ordre de travail"
+  },
+  "form": {
+    "titulo": "Nouvelle vente de produit",
+    "numero": "N° de vente / facture",
+    "cliente": "Client (nom complet)",
+    "vendedor": "Vendeur : {{nombre}}",
+    "todasCategorias": "Toutes les catégories",
+    "producto": "Produit...",
+    "cantidad": "Quantité",
+    "errorObligatorio": "Le n° de vente, le client et le produit sont obligatoires.",
+    "errorGenerico": "Une erreur s'est produite lors de l'enregistrement de la vente.",
+    "registrar": "Enregistrer la vente"
+  },
+  "tabla": {
+    "numero": "N°",
+    "cliente": "Client",
+    "vendedor": "Vendeur",
+    "detalle": "Détail",
+    "fecha": "Date",
+    "total": "Total",
+    "estado": "Statut",
+    "sinVentas": "Aucune vente enregistrée."
+  }
+}

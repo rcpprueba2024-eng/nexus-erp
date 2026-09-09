@@ -1,0 +1,19 @@
+{
+  "volver": "Back to board",
+  "tecnicoNoEncontrado": "Technician not found",
+  "buscarPlaceholder": "Search by OT number, device, or issue…",
+  "totalEquipos": "{{n}} active devices",
+  "sinEquipos": "No devices currently assigned.",
+  "diasCantidad": "{{n}} days",
+  "tabla": {
+    "numero": "OT #",
+    "equipo": "Device",
+    "tipoServicio": "Service type",
+    "problemaReportado": "Issue reported by customer",
+    "instruccionesAsesor": "Sales rep's instructions",
+    "ingreso": "Intake",
+    "diasEnTaller": "Days in shop",
+    "estado": "Status",
+    "sinDato": "—"
+  }
+}

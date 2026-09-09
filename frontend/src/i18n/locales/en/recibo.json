@@ -1,0 +1,16 @@
+{
+  "encabezado": "Cell Phone & Laptop Repair",
+  "factura": "Invoice:",
+  "fecha": "Date:",
+  "cliente": "Customer:",
+  "atendio": "Served by:",
+  "total": "TOTAL",
+  "vuelto": "Change",
+  "saldoPendiente": "Balance due (credit)",
+  "gracias": "Thank you for your purchase!",
+  "imprimir": "Print",
+  "metodo": {
+    "EFECTIVO": "Cash",
+    "TARJETA": "Card"
+  }
+}

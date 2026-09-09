@@ -1,0 +1,29 @@
+{
+  "titulo": "Gastos",
+  "subtitulo": "Registra los retiros de caja chica y administra las categorías de gasto.",
+  "cajaChica": {
+    "titulo": "Caja chica",
+    "ajustarSaldo": "Ajustar saldo",
+    "placeholderSaldo": "Saldo actual",
+    "ayuda": "Cada gasto que registres abajo descuenta automáticamente de este saldo. Usa \"Ajustar saldo\" para la apertura inicial o para registrar una reposición de fondos."
+  },
+  "registrarGasto": "Registrar gasto",
+  "placeholderCategoriaSeleccionar": "Categoría...",
+  "placeholderDescripcion": "Descripción del gasto",
+  "placeholderMonto": "Monto",
+  "agregarGasto": "Registrar gasto",
+  "sinGastos": "Aún no hay gastos registrados.",
+  "columnas": {
+    "fecha": "Fecha",
+    "categoria": "Categoría",
+    "descripcion": "Descripción",
+    "monto": "Monto",
+    "saldoResultante": "Saldo de caja",
+    "registradoPor": "Registrado por",
+    "nombre": "Nombre",
+    "gastos": "Gastos"
+  },
+  "categoriasTitulo": "Categorías de gasto",
+  "placeholderNombre": "Nombre (ej. Papelería)",
+  "agregarCategoria": "Agregar categoría"
+}

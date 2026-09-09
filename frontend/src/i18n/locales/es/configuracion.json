@@ -1,0 +1,63 @@
+{
+  "titulo": "Configuración",
+  "subtitulo": "Tasa de cambio y administración de usuarios y accesos al sistema.",
+  "tasaCambio": {
+    "titulo": "Tasa de cambio",
+    "guardar": "Guardar tasa",
+    "guardando": "Guardando...",
+    "actual": "Actual: 1 US$ = C${{monto}}"
+  },
+  "impresora": {
+    "titulo": "Impresora térmica (POS)",
+    "subtitulo": "Configura cómo el sistema envía los recibos a la impresora térmica.",
+    "sinConfigurar": "Sin configurar",
+    "win32": "Impresora instalada en Windows",
+    "red": "Red (IP y puerto)",
+    "nombreWindows": "Nombre exacto de la impresora en Windows",
+    "ip": "IP de la impresora",
+    "puerto": "Puerto",
+    "guardadoOk": "Guardado."
+  },
+  "usuarios": {
+    "titulo": "Usuarios del sistema",
+    "añadir": "+ Añadir usuario",
+    "columnaUsuario": "Usuario",
+    "columnaNombre": "Nombre",
+    "columnaRol": "Rol",
+    "columnaModulos": "Módulos con acceso",
+    "columnaEstado": "Estado",
+    "confirmarEliminar": "¿Eliminar este usuario? Quedará desactivado y se borrará en 24 horas si no cancelás la eliminación antes.",
+    "pendienteEliminacion": "Se elimina en {{horas}}h",
+    "cancelarEliminacion": "Cancelar eliminación"
+  },
+  "form": {
+    "tituloEditar": "Editar usuario",
+    "tituloNuevo": "Añadir usuario",
+    "usuario": "Usuario",
+    "usuarioEditarAyuda": "Si lo cambias, la persona deberá iniciar sesión con este nuevo nombre de usuario — el anterior deja de funcionar.",
+    "nombre": "Nombre completo",
+    "contrasena": "Contraseña",
+    "contrasenaOpcional": "Nueva contraseña (opcional)",
+    "activo": "Activo",
+    "modulosTitulo": "Apartados del sistema con acceso",
+    "errorObligatorio": "Usuario y contraseña son obligatorios.",
+    "errorGenerico": "No se pudo guardar el usuario."
+  },
+  "subtituloAdmin": "Tasa de cambio, apariencia y administración de usuarios y accesos al sistema.",
+  "subtituloUsuario": "Personaliza el idioma y la apariencia del sistema.",
+  "apariencia": {
+    "titulo": "Apariencia",
+    "subtitulo": "El idioma y el tema se guardan en tu cuenta y te acompañan en cualquier dispositivo.",
+    "idioma": "Idioma",
+    "tema": "Tema de interfaz",
+    "temas": {
+      "auto": "Automático",
+      "claro": "Claro",
+      "oscuro": "Oscuro",
+      "medianoche": "Medianoche",
+      "esmeralda": "Esmeralda",
+      "ambar": "Ámbar",
+      "blanco": "Blanco y negro"
+    }
+  }
+}

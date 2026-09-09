@@ -1,0 +1,100 @@
+{
+  "titulo": "Rapports",
+  "subtitulo": "Indicateurs de ventes, dépenses, inventaire, recouvrement et atelier",
+  "sinAcceso": "Aucun rapport disponible pour votre rôle.",
+  "tabs": {
+    "ventas": "Ventes",
+    "gastos": "Dépenses",
+    "inventario": "Inventaire",
+    "cobrar": "Comptes clients",
+    "taller": "Atelier",
+    "clientes": "Clients et entreprises"
+  },
+  "agrupacion": {
+    "diario": "Quotidien",
+    "semanal": "Hebdomadaire",
+    "quincenal": "Quinzomadaire",
+    "mensual": "Mensuel"
+  },
+  "ventas": {
+    "porPeriodoTitulo": "Ventes par période",
+    "sinVentas": "Aucune vente enregistrée.",
+    "vendedoresTitulo": "Vendeurs les plus performants",
+    "tabla": {
+      "numero": "#",
+      "vendedor": "Vendeur",
+      "facturas": "Factures",
+      "totalVendido": "Total vendu"
+    }
+  },
+  "gastos": {
+    "exportarSufijo": "(fournitures + paie)",
+    "insumosTitulo": "Dépenses en fournitures d'atelier",
+    "totalGastado": "Total dépensé :",
+    "sinConsumo": "Aucune consommation enregistrée.",
+    "mostrandoTop": "Affichage des {{n}} fournitures les plus coûteuses sur {{total}}. L'export Excel contient le détail complet.",
+    "tablaInsumos": {
+      "insumo": "Fourniture",
+      "cantidadUsada": "Quantité utilisée",
+      "costoTotal": "Coût total"
+    },
+    "personalTitulo": "Dépenses de personnel (paie)",
+    "totalPlanilla": "Total de la paie mensuelle :",
+    "tablaPersonal": {
+      "empleado": "Employé",
+      "puesto": "Poste",
+      "area": "Service",
+      "salario": "Salaire"
+    }
+  },
+  "inventario": {
+    "masMovidosTitulo": "Produits à rotation la plus rapide",
+    "menosMovidosTitulo": "Produits à rotation la plus lente",
+    "tabla": {
+      "producto": "Produit",
+      "movimientos": "Mouvements"
+    }
+  },
+  "cobrar": {
+    "titulo": "Comptes clients en attente",
+    "sinCuentas": "Aucun compte en attente.",
+    "tabla": {
+      "cliente": "Client",
+      "monto": "Montant",
+      "vencimiento": "Échéance",
+      "equipo": "Appareil"
+    },
+    "faltaRetirar": "Appareil à récupérer",
+    "sinPendiente": "Aucun appareil en attente"
+  },
+  "taller": {
+    "eficienciaTitulo": "Efficacité des techniciens",
+    "tabla": {
+      "numero": "#",
+      "tecnico": "Technicien",
+      "reparadas": "Réparés",
+      "activas": "Actifs",
+      "promedioDias": "Moyenne (jours)"
+    },
+    "chartTitulo": "Ordres réparés par technicien"
+  },
+  "clientes": {
+    "totalClientes": "Total clients",
+    "totalEmpresas": "Entreprises enregistrées",
+    "totalFrecuentes": "Clients fréquents",
+    "equiposPorEmpresaTitulo": "Appareils par entreprise",
+    "sinEmpresas": "Aucune entreprise avec des appareils enregistrés.",
+    "topClientesTitulo": "Clients les plus actifs (6 derniers mois)",
+    "sinActividad": "Aucune activité récente.",
+    "frecuenteSi": "Fréquent",
+    "frecuenteNo": "Occasionnel",
+    "tabla": {
+      "empresa": "Entreprise",
+      "contactos": "Contacts",
+      "equipos": "Appareils",
+      "cliente": "Client",
+      "actividad": "Activité récente",
+      "frecuente": "Fréquent"
+    }
+  }
+}

@@ -1,0 +1,91 @@
+{
+  "titulo": "采购",
+  "subtitulo": "供应商、采购订单与客户报价单",
+  "selector": {
+    "volver": "返回",
+    "compras": {
+      "titulo": "采购",
+      "descripcion": "供应商与已确认的采购订单。"
+    },
+    "cotizacionesClientes": {
+      "titulo": "客户报价单",
+      "descripcion": "给客户的预算单（PPTO）— 与RCP现有的Excel格式完全一致。"
+    }
+  },
+  "proveedores": {
+    "tituloNuevo": "新增供应商",
+    "nombre": "名称",
+    "documento": "税号",
+    "email": "邮箱",
+    "telefono": "电话",
+    "botonAgregar": "添加供应商",
+    "columnas": {
+      "nombre": "名称",
+      "documento": "证件号",
+      "email": "邮箱",
+      "telefono": "电话"
+    }
+  },
+  "ordenes": {
+    "tituloNueva": "新建采购订单",
+    "numero": "订单编号",
+    "proveedorPlaceholder": "供应商...",
+    "productoPlaceholder": "产品...",
+    "cantidad": "数量",
+    "botonCrear": "创建订单",
+    "vacio": "暂无采购订单。",
+    "columnas": {
+      "numero": "编号",
+      "proveedor": "供应商",
+      "fecha": "日期",
+      "total": "总计",
+      "estado": "状态"
+    }
+  },
+  "estados": {
+    "RECIBIDA": "已收货",
+    "CANCELADA": "已取消",
+    "PENDIENTE": "待处理"
+  },
+  "cotizacionesClientes": {
+    "botonNueva": "新建报价单",
+    "botonEditar": "编辑报价单",
+    "vacio": "暂无客户报价单。",
+    "excel": "Excel",
+    "pdf": "PDF",
+    "confirmarEliminar": "删除这份报价单？",
+    "columnas": {
+      "numero": "PPTO编号",
+      "cliente": "客户",
+      "fecha": "日期",
+      "totalUsd": "总计（美元）"
+    },
+    "form": {
+      "subtitulo": "填写与RCP现有客户报价单相同的Excel（PPTO）格式 — 下载后完全一致。",
+      "pptoNumero": "PPTO编号（例：PPTO-7006-210826/KP）",
+      "titulo": "PPTO标题",
+      "cliente": "客户",
+      "equipoMarca": "设备/品牌",
+      "servicioProducto": "服务/产品",
+      "tipoTrabajo": "工作类型",
+      "periodo": "期间（例：Q3）",
+      "tipoCambio": "汇率",
+      "ruc": "税号",
+      "datosContacto": "客户其他信息",
+      "contactoNombre": "姓名",
+      "contactoPuesto": "职位",
+      "contactoTelefono": "电话",
+      "contactoEmail": "邮箱",
+      "lineas": "报价项目",
+      "agregarLinea": "添加一行",
+      "descripcion": "描述",
+      "precioUsd": "单价（美元）",
+      "proveedorOpcional": "供应商（可选）",
+      "costoProveedorOpcional": "供应商成本（可选）",
+      "notaGarantia": "保修说明（可选）",
+      "observaciones": "备注（汇率、税务说明等）",
+      "errorSinLineas": "至少添加一项带描述和价格的项目。",
+      "errorGenerico": "出了点问题，请重试。"
+    }
+  }
+}

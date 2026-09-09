@@ -1,0 +1,65 @@
+{
+  "titulo": "Panel General",
+  "subtitulo": "Resumen operativo de RCP",
+  "cargando": "Cargando panel...",
+  "tasaCambio": "Tasa de cambio: 1 US$ = C${{monto}}",
+  "notaMargen": "El margen solo se calcula con precisión para venta de productos (usa el costo de compra registrado en Inventario). Los servicios de reparación no tienen un costo registrado en el sistema, así que su ingreso se cuenta pero su margen no.",
+  "secciones": {
+    "ingresos": "Ingresos",
+    "taller": "Taller",
+    "inventario": "Inventario",
+    "personal": "Personal y compras",
+    "cuentas": "Cuentas"
+  },
+  "stats": {
+    "productos": "Productos",
+    "bajoStock": "Bajo stock",
+    "ordenesEnTaller": "Órdenes en taller",
+    "listasParaEntrega": "Listas para entrega",
+    "facturasEmitidas": "Facturas emitidas",
+    "totalVentas": "Total en ventas",
+    "totalConsolidado": "Total consolidado (US$)",
+    "cobradoUsd": "Cobrado en dólares",
+    "cobradoNio": "Cobrado en córdobas",
+    "ordenesCompra": "Órdenes de compra",
+    "empleadosActivos": "Empleados activos",
+    "porCobrar": "Por cobrar",
+    "porPagar": "Por pagar",
+    "resguardoAcumulado": "Resguardo acumulado (equipos listos)"
+  },
+  "charts": {
+    "inventarioPorSubgrupo": "Inventario por subgrupo",
+    "ordenesPorEstado": "Órdenes de taller por estado",
+    "sinOrdenes": "No hay órdenes registradas todavía.",
+    "tiempoReparacion": "Tiempo de reparación (OTs entregadas)",
+    "sinTiempoReparacion": "Todavía no hay órdenes entregadas para medir tiempos.",
+    "bucket01": "0-1 día",
+    "bucket23": "2-3 días",
+    "bucket47": "4-7 días",
+    "bucket8mas": "8+ días",
+    "ventasPorTipo": "Ingresos por tipo de venta: contado, tarjeta y crédito",
+    "sinVentas": "No hay ventas registradas todavía.",
+    "equiposListos": "{{n}} equipo(s) listo(s) para entrega — C${{monto}} acumulado en resguardo.",
+    "ingresos": "Ingresos",
+    "margen": "Margen"
+  },
+  "tiposPago": {
+    "contado": "Contado",
+    "tarjeta": "Tarjeta",
+    "credito": "Crédito"
+  },
+  "subgrupos": {
+    "abandonadas": "Abandonadas",
+    "enTaller": "En taller",
+    "usoPersonal": "Uso personal",
+    "repuestos": "Repuestos",
+    "insumosTaller": "Insumos taller",
+    "listasEntrega": "Listas p/ entrega"
+  },
+  "estadoTaller": {
+    "recibido": "Recibido",
+    "enReparacion": "En reparación",
+    "listoEntrega": "Listo p/ entrega",
+    "entregado": "Entregado"
+  }
+}

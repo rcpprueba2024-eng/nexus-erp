@@ -1,0 +1,29 @@
+{
+  "titulo": "Expenses",
+  "subtitulo": "Record petty cash withdrawals and manage expense categories.",
+  "cajaChica": {
+    "titulo": "Petty cash",
+    "ajustarSaldo": "Adjust balance",
+    "placeholderSaldo": "Current balance",
+    "ayuda": "Every expense you register below is automatically deducted from this balance. Use \"Adjust balance\" for the initial setup or to record a fund top-up."
+  },
+  "registrarGasto": "Register expense",
+  "placeholderCategoriaSeleccionar": "Category...",
+  "placeholderDescripcion": "Expense description",
+  "placeholderMonto": "Amount",
+  "agregarGasto": "Register expense",
+  "sinGastos": "No expenses recorded yet.",
+  "columnas": {
+    "fecha": "Date",
+    "categoria": "Category",
+    "descripcion": "Description",
+    "monto": "Amount",
+    "saldoResultante": "Cash balance",
+    "registradoPor": "Registered by",
+    "nombre": "Name",
+    "gastos": "Expenses"
+  },
+  "categoriasTitulo": "Expense categories",
+  "placeholderNombre": "Name (e.g. Office supplies)",
+  "agregarCategoria": "Add category"
+}

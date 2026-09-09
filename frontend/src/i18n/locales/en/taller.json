@@ -1,0 +1,83 @@
+{
+  "titulo": "Workshop",
+  "subtitulo": "Service orders, technicians and supplies",
+  "filtro": {
+    "todas": "All"
+  },
+  "tablero": {
+    "titulo": "Technicians & interns",
+    "sinPersonal": "No technicians or interns registered.",
+    "equiposCount": "{{n}} devices",
+    "estados": {
+      "EN_ESPERA": "Waiting",
+      "EN_PROCESO": "In progress",
+      "TERMINADO": "Done"
+    }
+  },
+  "nuevaOrden": {
+    "titulo": "New workshop order (manual)",
+    "numeroOrden": "Order #",
+    "clienteDefault": "Customer...",
+    "equipoPlaceholder": "Device (e.g. HP Pavilion Laptop)",
+    "tipoOrdenCCA": "CCA — Phone/Tablet",
+    "tipoOrdenCOM": "COM — Computer",
+    "tecnicoDefault": "Technician...",
+    "costoEstimado": "Estimated cost",
+    "problemaReportado": "Reported issue",
+    "crear": "Create order"
+  },
+  "insumo": {
+    "titulo": "Log supply used",
+    "ordenDefault": "Order...",
+    "insumoDefault": "Supply...",
+    "stock": "(stock: {{stock}})",
+    "cantidad": "Quantity",
+    "registrar": "Log"
+  },
+  "vacio": "There are no orders in this status.",
+  "mostrandoRecientes": "Showing the {{n}} most recent out of {{total}}.",
+  "tabla": {
+    "numero": "No.",
+    "cliente": "Customer",
+    "equipo": "Device",
+    "tecnico": "Technician",
+    "ingreso": "Received",
+    "estado": "Status",
+    "asesor": "Advisor",
+    "asignar": "Assign",
+    "cambiarEstado": "Change status",
+    "sinAsignar": "Unassigned"
+  },
+  "servicios": {
+    "MANTENIMIENTO": "Maintenance",
+    "DIAGNOSTICO": "Diagnostics",
+    "REPARACION": "Repair"
+  },
+  "ficha": {
+    "cliente": "Customer",
+    "asesorAsignado": "Assigned advisor",
+    "recibidoPor": "Received by",
+    "valor": "Value",
+    "adelanto": "Deposit",
+    "fechaHoraRecepcion": "Reception date and time",
+    "tiempoReparacionEstimado": "Estimated repair time",
+    "marcaModelo": "Brand / Model",
+    "color": "Color",
+    "numeroSerie": "Serial number",
+    "imei": "IMEI",
+    "accesorios": "Accessories",
+    "contrasenaEquipo": "Device password",
+    "especificaciones": "Specifications",
+    "fallaReportada": "Reported fault",
+    "diagnosticoTitulo": "Technician diagnosis",
+    "diagnosticoPlaceholder": "Write what you found and what the diagnosis was...",
+    "diagnosticoVacio": "No diagnoses recorded yet.",
+    "agregarDiagnostico": "Add diagnosis",
+    "diagnosticoFotosAyuda": "{{n}} of {{max}} photos for this diagnosis.",
+    "guardarDiagnostico": "Save diagnosis",
+    "fotosTitulo": "Equipment photos",
+    "checklistEntrada": "Check-in checklist",
+    "checklistSalida": "Check-out checklist (on delivery)",
+    "guardarChecklistSalida": "Save check-out checklist"
+  }
+}

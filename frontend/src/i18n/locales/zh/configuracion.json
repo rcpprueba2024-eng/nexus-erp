@@ -1,0 +1,63 @@
+{
+  "titulo": "设置",
+  "subtitulo": "汇率设置以及用户和系统权限管理。",
+  "tasaCambio": {
+    "titulo": "汇率",
+    "guardar": "保存汇率",
+    "guardando": "保存中...",
+    "actual": "当前汇率：1 美元 = {{monto}} 科多巴"
+  },
+  "impresora": {
+    "titulo": "热敏打印机（POS）",
+    "subtitulo": "配置系统如何将小票发送到热敏打印机。",
+    "sinConfigurar": "未配置",
+    "win32": "Windows 已安装的打印机",
+    "red": "网络（IP 和端口）",
+    "nombreWindows": "Windows 中打印机的准确名称",
+    "ip": "打印机 IP",
+    "puerto": "端口",
+    "guardadoOk": "已保存。"
+  },
+  "usuarios": {
+    "titulo": "系统用户",
+    "añadir": "+ 添加用户",
+    "columnaUsuario": "用户名",
+    "columnaNombre": "姓名",
+    "columnaRol": "角色",
+    "columnaModulos": "可访问模块",
+    "columnaEstado": "状态",
+    "confirmarEliminar": "确定要删除此用户吗？账号将被停用，如果24小时内不取消删除，将被永久删除。",
+    "pendienteEliminacion": "将在 {{horas}} 小时后删除",
+    "cancelarEliminacion": "取消删除"
+  },
+  "form": {
+    "tituloEditar": "编辑用户",
+    "tituloNuevo": "添加用户",
+    "usuario": "用户名",
+    "usuarioEditarAyuda": "修改后，该用户需要用新的用户名登录——旧用户名将无法使用。",
+    "nombre": "姓名",
+    "contrasena": "密码",
+    "contrasenaOpcional": "新密码（可选）",
+    "activo": "启用",
+    "modulosTitulo": "可访问的系统模块",
+    "errorObligatorio": "用户名和密码为必填项。",
+    "errorGenerico": "无法保存用户。"
+  },
+  "subtituloAdmin": "汇率、外观以及用户和系统权限管理。",
+  "subtituloUsuario": "自定义系统的语言和外观。",
+  "apariencia": {
+    "titulo": "外观",
+    "subtitulo": "语言和主题会保存到您的账户，并在任意设备上同步。",
+    "idioma": "语言",
+    "tema": "界面主题",
+    "temas": {
+      "auto": "自动",
+      "claro": "浅色",
+      "oscuro": "深色",
+      "medianoche": "午夜",
+      "esmeralda": "翡翠绿",
+      "ambar": "琥珀色",
+      "blanco": "黑白"
+    }
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "titulo": "Historial por Técnico",
+  "subtitulo": "Equipos que cada técnico ha reparado y entregado, con su número de orden.",
+  "buscarPlaceholder": "Buscar por número de OT o cliente…",
+  "sinTecnicos": "No hay técnicos registrados en Recursos Humanos.",
+  "sinReparaciones": "Aún no ha reparado ningún equipo.",
+  "reparados": "{{n}} reparados",
+  "tabla": {
+    "numero": "N.º OT",
+    "cliente": "Cliente",
+    "equipo": "Equipo",
+    "fechaEntrega": "Fecha",
+    "estado": "Estado"
+  }
+}

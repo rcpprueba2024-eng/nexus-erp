@@ -1,0 +1,67 @@
+{
+  "titulo": "POS — Point de vente",
+  "subtitulo": "Vendez des produits au comptoir et imprimez le reçu sur l'imprimante thermique.",
+  "buscarPlaceholder": "Rechercher un produit par nom ou code…",
+  "sinProductos": "Aucun produit correspondant.",
+  "stock": "Stock : {{n}}",
+  "clienteGenerico": "Client général",
+  "moneda": {
+    "etiqueta": "Encaisser en",
+    "usd": "Dollars (US$)",
+    "nio": "Córdobas (C$)"
+  },
+  "categorias": {
+    "productos": "{{n}} produits",
+    "sinCategoria": "Sans catégorie",
+    "sinCategorias": "Aucune catégorie avec des produits pour l'instant.",
+    "volver": "Catégories"
+  },
+  "carrito": {
+    "titulo": "Panier",
+    "clientePlaceholder": "Client (facultatif — laisser vide pour une vente générale)",
+    "vacio": "Le panier est vide. Choisissez une catégorie ou recherchez un produit.",
+    "total": "Total",
+    "cobrarImprimir": "Encaisser et imprimer",
+    "cobrando": "Encaissement...",
+    "vaciar": "Vider le panier",
+    "items": "{{n}} articles",
+    "clienteParticular": "Particulier",
+    "clienteEmpresa": "Entreprise",
+    "clienteNombrePlaceholder": "Nom du client",
+    "cedula": "Pièce d'identité",
+    "ruc": "Numéro fiscal",
+    "clienteHint": "Choisissez Particulier ou Entreprise pour enregistrer les données du client (optionnel — sinon la vente est générale)."
+  },
+  "pago": {
+    "titulo": "Encaisser la vente",
+    "pagos": "Paiements",
+    "agregarPago": "Ajouter un paiement",
+    "efectivo": "Espèces",
+    "tarjeta": "Carte",
+    "credex": "Credex",
+    "tasaCero": "Taux Zéro",
+    "lineaCredito": "Ligne de crédit",
+    "cuotas": "Nb de mensualités",
+    "banco": "Banque/organisme",
+    "referencia": "Référence/autorisation",
+    "monto": "Montant",
+    "recibido": "Reçu",
+    "vuelto": "Monnaie rendue",
+    "saldoPendiente": "Solde dû",
+    "avisoCredito": "Il reste un solde impayé — cette vente sera enregistrée à crédit et apparaîtra dans les Comptes clients.",
+    "confirmarCredito": "Cette vente restera avec un solde dû (crédit). Confirmer quand même ?",
+    "confirmar": "Confirmer le paiement",
+    "tipoVenta": {
+      "CONTADO": "Comptant",
+      "TARJETA": "Carte",
+      "CREDITO": "Crédit",
+      "MULTIPLE": "Paiement mixte"
+    },
+    "abonoInicial": "Acompte initial (optionnel)"
+  },
+  "mensajes": {
+    "cobradoImpreso": "Vente {{numero}} enregistrée et imprimée avec succès.",
+    "cobradoSinImprimir": "Vente {{numero}} enregistrée, mais le reçu n'a pas pu être imprimé : {{error}}",
+    "errorCobro": "Impossible d'enregistrer la vente. Réessayez."
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "titulo": "Equipos en Abandono",
+  "subtitulo": "Equipos que nadie retiró dentro del plazo — se pueden usar para sacar repuestos y hacer reparaciones actuales.",
+  "buscarPlaceholder": "Buscar por número de OT o cliente…",
+  "sinResultados": "No hay equipos en abandono.",
+  "stats": {
+    "total": "Equipos abandonados"
+  },
+  "tabla": {
+    "verOrden": "Ver orden completa",
+    "numero": "N.º OT",
+    "cliente": "Cliente",
+    "telefono": "Teléfono",
+    "equipo": "Equipo",
+    "marcaModelo": "Marca / Modelo",
+    "fechaIngreso": "Fecha de ingreso",
+    "recibidoPor": "Recibido por",
+    "tecnico": "Técnico",
+    "asesor": "Asesor",
+    "diasListo": "Días listo",
+    "repuestosExtraidos": "Repuestos extraídos",
+    "repuestosPlaceholder": "Ej. Se usó la pantalla y la batería"
+  }
+}

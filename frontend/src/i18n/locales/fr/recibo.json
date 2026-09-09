@@ -1,0 +1,16 @@
+{
+  "encabezado": "Réparation de téléphones et portables",
+  "factura": "Facture :",
+  "fecha": "Date :",
+  "cliente": "Client :",
+  "atendio": "Servi par :",
+  "total": "TOTAL",
+  "vuelto": "Monnaie rendue",
+  "saldoPendiente": "Solde dû (crédit)",
+  "gracias": "Merci pour votre achat !",
+  "imprimir": "Imprimer",
+  "metodo": {
+    "EFECTIVO": "Espèces",
+    "TARJETA": "Carte"
+  }
+}

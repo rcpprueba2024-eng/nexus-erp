@@ -1,0 +1,22 @@
+{
+  "titulo": "Unidades de Medida",
+  "subtitulo": "Catálogo de unidades para vender o registrar productos por unidad, gramos, paquete, etc.",
+  "form": {
+    "titulo": "Nueva unidad",
+    "nombre": "Nombre (ej. Gramo, Paquete)",
+    "abreviatura": "Abreviatura (ej. g, paq)",
+    "permiteFraccion": "Permite fracciones (ej. 8 g, medio paquete)",
+    "agregar": "Agregar unidad"
+  },
+  "sinUnidades": "Sin unidades registradas.",
+  "errorGenerico": "No se pudo guardar la unidad.",
+  "errorEnUso": "No se puede eliminar: hay productos usando esta unidad.",
+  "columnas": {
+    "nombre": "Nombre",
+    "abreviatura": "Abrev.",
+    "fraccion": "Fraccionable",
+    "productos": "Productos",
+    "si": "Sí",
+    "no": "No"
+  }
+}

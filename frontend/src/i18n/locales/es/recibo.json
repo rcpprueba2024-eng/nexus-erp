@@ -1,0 +1,16 @@
+{
+  "encabezado": "Reparación de Celulares y Portátiles",
+  "factura": "Factura:",
+  "fecha": "Fecha:",
+  "cliente": "Cliente:",
+  "atendio": "Atendió:",
+  "total": "TOTAL",
+  "vuelto": "Vuelto",
+  "saldoPendiente": "Saldo pendiente (crédito)",
+  "gracias": "¡Gracias por su compra!",
+  "imprimir": "Imprimir",
+  "metodo": {
+    "EFECTIVO": "Efectivo",
+    "TARJETA": "Tarjeta"
+  }
+}

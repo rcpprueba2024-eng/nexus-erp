@@ -1,0 +1,37 @@
+{
+  "titulo": "待取设备",
+  "subtitulo": "已维修完成、等待客户取回的设备 — 含45天期限和保管费规则。",
+  "buscarPlaceholder": "按工单号或客户搜索…",
+  "sinResultados": "暂无等待取回的设备。",
+  "stats": {
+    "total": "待取设备数",
+    "conCobro": "正在收取保管费",
+    "porVencer": "即将到期（紧急）",
+    "plazoGracia": "宽限期",
+    "dias": "天"
+  },
+  "tabla": {
+    "numero": "工单号",
+    "cliente": "客户",
+    "tecnico": "技师",
+    "equipo": "设备",
+    "fechaListo": "完成日期",
+    "dias": "天数",
+    "cargo": "保管费",
+    "plazo": "状态",
+    "pagado": "是否已付款？",
+    "siPagado": "已付款 — {{numero}}",
+    "noPagado": "未付款",
+    "accion": "操作",
+    "entregar": "交付"
+  },
+  "plazo": {
+    "normal": "正常",
+    "cobrando": "每天收取C$100",
+    "porVencer": "即将到期"
+  },
+  "entrega": {
+    "titulo": "交付 {{numero}}",
+    "confirmar": "确认交付"
+  }
+}

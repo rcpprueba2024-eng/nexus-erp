@@ -1,0 +1,37 @@
+{
+  "titulo": "Equipos Listos",
+  "subtitulo": "Equipos ya reparados esperando que el cliente los retire — con el plazo de 45 días y el cobro de resguardo.",
+  "buscarPlaceholder": "Buscar por número de OT o cliente…",
+  "sinResultados": "No hay equipos listos esperando retiro.",
+  "stats": {
+    "total": "Equipos listos",
+    "conCobro": "Con cobro de resguardo",
+    "porVencer": "Por vencer (crítico)",
+    "plazoGracia": "Plazo de gracia",
+    "dias": "días"
+  },
+  "tabla": {
+    "numero": "N.º OT",
+    "cliente": "Cliente",
+    "tecnico": "Técnico",
+    "equipo": "Equipo",
+    "fechaListo": "Listo desde",
+    "dias": "Días",
+    "cargo": "Cargo resguardo",
+    "plazo": "Plazo",
+    "pagado": "¿Pagado?",
+    "siPagado": "Sí — {{numero}}",
+    "noPagado": "No pagado",
+    "accion": "Acción",
+    "entregar": "Entregar"
+  },
+  "plazo": {
+    "normal": "Normal",
+    "cobrando": "Cobrando C$100/día",
+    "porVencer": "Por vencer"
+  },
+  "entrega": {
+    "titulo": "Entregar {{numero}}",
+    "confirmar": "Confirmar entrega"
+  }
+}

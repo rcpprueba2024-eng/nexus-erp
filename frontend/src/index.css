@@ -1,0 +1,199 @@
+:root {
+  --text: #4b5563;
+  --text-h: #0f172a;
+  --bg: #f3f4f6;
+  --panel: #ffffff;
+  --border: #e2e4e9;
+  --accent: #1d4ed8;
+  --accent-bg: rgba(29, 78, 216, 0.08);
+  --sidebar-bg: #0f172a;
+  --sidebar-text: #cbd5e1;
+  --sidebar-active: #1d4ed8;
+  --sidebar-hover: rgba(255, 255, 255, 0.06);
+  --sidebar-heading: #ffffff;
+  --sidebar-border: rgba(255, 255, 255, 0.15);
+  --danger: #dc2626;
+  --success: #16a34a;
+
+  /* Derivados: se recalculan solos con cada tema porque dependen de
+     --panel/--text-h, que sí cambian por tema — no hace falta repetirlos
+     en cada bloque de tema de abajo. */
+  --panel-2: color-mix(in srgb, var(--panel) 93%, var(--text-h) 7%);
+  --shadow-sm: 0 1px 2px color-mix(in srgb, var(--text-h) 8%, transparent), 0 1px 2px -1px color-mix(in srgb, var(--text-h) 10%, transparent);
+  --shadow-md: 0 12px 28px -8px color-mix(in srgb, var(--text-h) 24%, transparent), 0 4px 10px -4px color-mix(in srgb, var(--text-h) 14%, transparent);
+  --radius: 14px;
+  --radius-sm: 9px;
+
+  font: 15px/145% system-ui, 'Segoe UI', Roboto, sans-serif;
+  color-scheme: light dark;
+  color: var(--text);
+  background: var(--bg);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Tema de interfaz (Configuración > Apariencia), 6 looks completos:
+   auto (sigue al sistema), claro, oscuro, medianoche, esmeralda, ambar.
+   ThemeContext.jsx aplica document.documentElement[data-theme]; "auto" no
+   fija el atributo, por lo que cae en el bloque @media de abajo. */
+
+/* AUTO (sin atributo data-theme): sigue al sistema operativo. */
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme]) {
+    --text: #a1a8b5; --text-h: #f3f4f6; --bg: #0b0d12; --panel: #161922; --border: #262b36;
+    --accent: #60a5fa; --accent-bg: rgba(96, 165, 250, 0.12);
+    --sidebar-bg: #0a0c11; --sidebar-text: #9aa4b2; --sidebar-active: #1d4ed8;
+  }
+}
+
+/* CLARO: azul clásico, forzado claro sin importar el sistema. */
+:root[data-theme="claro"] {
+  --text: #4b5563; --text-h: #0f172a; --bg: #f3f4f6; --panel: #ffffff; --border: #e2e4e9;
+  --accent: #1d4ed8; --accent-bg: rgba(29, 78, 216, 0.08);
+  --sidebar-bg: #0f172a; --sidebar-text: #cbd5e1; --sidebar-active: #1d4ed8;
+}
+
+/* OSCURO: azul clásico, forzado oscuro sin importar el sistema. */
+:root[data-theme="oscuro"] {
+  --text: #a1a8b5; --text-h: #f3f4f6; --bg: #0b0d12; --panel: #161922; --border: #262b36;
+  --accent: #60a5fa; --accent-bg: rgba(96, 165, 250, 0.12);
+  --sidebar-bg: #0a0c11; --sidebar-text: #9aa4b2; --sidebar-active: #1d4ed8;
+}
+
+/* MEDIANOCHE: negro azulado profundo con acento índigo, look "premium". */
+:root[data-theme="medianoche"] {
+  --text: #a5a3c4; --text-h: #f0f0ff; --bg: #0a0a17; --panel: #14142b; --border: #24243f;
+  --accent: #818cf8; --accent-bg: rgba(129, 140, 248, 0.16);
+  --sidebar-bg: #050510; --sidebar-text: #a5a3c4; --sidebar-active: #818cf8;
+}
+
+/* ESMERALDA: claro con acento verde, imagen fresca de marca. */
+:root[data-theme="esmeralda"] {
+  --text: #3f4a45; --text-h: #052e21; --bg: #f0f7f3; --panel: #ffffff; --border: #d3ece1;
+  --accent: #059669; --accent-bg: rgba(5, 150, 105, 0.10);
+  --sidebar-bg: #052e21; --sidebar-text: #a7d9c5; --sidebar-active: #10b981;
+}
+
+/* AMBAR: chocolate oscuro con acento ámbar, tono cálido e industrial de taller. */
+:root[data-theme="ambar"] {
+  --text: #cbab84; --text-h: #fef3e2; --bg: #1a1207; --panel: #241a0d; --border: #3d2b14;
+  --accent: #f59e0b; --accent-bg: rgba(245, 158, 11, 0.16);
+  --sidebar-bg: #120c05; --sidebar-text: #c9a876; --sidebar-active: #f59e0b;
+}
+
+/* BLANCO: blanco + azul + negro, tal como se pidió — menú lateral claro (lo
+   que la distingue de CLARO, que lleva menú oscuro), texto casi negro para
+   máxima nitidez, y un azul intenso como único color de acento. */
+:root[data-theme="blanco"] {
+  --text: #32363f; --text-h: #05070c; --bg: #f4f6fa; --panel: #ffffff; --border: #dde1ea;
+  --accent: #1d4ed8; --accent-bg: rgba(29, 78, 216, 0.09);
+  --sidebar-bg: #ffffff; --sidebar-text: #32363f; --sidebar-active: #1d4ed8;
+  --sidebar-hover: rgba(29, 78, 216, 0.07);
+  --sidebar-heading: #05070c; --sidebar-border: rgba(5, 7, 12, 0.12);
+  --danger: #dc2626; --success: #15803d;
+}
+:root[data-theme="blanco"] .sidebar { border-right: 1px solid var(--border); }
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+h1, h2, h3 {
+  color: var(--text-h);
+  font-weight: 600;
+  margin: 0 0 4px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  text-align: left;
+  padding: 12px 14px;
+  border-bottom: 1px solid var(--border);
+  font-size: 13.5px;
+}
+
+th {
+  color: var(--text-h);
+  font-weight: 600;
+  font-size: 11.5px;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  background: var(--panel-2);
+}
+
+tbody tr {
+  transition: background 0.12s;
+}
+
+tbody tr:hover {
+  background: var(--accent-bg);
+}
+
+input, select, textarea {
+  font: inherit;
+  padding: 9px 12px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  background: var(--panel);
+  color: var(--text-h);
+  transition: border-color 0.15s, box-shadow 0.15s;
+}
+
+input:focus, select:focus, textarea:focus {
+  outline: none;
+  border-color: var(--accent);
+  box-shadow: 0 0 0 3px var(--accent-bg);
+}
+
+button {
+  font: inherit;
+  font-weight: 600;
+  cursor: pointer;
+  border-radius: var(--radius-sm);
+  border: 1px solid transparent;
+  padding: 9px 16px;
+  background: var(--accent);
+  color: #fff;
+  box-shadow: var(--shadow-sm);
+  transition: opacity 0.15s, transform 0.08s, box-shadow 0.15s;
+}
+
+button:hover {
+  opacity: 0.92;
+  box-shadow: var(--shadow-md);
+}
+
+button:active {
+  transform: translateY(1px);
+}
+
+button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  box-shadow: none;
+  transform: none;
+}
+
+button.secondary {
+  background: var(--panel);
+  border-color: var(--border);
+  color: var(--text-h);
+  box-shadow: none;
+}
+
+button.secondary:hover {
+  background: var(--panel-2);
+  box-shadow: none;
+}
+
+button.danger {
+  background: var(--danger);
+}

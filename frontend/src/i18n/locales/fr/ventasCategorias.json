@@ -1,0 +1,35 @@
+{
+  "titulo": "Catégories",
+  "subtitulo": "Gérez les catégories et sous-catégories de produits.",
+  "chart": {
+    "titulo": "Catégorie la plus vendue",
+    "sinDatos": "Aucune vente enregistrée pour le moment."
+  },
+  "categoriasTitulo": "Catégories de produits",
+  "placeholderNombre": "Nom (ex. Téléphones)",
+  "placeholderDescripcion": "Description (optionnelle)",
+  "agregarCategoria": "Ajouter une catégorie",
+  "columnas": {
+    "nombre": "Nom",
+    "tipo": "Type",
+    "descripcion": "Description",
+    "productos": "Produits"
+  },
+  "subcategoriasTitulo": "Sous-catégories",
+  "placeholderCategoriaSeleccionar": "Catégorie...",
+  "placeholderNombreSubcategoria": "Nom de la sous-catégorie (ex. Haut de gamme)",
+  "agregarSubcategoria": "Ajouter une sous-catégorie",
+  "columnasSubcategoria": {
+    "categoria": "Catégorie",
+    "subcategoria": "Sous-catégorie",
+    "descripcion": "Description",
+    "productos": "Produits"
+  },
+  "tiposCategoria": {
+    "producto": "Produit",
+    "repuesto": "Pièce détachée",
+    "insumo": "Fourniture",
+    "accesorio": "Accessoire",
+    "otro": "Autre"
+  }
+}

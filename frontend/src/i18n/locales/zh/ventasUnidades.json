@@ -1,0 +1,22 @@
+{
+  "titulo": "计量单位",
+  "subtitulo": "用于按件、克、包等单位销售或登记产品的计量单位目录。",
+  "form": {
+    "titulo": "新建单位",
+    "nombre": "名称（例如：克、包）",
+    "abreviatura": "缩写（例如：g、包）",
+    "permiteFraccion": "允许小数（例如：8克、半包）",
+    "agregar": "添加单位"
+  },
+  "sinUnidades": "暂无计量单位记录。",
+  "errorGenerico": "无法保存该单位。",
+  "errorEnUso": "无法删除：有产品正在使用该单位。",
+  "columnas": {
+    "nombre": "名称",
+    "abreviatura": "缩写",
+    "fraccion": "可分数",
+    "productos": "产品数",
+    "si": "是",
+    "no": "否"
+  }
+}

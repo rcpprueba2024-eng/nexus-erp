@@ -1,0 +1,37 @@
+{
+  "titulo": "Ready Equipment",
+  "subtitulo": "Repaired equipment waiting for pickup — with the 45-day window and storage fee.",
+  "buscarPlaceholder": "Search by work order number or customer…",
+  "sinResultados": "No equipment currently waiting for pickup.",
+  "stats": {
+    "total": "Ready equipment",
+    "conCobro": "Accruing storage fee",
+    "porVencer": "About to expire (critical)",
+    "plazoGracia": "Grace period",
+    "dias": "days"
+  },
+  "tabla": {
+    "numero": "Order #",
+    "cliente": "Customer",
+    "tecnico": "Technician",
+    "equipo": "Equipment",
+    "fechaListo": "Ready since",
+    "dias": "Days",
+    "cargo": "Storage fee",
+    "plazo": "Status",
+    "pagado": "Paid?",
+    "siPagado": "Yes — {{numero}}",
+    "noPagado": "Not paid",
+    "accion": "Action",
+    "entregar": "Deliver"
+  },
+  "plazo": {
+    "normal": "Normal",
+    "cobrando": "Charging C$100/day",
+    "porVencer": "About to expire"
+  },
+  "entrega": {
+    "titulo": "Deliver {{numero}}",
+    "confirmar": "Confirm delivery"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "titulo": "销售",
+  "subtitulo": {
+    "texto": "销售手机、电脑、配件及各类商品。如需保养、诊断或维修，请使用",
+    "enlace": "+ 新建工单"
+  },
+  "form": {
+    "titulo": "新建产品销售",
+    "numero": "销售单号/发票号",
+    "cliente": "客户（全名）",
+    "vendedor": "销售员：{{nombre}}",
+    "todasCategorias": "所有分类",
+    "producto": "选择产品...",
+    "cantidad": "数量",
+    "errorObligatorio": "销售单号、客户和产品为必填项。",
+    "errorGenerico": "登记销售时发生错误。",
+    "registrar": "登记销售"
+  },
+  "tabla": {
+    "numero": "编号",
+    "cliente": "客户",
+    "vendedor": "销售员",
+    "detalle": "明细",
+    "fecha": "日期",
+    "total": "总计",
+    "estado": "状态",
+    "sinVentas": "暂无销售记录。"
+  }
+}

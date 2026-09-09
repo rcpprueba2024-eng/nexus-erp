@@ -1,0 +1,14 @@
+{
+  "titulo": "Importar Productos",
+  "subtitulo": "Importa productos de forma masiva desde un archivo Excel.",
+  "descripcion": "Sube un archivo <strong>.xlsx</strong>. Reconoce tanto el formato simple (<code>codigo</code>, <code>nombre</code>, <code>categoria</code>, <code>subgrupo</code>, <code>precio_compra</code>, <code>precio_venta</code>, <code>stock_actual</code>...) como el inventario real de control interno (<code>ITEM</code>, <code>ARTICULO</code>, <code>TIPO</code>, <code>MARCA</code>, <code>MODELO</code>, <code>N° SERIE</code>, <code>ESTADO</code>, <code>EXISTENCIA</code>, <code>VALOR UNITARIO</code>, <code>ESTANTE</code>, <code>NIVEL</code>, <code>DETALLE / COMPATIBILIDAD</code>, <code>ASIGNACION</code>...), en cualquier orden y aunque haya una fila de título antes de los encabezados. Solo el código y el nombre son obligatorios; si el código ya existe, se actualiza.",
+  "dropzoneText": "Clic para seleccionar el archivo .xlsx",
+  "importando": "Importando...",
+  "boton": "Importar",
+  "errorGenerico": "Error al importar el archivo.",
+  "resultados": {
+    "creados": "Creados",
+    "actualizados": "Actualizados",
+    "errores": "Errores"
+  }
+}

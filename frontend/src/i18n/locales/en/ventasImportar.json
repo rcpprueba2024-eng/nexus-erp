@@ -1,0 +1,14 @@
+{
+  "titulo": "Import Products",
+  "subtitulo": "Bulk-import products from an Excel file.",
+  "descripcion": "Upload an <strong>.xlsx</strong> file. Recognizes both the simple format (<code>codigo</code>, <code>nombre</code>, <code>categoria</code>, <code>subgrupo</code>, <code>precio_compra</code>, <code>precio_venta</code>, <code>stock_actual</code>...) and a real internal inventory format (<code>ITEM</code>, <code>ARTICULO</code>, <code>TIPO</code>, <code>MARCA</code>, <code>MODELO</code>, <code>N° SERIE</code>, <code>ESTADO</code>, <code>EXISTENCIA</code>, <code>VALOR UNITARIO</code>, <code>ESTANTE</code>, <code>NIVEL</code>, <code>DETALLE / COMPATIBILIDAD</code>, <code>ASIGNACION</code>...), in any order and even with a title row before the headers. Only the code and name are required; if the code already exists, it will be updated.",
+  "dropzoneText": "Click to select the .xlsx file",
+  "importando": "Importing...",
+  "boton": "Import",
+  "errorGenerico": "Error importing the file.",
+  "resultados": {
+    "creados": "Created",
+    "actualizados": "Updated",
+    "errores": "Errors"
+  }
+}

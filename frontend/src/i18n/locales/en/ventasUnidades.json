@@ -1,0 +1,22 @@
+{
+  "titulo": "Units of Measure",
+  "subtitulo": "Catalog of units for selling or registering products by unit, grams, package, etc.",
+  "form": {
+    "titulo": "New unit",
+    "nombre": "Name (e.g. Gram, Package)",
+    "abreviatura": "Abbreviation (e.g. g, pkg)",
+    "permiteFraccion": "Allows fractions (e.g. 8g, half a package)",
+    "agregar": "Add unit"
+  },
+  "sinUnidades": "No units registered.",
+  "errorGenerico": "Could not save the unit.",
+  "errorEnUso": "Cannot delete: there are products using this unit.",
+  "columnas": {
+    "nombre": "Name",
+    "abreviatura": "Abbr.",
+    "fraccion": "Fractional",
+    "productos": "Products",
+    "si": "Yes",
+    "no": "No"
+  }
+}

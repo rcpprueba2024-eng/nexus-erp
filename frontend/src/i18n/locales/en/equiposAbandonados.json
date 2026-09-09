@@ -1,0 +1,24 @@
+{
+  "titulo": "Abandoned Equipment",
+  "subtitulo": "Equipment nobody picked up within the deadline — can be used to harvest parts for current repairs.",
+  "buscarPlaceholder": "Search by work order number or customer…",
+  "sinResultados": "No abandoned equipment.",
+  "stats": {
+    "total": "Abandoned equipment"
+  },
+  "tabla": {
+    "verOrden": "View full order",
+    "numero": "Order #",
+    "cliente": "Customer",
+    "telefono": "Phone",
+    "equipo": "Equipment",
+    "marcaModelo": "Brand / Model",
+    "fechaIngreso": "Intake date",
+    "recibidoPor": "Received by",
+    "tecnico": "Technician",
+    "asesor": "Sales rep",
+    "diasListo": "Days ready",
+    "repuestosExtraidos": "Parts harvested",
+    "repuestosPlaceholder": "E.g. Screen and battery were used"
+  }
+}

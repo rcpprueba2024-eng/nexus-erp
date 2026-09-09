@@ -1,0 +1,73 @@
+{
+  "titulo": "财务",
+  "subtitulo": "损益表、销售、支出与账款",
+  "tabs": {
+    "resultados": "损益表",
+    "ventas": "销售",
+    "gastos": "支出",
+    "cuentas": "账款"
+  },
+  "resultados": {
+    "ingresos": "销售收入",
+    "gastosTitulo": "支出",
+    "totalGastos": "支出合计",
+    "utilidadNeta": "净利润",
+    "margenNeto": "净利率",
+    "conceptos": {
+      "insumos": "车间耗材",
+      "planilla": "工资",
+      "compras": "供应商采购"
+    }
+  },
+  "ventas": {
+    "porDiaTitulo": "按日销售",
+    "porVendedorTitulo": "按销售员统计",
+    "columnas": {
+      "periodo": "日期",
+      "total": "合计（美元）",
+      "facturas": "发票数",
+      "vendedor": "销售员",
+      "promedio": "平均单价（美元）"
+    },
+    "vacio": "暂无销售记录。"
+  },
+  "gastos": {
+    "porProveedorTitulo": "按供应商统计支出",
+    "porDiaTitulo": "按日支出",
+    "columnas": {
+      "proveedor": "供应商",
+      "ordenes": "订单数",
+      "total": "已付合计（美元）",
+      "fecha": "日期",
+      "compras": "供应商采购（美元）",
+      "insumos": "车间耗材（美元）"
+    },
+    "vacio": "暂无支出记录。"
+  },
+  "porCobrar": {
+    "titulo": "应收账款",
+    "vacio": "暂无应收账款。",
+    "columnas": {
+      "cliente": "客户",
+      "monto": "金额",
+      "vencimiento": "到期日",
+      "asesor": "负责顾问",
+      "referenciaOts": "工单编号",
+      "estado": "状态"
+    }
+  },
+  "porPagar": {
+    "titulo": "应付账款",
+    "vacio": "暂无应付账款。",
+    "columnas": {
+      "proveedor": "供应商",
+      "monto": "金额",
+      "vencimiento": "到期日",
+      "estado": "状态"
+    }
+  },
+  "cuentas": {
+    "vencidasCobrar": "逾期应收",
+    "vencidasPagar": "逾期应付"
+  }
+}

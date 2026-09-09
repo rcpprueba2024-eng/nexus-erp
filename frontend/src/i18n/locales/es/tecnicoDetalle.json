@@ -1,0 +1,19 @@
+{
+  "volver": "Volver al tablero",
+  "tecnicoNoEncontrado": "Técnico no encontrado",
+  "buscarPlaceholder": "Buscar por número de OT, equipo o falla…",
+  "totalEquipos": "{{n}} equipos activos",
+  "sinEquipos": "No tiene equipos asignados en este momento.",
+  "diasCantidad": "{{n}} días",
+  "tabla": {
+    "numero": "N.º OT",
+    "equipo": "Equipo",
+    "tipoServicio": "Tipo de servicio",
+    "problemaReportado": "Falla reportada por el cliente",
+    "instruccionesAsesor": "Instrucciones del asesor",
+    "ingreso": "Ingreso",
+    "diasEnTaller": "Días en taller",
+    "estado": "Estado",
+    "sinDato": "—"
+  }
+}

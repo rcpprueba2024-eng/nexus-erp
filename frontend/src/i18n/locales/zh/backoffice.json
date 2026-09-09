@@ -1,0 +1,48 @@
+{
+  "flujo": {
+    "titulo": "每日工作流程",
+    "subtitulo": "今日运营概览：设备、库存和销售。",
+    "entradasHoy": "今日接收设备",
+    "entregasHoy": "今日交付设备",
+    "ventasHoy": "今日销售额",
+    "bajoStock": "低库存产品",
+    "ordenesActivas": "车间进行中工单",
+    "valorEnTaller": "车间预估价值",
+    "entradasHoyTitulo": "今日接收",
+    "sinEntradas": "今天还没有设备接收。",
+    "entregasHoyTitulo": "今日交付",
+    "sinEntregas": "今天还没有设备交付。",
+    "bajoStockTitulo": "低库存产品",
+    "sinBajoStock": "所有库存均高于最低值。",
+    "accesosTitulo": "快捷入口",
+    "irInventario": "查看库存",
+    "irReportes": "查看报表",
+    "irFinanciero": "财务报表",
+    "irOrdenes": "查看工单",
+    "tabla": {
+      "numero": "编号", "equipo": "设备", "cliente": "客户", "tecnico": "技术员",
+      "producto": "产品", "stockActual": "当前库存", "stockMinimo": "最低库存",
+      "factura": "发票", "total": "合计"
+    }
+  },
+  "financiero": {
+    "titulo": "月度财务报表",
+    "subtitulo": "销售收入、支出与预估利润。",
+    "ventasMes": "本月销售额",
+    "gastosMes": "支出（耗材 + 工资）",
+    "utilidadNeta": "预估净利润",
+    "porCobrar": "待收账款",
+    "ventasPorMesTitulo": "按月销售额",
+    "periodo": "期间",
+    "total": "合计",
+    "acumulado": "累计",
+    "gastosTitulo": "支出",
+    "gastosInsumos": "耗材支出：",
+    "gastosPersonal": "工资支出：",
+    "porCobrarTitulo": "应收账款",
+    "sinPorCobrar": "没有待收账款。",
+    "cliente": "客户",
+    "monto": "金额",
+    "vencimiento": "到期日"
+  }
+}

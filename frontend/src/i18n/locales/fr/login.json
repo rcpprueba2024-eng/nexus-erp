@@ -1,0 +1,8 @@
+{
+  "titulo": "Connexion",
+  "usuario": "Nom d'utilisateur",
+  "contrasena": "Mot de passe",
+  "ingresar": "Se connecter",
+  "ingresando": "Connexion en cours...",
+  "error": "Nom d'utilisateur ou mot de passe incorrect."
+}

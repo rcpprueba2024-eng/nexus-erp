@@ -1,0 +1,63 @@
+{
+  "titulo": "Settings",
+  "subtitulo": "Exchange rate and management of users and system access.",
+  "tasaCambio": {
+    "titulo": "Exchange Rate",
+    "guardar": "Save Rate",
+    "guardando": "Saving...",
+    "actual": "Current: 1 US$ = C${{monto}}"
+  },
+  "impresora": {
+    "titulo": "Thermal printer (POS)",
+    "subtitulo": "Configure how the system sends receipts to the thermal printer.",
+    "sinConfigurar": "Not configured",
+    "win32": "Printer installed in Windows",
+    "red": "Network (IP and port)",
+    "nombreWindows": "Exact printer name in Windows",
+    "ip": "Printer IP",
+    "puerto": "Port",
+    "guardadoOk": "Saved."
+  },
+  "usuarios": {
+    "titulo": "System Users",
+    "añadir": "+ Add User",
+    "columnaUsuario": "Username",
+    "columnaNombre": "Name",
+    "columnaRol": "Role",
+    "columnaModulos": "Modules with Access",
+    "columnaEstado": "Status",
+    "confirmarEliminar": "Delete this user? The account will be deactivated and permanently deleted in 24 hours unless you cancel the deletion before then.",
+    "pendienteEliminacion": "Deletes in {{horas}}h",
+    "cancelarEliminacion": "Cancel deletion"
+  },
+  "form": {
+    "tituloEditar": "Edit User",
+    "tituloNuevo": "Add User",
+    "usuario": "Username",
+    "usuarioEditarAyuda": "If you change this, they'll need to log in with the new username — the old one stops working.",
+    "nombre": "Full Name",
+    "contrasena": "Password",
+    "contrasenaOpcional": "New password (optional)",
+    "activo": "Active",
+    "modulosTitulo": "System sections with access",
+    "errorObligatorio": "Username and password are required.",
+    "errorGenerico": "Could not save the user."
+  },
+  "subtituloAdmin": "Exchange rate, appearance, and management of users and system access.",
+  "subtituloUsuario": "Customize the system's language and appearance.",
+  "apariencia": {
+    "titulo": "Appearance",
+    "subtitulo": "Language and theme are saved to your account and follow you on any device.",
+    "idioma": "Language",
+    "tema": "Interface Theme",
+    "temas": {
+      "auto": "Automatic",
+      "claro": "Light",
+      "oscuro": "Dark",
+      "medianoche": "Midnight",
+      "esmeralda": "Emerald",
+      "ambar": "Amber",
+      "blanco": "Black & White"
+    }
+  }
+}

@@ -1,0 +1,208 @@
+{
+  "titulo": "库存",
+  "subtitulo": "四个独立库存：车间、销售、固定资产和废旧料",
+  "selector": {
+    "volver": "返回",
+    "taller": {
+      "titulo": "车间库存",
+      "descripcion": "车间维修设备所用的耗材。"
+    },
+    "ventas": {
+      "titulo": "销售库存",
+      "descripcion": "销售给客户的配件、耗材和设备。"
+    },
+    "activosFijos": {
+      "titulo": "固定资产",
+      "descripcion": "分配给员工的内部使用设备。"
+    },
+    "huesera": {
+      "titulo": "废旧料",
+      "descripcion": "从中拆取配件的报废设备。"
+    },
+    "marcas": {
+      "titulo": "品牌与型号",
+      "descripcion": "四个库存共用的目录。"
+    }
+  },
+  "subtabs": {
+    "productos": "产品",
+    "agregar": "添加产品",
+    "categorias": "分类与子分类",
+    "marcas": "品牌",
+    "importar": "批量导入产品",
+    "bajas": "报废记录"
+  },
+  "bajas": {
+    "darDeBaja": "报废",
+    "titulo": "报废历史记录",
+    "subtitulo": "永久移出库存的产品：谁办理的报废、来自哪里、去往哪个部门，以及公司交给了谁。",
+    "sinBajas": "该库存暂无报废记录。",
+    "tituloModal": "报废此产品",
+    "placeholders": {
+      "cantidad": "报废数量（现有库存：{{stock}}）",
+      "origen": "来源（原位置或部门）",
+      "areaDestino": "去往的部门或区域",
+      "entregadoA": "公司交付给谁",
+      "motivo": "原因（可选）"
+    },
+    "avisoTotal": "此操作会清空全部库存并将产品标记为停用。记录会保留在本标签页的历史记录中。",
+    "avisoParcial": "仅从库存中扣除此数量，其余库存仍可用，产品保持启用状态。记录会保留在本标签页的历史记录中。",
+    "errorCantidad": "请填写报废的数量。",
+    "errorGenerico": "出了点问题，请重试。",
+    "confirmarBaja": "确认报废",
+    "columnas": {
+      "fecha": "日期",
+      "producto": "产品",
+      "cantidad": "数量",
+      "origen": "来源",
+      "areaDestino": "去往部门",
+      "entregadoA": "交付对象",
+      "motivo": "原因",
+      "registradoPor": "登记人"
+    }
+  },
+  "tabla": {
+    "item": "编号",
+    "tipo": "类型",
+    "articulo": "物品",
+    "marca": "品牌",
+    "modelo": "型号",
+    "noSerie": "序列号",
+    "caracteristicas": "特征说明",
+    "existencia": "库存",
+    "ubicacion": "位置",
+    "asignacion": "分配对象"
+  },
+  "subgrupos": {
+    "todos": "全部",
+    "abandonada": "废弃电脑",
+    "enTaller": "维修中的电脑",
+    "usoPersonal": "员工使用设备",
+    "repuesto": "备件",
+    "insumoTaller": "维修耗材",
+    "listoEntrega": "待取货"
+  },
+  "tiposCategoria": {
+    "producto": "产品",
+    "repuesto": "备件",
+    "insumo": "耗材",
+    "accesorio": "配件",
+    "otro": "其他"
+  },
+  "condiciones": {
+    "NUEVO": "全新",
+    "USADO": "二手",
+    "MAL_ESTADO": "状况不佳"
+  },
+  "productos": {
+    "sinProductos": "该子组下没有产品。",
+    "mostrandoRecientes": "显示最近的 {{n}} 个产品，共 {{total}} 个。使用子组筛选查看其他产品。",
+    "buscarPlaceholder": "按代码、名称、品牌或型号搜索…",
+    "columnas": {
+      "codigo": "编码",
+      "nombre": "名称",
+      "marca": "品牌",
+      "modelo": "型号",
+      "categoria": "分类",
+      "subgrupo": "子组",
+      "condicion": "成色",
+      "ubicacion": "位置",
+      "precioVenta": "销售价",
+      "stock": "库存",
+      "estado": "状态"
+    },
+    "bajoStock": "库存不足",
+    "ok": "正常",
+    "registro": "预览",
+    "registroSinCategoria": "无分类",
+    "registroStock": "库存 {{n}}"
+  },
+  "agregar": {
+    "titulo": "添加产品",
+    "fotoProducto": "产品照片",
+    "clicSubir": "(点击上传)",
+    "placeholders": {
+      "codigo": "编码",
+      "nombre": "名称",
+      "marcaSeleccionar": "选择品牌...",
+      "categoriaSeleccionar": "选择分类...",
+      "subcategoriaSeleccionar": "选择子分类...",
+      "modelo": "型号",
+      "modeloSeleccionar": "型号…",
+      "modeloSeleccionaMarcaPrimero": "请先选择品牌",
+      "noSerie": "序列号",
+      "precioCompra": "进货价 ({{simbolo}})",
+      "precioVenta": "销售价 ({{simbolo}})",
+      "stockInicial": "初始库存",
+      "stockMinimo": "最低库存",
+      "ubicacion": "位置（货架/柜子）",
+      "nivel": "层级",
+      "asignacion": "分配给",
+      "descripcion": "描述",
+      "detalles": "详情 / 技术规格",
+      "unidadSeleccionar": "选择计量单位..."
+    },
+    "condicionSeleccionar": "选择成色...",
+    "nuevoModelo": "新建型号",
+    "guardarProducto": "保存产品",
+    "tituloEditar": "编辑产品",
+    "guardarCambios": "保存更改"
+  },
+  "categorias": {
+    "categoriasTitulo": "产品分类",
+    "placeholderNombre": "名称（例如：手机）",
+    "placeholderDescripcion": "描述（可选）",
+    "agregarCategoria": "添加分类",
+    "columnas": {
+      "nombre": "名称",
+      "tipo": "类型",
+      "descripcion": "描述",
+      "productos": "产品数"
+    },
+    "subcategoriasTitulo": "子分类",
+    "placeholderCategoriaSeleccionar": "选择分类...",
+    "placeholderNombreSubcategoria": "子分类名称（例如：高端）",
+    "agregarSubcategoria": "添加子分类",
+    "columnasSubcategoria": {
+      "categoria": "分类",
+      "subcategoria": "子分类",
+      "descripcion": "描述",
+      "productos": "产品数"
+    }
+  },
+  "marcas": {
+    "titulo": "品牌",
+    "placeholderNombre": "品牌名称（例如：HP、三星）",
+    "agregarMarca": "添加品牌",
+    "columnas": {
+      "marca": "品牌",
+      "productos": "产品数"
+    }
+  },
+  "modelos": {
+    "titulo": "型号",
+    "ayuda": "在此创建的型号会出现在填写工单或产品时的品牌/型号下拉列表中 — 无需每次重新输入。",
+    "placeholderMarca": "选择品牌…",
+    "placeholderNombre": "型号名称（例如：Pavilion 14、Galaxy A54）",
+    "agregarModelo": "添加型号",
+    "sinModelos": "暂无型号记录。",
+    "columnas": {
+      "marca": "品牌",
+      "modelo": "型号",
+      "productos": "产品数"
+    }
+  },
+  "importar": {
+    "titulo": "批量导入产品",
+    "descripcion": "上传一个 <strong>.xlsx</strong> 文件。既支持简单格式（<code>codigo</code>、<code>nombre</code>、<code>categoria</code>、<code>subgrupo</code>、<code>precio_compra</code>、<code>precio_venta</code>、<code>stock_actual</code>…），也支持真实的内部库存格式（<code>ITEM</code>、<code>ARTICULO</code>、<code>TIPO</code>、<code>MARCA</code>、<code>MODELO</code>、<code>N° SERIE</code>、<code>ESTADO</code>、<code>EXISTENCIA</code>、<code>VALOR UNITARIO</code>、<code>ESTANTE</code>、<code>NIVEL</code>、<code>DETALLE / COMPATIBILIDAD</code>、<code>ASIGNACION</code>…），列的顺序不限，即使表头前有一行标题也没关系。只有编码和名称是必填项；如果编码已存在，将更新该记录。",
+    "dropzoneText": "点击选择 .xlsx 文件",
+    "importando": "正在导入...",
+    "boton": "导入",
+    "errorGenerico": "导入文件时出错。",
+    "resultados": {
+      "creados": "已创建",
+      "actualizados": "已更新",
+      "errores": "错误"
+    }
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "volver": "返回看板",
+  "tecnicoNoEncontrado": "未找到该技术员",
+  "buscarPlaceholder": "按工单号、设备或故障搜索…",
+  "totalEquipos": "{{n}} 台在修设备",
+  "sinEquipos": "目前没有分配的设备。",
+  "diasCantidad": "{{n}} 天",
+  "tabla": {
+    "numero": "工单号",
+    "equipo": "设备",
+    "tipoServicio": "服务类型",
+    "problemaReportado": "客户反映的故障",
+    "instruccionesAsesor": "销售顾问的说明",
+    "ingreso": "入店日期",
+    "diasEnTaller": "在店天数",
+    "estado": "状态",
+    "sinDato": "—"
+  }
+}

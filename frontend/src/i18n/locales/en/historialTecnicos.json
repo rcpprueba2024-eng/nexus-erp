@@ -1,0 +1,15 @@
+{
+  "titulo": "Technician History",
+  "subtitulo": "Equipment each technician has repaired and delivered, with its order number.",
+  "buscarPlaceholder": "Search by work order number or customer…",
+  "sinTecnicos": "No technicians registered in HR.",
+  "sinReparaciones": "Hasn't repaired any equipment yet.",
+  "reparados": "{{n}} repaired",
+  "tabla": {
+    "numero": "Order #",
+    "cliente": "Customer",
+    "equipo": "Equipment",
+    "fechaEntrega": "Date",
+    "estado": "Status"
+  }
+}

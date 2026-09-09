@@ -1,0 +1,41 @@
+{
+  "titulo": "Invoice Log",
+  "subtitulo": "History of everything billed — work orders and products, cash or credit.",
+  "buscarPlaceholder": "Search by number or customer…",
+  "stats": {
+    "totalFacturado": "Total billed",
+    "facturasOt": "Work order invoices",
+    "facturasProducto": "Product invoices",
+    "aCredito": "With balance (credit)"
+  },
+  "filtros": {
+    "tipoTodas": "All",
+    "tipoOt": "Work orders",
+    "tipoProducto": "Products",
+    "estadoTodas": "All",
+    "estadoPagada": "Paid",
+    "estadoPendiente": "On credit",
+    "estadoAnulada": "Voided"
+  },
+  "tabla": {
+    "numero": "#",
+    "fecha": "Date",
+    "cliente": "Customer",
+    "tipo": "Type",
+    "total": "Total",
+    "saldo": "Balance",
+    "estado": "Status",
+    "verRecibo": "View receipt"
+  },
+  "tipo": {
+    "OT": "Work order",
+    "PRODUCTO": "Product"
+  },
+  "estado": {
+    "PAGADA": "Paid",
+    "PENDIENTE": "On credit",
+    "ANULADA": "Voided"
+  },
+  "sinResultados": "No matching invoices.",
+  "mostrandoRecientes": "Showing {{n}} of {{total}}. Use search to find others."
+}

@@ -1,0 +1,8 @@
+{
+  "titulo": "Sign In",
+  "usuario": "Username",
+  "contrasena": "Password",
+  "ingresar": "Sign In",
+  "ingresando": "Signing in...",
+  "error": "Incorrect username or password."
+}

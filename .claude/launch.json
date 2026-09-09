@@ -1,0 +1,29 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "catalogo-rcp",
+      "runtimeExecutable": "python",
+      "runtimeArgs": ["-m", "http.server", "4173", "--directory", "C:/Users/USER/Desktop/CATALOGO RCP"],
+      "port": 4173
+    },
+    {
+      "name": "rcp-web",
+      "runtimeExecutable": "python",
+      "runtimeArgs": ["-m", "http.server", "4180", "--directory", "C:/Users/USER/Desktop/RCP WEB"],
+      "port": 4180
+    },
+    {
+      "name": "nexus-frontend",
+      "runtimeExecutable": "npm.cmd",
+      "runtimeArgs": ["--prefix", "C:/Users/USER/Desktop/NEXUS ERP/frontend", "run", "dev", "--", "--port", "5183", "--strictPort"],
+      "port": 5183
+    },
+    {
+      "name": "nexus-backend",
+      "runtimeExecutable": "C:/Users/USER/Desktop/NEXUS ERP/backend/venv/Scripts/python.exe",
+      "runtimeArgs": ["C:/Users/USER/Desktop/NEXUS ERP/backend/manage.py", "runserver", "8000"],
+      "port": 8000
+    }
+  ]
+}

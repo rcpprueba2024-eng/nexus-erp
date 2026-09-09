@@ -1,0 +1,35 @@
+{
+  "titulo": "Categorías",
+  "subtitulo": "Administra las categorías y subcategorías de producto.",
+  "chart": {
+    "titulo": "Categoría más vendida",
+    "sinDatos": "Aún no hay ventas registradas."
+  },
+  "categoriasTitulo": "Categorías de producto",
+  "placeholderNombre": "Nombre (ej. Celulares)",
+  "placeholderDescripcion": "Descripción (opcional)",
+  "agregarCategoria": "Agregar categoría",
+  "columnas": {
+    "nombre": "Nombre",
+    "tipo": "Tipo",
+    "descripcion": "Descripción",
+    "productos": "Productos"
+  },
+  "subcategoriasTitulo": "Subcategorías",
+  "placeholderCategoriaSeleccionar": "Categoría...",
+  "placeholderNombreSubcategoria": "Nombre de subcategoría (ej. Gama alta)",
+  "agregarSubcategoria": "Agregar subcategoría",
+  "columnasSubcategoria": {
+    "categoria": "Categoría",
+    "subcategoria": "Subcategoría",
+    "descripcion": "Descripción",
+    "productos": "Productos"
+  },
+  "tiposCategoria": {
+    "producto": "Producto",
+    "repuesto": "Repuesto",
+    "insumo": "Insumo",
+    "accesorio": "Accesorio",
+    "otro": "Otro"
+  }
+}

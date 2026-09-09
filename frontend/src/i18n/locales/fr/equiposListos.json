@@ -1,0 +1,37 @@
+{
+  "titulo": "Équipements Prêts",
+  "subtitulo": "Équipements réparés en attente d'être retirés — avec le délai de 45 jours et les frais de garde.",
+  "buscarPlaceholder": "Rechercher par numéro d'ordre ou client…",
+  "sinResultados": "Aucun équipement en attente de retrait.",
+  "stats": {
+    "total": "Équipements prêts",
+    "conCobro": "Avec frais de garde",
+    "porVencer": "Sur le point d'expirer (critique)",
+    "plazoGracia": "Délai de grâce",
+    "dias": "jours"
+  },
+  "tabla": {
+    "numero": "N° d'ordre",
+    "cliente": "Client",
+    "tecnico": "Technicien",
+    "equipo": "Équipement",
+    "fechaListo": "Prêt depuis",
+    "dias": "Jours",
+    "cargo": "Frais de garde",
+    "plazo": "Statut",
+    "pagado": "Payé ?",
+    "siPagado": "Oui — {{numero}}",
+    "noPagado": "Non payé",
+    "accion": "Action",
+    "entregar": "Livrer"
+  },
+  "plazo": {
+    "normal": "Normal",
+    "cobrando": "Frais de C$100/jour",
+    "porVencer": "Sur le point d'expirer"
+  },
+  "entrega": {
+    "titulo": "Livrer {{numero}}",
+    "confirmar": "Confirmer la livraison"
+  }
+}

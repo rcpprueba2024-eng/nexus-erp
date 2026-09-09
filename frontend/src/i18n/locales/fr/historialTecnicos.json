@@ -1,0 +1,15 @@
+{
+  "titulo": "Historique par Technicien",
+  "subtitulo": "Équipements que chaque technicien a réparés et livrés, avec leur numéro d'ordre.",
+  "buscarPlaceholder": "Rechercher par numéro d'ordre ou client…",
+  "sinTecnicos": "Aucun technicien enregistré aux RH.",
+  "sinReparaciones": "N'a encore réparé aucun équipement.",
+  "reparados": "{{n}} réparés",
+  "tabla": {
+    "numero": "N° d'ordre",
+    "cliente": "Client",
+    "equipo": "Équipement",
+    "fechaEntrega": "Date",
+    "estado": "Statut"
+  }
+}

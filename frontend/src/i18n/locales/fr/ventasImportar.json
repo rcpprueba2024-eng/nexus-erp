@@ -1,0 +1,14 @@
+{
+  "titulo": "Importer des Produits",
+  "subtitulo": "Importez des produits en masse depuis un fichier Excel.",
+  "descripcion": "Téléversez un fichier <strong>.xlsx</strong>. Reconnaît le format simple (<code>codigo</code>, <code>nombre</code>, <code>categoria</code>, <code>subgrupo</code>, <code>precio_compra</code>, <code>precio_venta</code>, <code>stock_actual</code>...) et un format d'inventaire interne réel (<code>ITEM</code>, <code>ARTICULO</code>, <code>TIPO</code>, <code>MARCA</code>, <code>MODELO</code>, <code>N° SERIE</code>, <code>ESTADO</code>, <code>EXISTENCIA</code>, <code>VALOR UNITARIO</code>, <code>ESTANTE</code>, <code>NIVEL</code>, <code>DETALLE / COMPATIBILIDAD</code>, <code>ASIGNACION</code>...), dans n'importe quel ordre et même avec une ligne de titre avant les en-têtes. Seuls le code et le nom sont obligatoires ; si le code existe déjà, il sera mis à jour.",
+  "dropzoneText": "Cliquez pour sélectionner le fichier .xlsx",
+  "importando": "Importation en cours...",
+  "boton": "Importer",
+  "errorGenerico": "Erreur lors de l'importation du fichier.",
+  "resultados": {
+    "creados": "Créés",
+    "actualizados": "Mis à jour",
+    "errores": "Erreurs"
+  }
+}

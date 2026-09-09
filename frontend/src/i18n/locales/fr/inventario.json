@@ -1,0 +1,208 @@
+{
+  "titulo": "Inventaire",
+  "subtitulo": "4 inventaires séparés : Atelier, Ventes, Immobilisations et Récupération",
+  "selector": {
+    "volver": "Retour",
+    "taller": {
+      "titulo": "Inventaire de l'atelier",
+      "descripcion": "Fournitures utilisées par l'atelier pour réparer les équipements."
+    },
+    "ventas": {
+      "titulo": "Inventaire des ventes",
+      "descripcion": "Pièces, fournitures et équipements vendus aux clients."
+    },
+    "activosFijos": {
+      "titulo": "Immobilisations",
+      "descripcion": "Équipement à usage interne, assigné au personnel."
+    },
+    "huesera": {
+      "titulo": "Récupération",
+      "descripcion": "Équipements abandonnés utilisés comme source de pièces détachées."
+    },
+    "marcas": {
+      "titulo": "Marques et modèles",
+      "descripcion": "Catalogue partagé par les 4 inventaires."
+    }
+  },
+  "subtabs": {
+    "productos": "Produits",
+    "agregar": "Ajouter un produit",
+    "categorias": "Catégories et sous-catégories",
+    "marcas": "Marques",
+    "importar": "Importation groupée de produits",
+    "bajas": "Radiations"
+  },
+  "bajas": {
+    "darDeBaja": "Radier",
+    "titulo": "Historique des radiations",
+    "subtitulo": "Produits définitivement retirés de l'inventaire : qui l'a radié, d'où il provenait, à quel service il est allé, et à qui l'entreprise l'a remis.",
+    "sinBajas": "Aucune radiation enregistrée pour cet inventaire.",
+    "tituloModal": "Radier ce produit",
+    "placeholders": {
+      "cantidad": "Quantité à radier (stock disponible : {{stock}})",
+      "origen": "D'où il provient (emplacement ou service d'origine)",
+      "areaDestino": "À quel service ou département il va",
+      "entregadoA": "À qui l'entreprise l'a remis",
+      "motivo": "Motif (facultatif)"
+    },
+    "avisoTotal": "Ceci vide tout le stock et marque le produit comme inactif. L'enregistrement reste dans l'historique de cet onglet.",
+    "avisoParcial": "Seule cette quantité est déduite du stock ; le reste demeure disponible et le produit reste actif. L'enregistrement reste dans l'historique de cet onglet.",
+    "errorCantidad": "Indique combien d'unités sont radiées.",
+    "errorGenerico": "Une erreur est survenue, réessaie.",
+    "confirmarBaja": "Confirmer la radiation",
+    "columnas": {
+      "fecha": "Date",
+      "producto": "Produit",
+      "cantidad": "Quantité",
+      "origen": "Origine",
+      "areaDestino": "Service de destination",
+      "entregadoA": "Remis à",
+      "motivo": "Motif",
+      "registradoPor": "Enregistré par"
+    }
+  },
+  "tabla": {
+    "item": "ARTICLE N°",
+    "tipo": "TYPE",
+    "articulo": "ARTICLE",
+    "marca": "MARQUE",
+    "modelo": "MODÈLE",
+    "noSerie": "N° SÉRIE",
+    "caracteristicas": "CARACTÉRISTIQUES",
+    "existencia": "STOCK",
+    "ubicacion": "EMPLACEMENT",
+    "asignacion": "ASSIGNATION"
+  },
+  "subgrupos": {
+    "todos": "Tous",
+    "abandonada": "Ordinateurs abandonnés",
+    "enTaller": "Ordinateurs en atelier",
+    "usoPersonal": "Équipement utilisé par le personnel",
+    "repuesto": "Pièces détachées",
+    "insumoTaller": "Fournitures d'atelier",
+    "listoEntrega": "Prêts pour retrait"
+  },
+  "tiposCategoria": {
+    "producto": "Produit",
+    "repuesto": "Pièce détachée",
+    "insumo": "Fourniture",
+    "accesorio": "Accessoire",
+    "otro": "Autre"
+  },
+  "condiciones": {
+    "NUEVO": "Neuf",
+    "USADO": "Usagé",
+    "MAL_ESTADO": "Mauvais état"
+  },
+  "productos": {
+    "sinProductos": "Aucun produit dans ce sous-groupe.",
+    "mostrandoRecientes": "Affichage des {{n}} produits les plus récents sur {{total}} au total. Utilisez les filtres par sous-groupe pour voir les autres.",
+    "buscarPlaceholder": "Rechercher par code, nom, marque ou modèle…",
+    "columnas": {
+      "codigo": "Code",
+      "nombre": "Nom",
+      "marca": "Marque",
+      "modelo": "Modèle",
+      "categoria": "Catégorie",
+      "subgrupo": "Sous-groupe",
+      "condicion": "État",
+      "ubicacion": "Emplacement",
+      "precioVenta": "Prix de vente",
+      "stock": "Stock",
+      "estado": "État"
+    },
+    "bajoStock": "Stock faible",
+    "ok": "OK",
+    "registro": "Aperçu",
+    "registroSinCategoria": "Sans catégorie",
+    "registroStock": "{{n}} disponibles"
+  },
+  "agregar": {
+    "titulo": "Ajouter un produit",
+    "fotoProducto": "Photo du produit",
+    "clicSubir": "(cliquez pour téléverser)",
+    "placeholders": {
+      "codigo": "Code",
+      "nombre": "Nom",
+      "marcaSeleccionar": "Marque...",
+      "categoriaSeleccionar": "Catégorie...",
+      "subcategoriaSeleccionar": "Sous-catégorie...",
+      "modelo": "Modèle",
+      "modeloSeleccionar": "Modèle...",
+      "modeloSeleccionaMarcaPrimero": "Choisissez d'abord la marque",
+      "noSerie": "Numéro de série",
+      "precioCompra": "Prix d'achat ({{simbolo}})",
+      "precioVenta": "Prix de vente ({{simbolo}})",
+      "stockInicial": "Stock initial",
+      "stockMinimo": "Stock minimum",
+      "ubicacion": "Emplacement (étagère/meuble)",
+      "nivel": "Niveau",
+      "asignacion": "Assigné à",
+      "descripcion": "Description",
+      "detalles": "Détails / spécifications techniques",
+      "unidadSeleccionar": "Unité de mesure..."
+    },
+    "condicionSeleccionar": "État...",
+    "nuevoModelo": "Nouveau modèle",
+    "guardarProducto": "Enregistrer le produit",
+    "tituloEditar": "Modifier le produit",
+    "guardarCambios": "Enregistrer les modifications"
+  },
+  "categorias": {
+    "categoriasTitulo": "Catégories de produits",
+    "placeholderNombre": "Nom (ex. Téléphones)",
+    "placeholderDescripcion": "Description (optionnelle)",
+    "agregarCategoria": "Ajouter une catégorie",
+    "columnas": {
+      "nombre": "Nom",
+      "tipo": "Type",
+      "descripcion": "Description",
+      "productos": "Produits"
+    },
+    "subcategoriasTitulo": "Sous-catégories",
+    "placeholderCategoriaSeleccionar": "Catégorie...",
+    "placeholderNombreSubcategoria": "Nom de la sous-catégorie (ex. Haut de gamme)",
+    "agregarSubcategoria": "Ajouter une sous-catégorie",
+    "columnasSubcategoria": {
+      "categoria": "Catégorie",
+      "subcategoria": "Sous-catégorie",
+      "descripcion": "Description",
+      "productos": "Produits"
+    }
+  },
+  "marcas": {
+    "titulo": "Marques",
+    "placeholderNombre": "Nom de la marque (ex. HP, Samsung)",
+    "agregarMarca": "Ajouter une marque",
+    "columnas": {
+      "marca": "Marque",
+      "productos": "Produits"
+    }
+  },
+  "modelos": {
+    "titulo": "Modèles",
+    "ayuda": "Les modèles créés ici apparaissent dans la liste déroulante Marque/Modèle lors du remplissage d'un ordre ou d'un produit — inutile de les retaper à chaque fois.",
+    "placeholderMarca": "Choisir une marque...",
+    "placeholderNombre": "Nom du modèle (ex. Pavilion 14, Galaxy A54)",
+    "agregarModelo": "Ajouter un modèle",
+    "sinModelos": "Aucun modèle enregistré.",
+    "columnas": {
+      "marca": "Marque",
+      "modelo": "Modèle",
+      "productos": "Produits"
+    }
+  },
+  "importar": {
+    "titulo": "Importation groupée de produits",
+    "descripcion": "Téléversez un fichier <strong>.xlsx</strong>. Reconnaît le format simple (<code>codigo</code>, <code>nombre</code>, <code>categoria</code>, <code>subgrupo</code>, <code>precio_compra</code>, <code>precio_venta</code>, <code>stock_actual</code>...) et un format d'inventaire interne réel (<code>ITEM</code>, <code>ARTICULO</code>, <code>TIPO</code>, <code>MARCA</code>, <code>MODELO</code>, <code>N° SERIE</code>, <code>ESTADO</code>, <code>EXISTENCIA</code>, <code>VALOR UNITARIO</code>, <code>ESTANTE</code>, <code>NIVEL</code>, <code>DETALLE / COMPATIBILIDAD</code>, <code>ASIGNACION</code>...), dans n'importe quel ordre et même avec une ligne de titre avant les en-têtes. Seuls le code et le nom sont obligatoires ; si le code existe déjà, il sera mis à jour.",
+    "dropzoneText": "Cliquez pour sélectionner le fichier .xlsx",
+    "importando": "Importation en cours...",
+    "boton": "Importer",
+    "errorGenerico": "Erreur lors de l'importation du fichier.",
+    "resultados": {
+      "creados": "Créés",
+      "actualizados": "Mis à jour",
+      "errores": "Erreurs"
+    }
+  }
+}

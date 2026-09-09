@@ -1,0 +1,32 @@
+{
+  "titulo": "系统活动记录",
+  "subtitulo": "记录每个用户的所有创建、编辑或删除操作，以及每次登录 — 全部自动记录，无需各模块手动上报。",
+  "totalRegistros": "共 {{n}} 条记录",
+  "sinRegistros": "没有符合筛选条件的记录。",
+  "filtro": {
+    "todosUsuarios": "所有用户",
+    "todasAcciones": "所有操作",
+    "todosModulos": "所有模块",
+    "desde": "起始日期",
+    "hasta": "结束日期",
+    "buscarPlaceholder": "搜索路径或摘要…",
+    "limpiar": "清除筛选"
+  },
+  "accion": {
+    "LOGIN": "登录",
+    "CREAR": "创建",
+    "EDITAR": "编辑",
+    "ELIMINAR": "删除"
+  },
+  "tabla": {
+    "fecha": "日期和时间",
+    "usuario": "用户",
+    "accion": "操作",
+    "modulo": "模块",
+    "ruta": "路径",
+    "resumen": "摘要",
+    "codigo": "状态码",
+    "ip": "IP",
+    "usuarioBorrado": "（用户已删除）"
+  }
+}

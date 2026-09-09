@@ -1,0 +1,67 @@
+{
+  "titulo": "POS — 收银台",
+  "subtitulo": "销售柜台产品，并在热敏打印机上打印小票。",
+  "buscarPlaceholder": "按名称或编码搜索产品…",
+  "sinProductos": "没有匹配的产品。",
+  "stock": "库存：{{n}}",
+  "clienteGenerico": "普通客户",
+  "moneda": {
+    "etiqueta": "收款货币",
+    "usd": "美元 (US$)",
+    "nio": "科多巴 (C$)"
+  },
+  "categorias": {
+    "productos": "{{n}} 件产品",
+    "sinCategoria": "无分类",
+    "sinCategorias": "暂无带产品的分类。",
+    "volver": "分类"
+  },
+  "carrito": {
+    "titulo": "购物车",
+    "clientePlaceholder": "客户（可选 — 留空表示普通销售）",
+    "vacio": "购物车是空的。选择一个分类或搜索产品。",
+    "total": "合计",
+    "cobrarImprimir": "结账并打印",
+    "cobrando": "结账中...",
+    "vaciar": "清空购物车",
+    "items": "{{n}} 件商品",
+    "clienteParticular": "个人",
+    "clienteEmpresa": "企业",
+    "clienteNombrePlaceholder": "客户姓名",
+    "cedula": "身份证号",
+    "ruc": "税号",
+    "clienteHint": "选择个人或企业以登记客户信息（可选 — 否则按普通销售开票）。"
+  },
+  "pago": {
+    "titulo": "结账",
+    "pagos": "付款",
+    "agregarPago": "添加付款",
+    "efectivo": "现金",
+    "tarjeta": "刷卡",
+    "credex": "Credex分期卡",
+    "tasaCero": "零利率分期",
+    "lineaCredito": "银行信用额度",
+    "cuotas": "分期数",
+    "banco": "银行/金融机构",
+    "referencia": "参考号/授权码",
+    "monto": "金额",
+    "recibido": "实收",
+    "vuelto": "找零",
+    "saldoPendiente": "待付余额",
+    "avisoCredito": "还有未付余额 — 此销售将记为赊账，并显示在应收账款中。",
+    "confirmarCredito": "此销售将留有未付余额（赊账）。仍要确认吗？",
+    "confirmar": "确认收款",
+    "tipoVenta": {
+      "CONTADO": "现金全款",
+      "TARJETA": "刷卡",
+      "CREDITO": "赊账",
+      "MULTIPLE": "组合支付"
+    },
+    "abonoInicial": "首付款（可选）"
+  },
+  "mensajes": {
+    "cobradoImpreso": "销售 {{numero}} 已成功登记并打印。",
+    "cobradoSinImprimir": "销售 {{numero}} 已登记，但小票打印失败：{{error}}",
+    "errorCobro": "无法登记该销售，请重试。"
+  }
+}

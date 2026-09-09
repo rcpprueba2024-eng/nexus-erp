@@ -1,0 +1,41 @@
+{
+  "titulo": "Registre des Factures",
+  "subtitulo": "Historique de tout ce qui a été facturé — ordres de travail et produits, comptant ou à crédit.",
+  "buscarPlaceholder": "Rechercher par numéro ou client…",
+  "stats": {
+    "totalFacturado": "Total facturé",
+    "facturasOt": "Factures d'ordres de travail",
+    "facturasProducto": "Factures de produits",
+    "aCredito": "Avec solde (crédit)"
+  },
+  "filtros": {
+    "tipoTodas": "Toutes",
+    "tipoOt": "Ordres de travail",
+    "tipoProducto": "Produits",
+    "estadoTodas": "Tous",
+    "estadoPagada": "Payées",
+    "estadoPendiente": "À crédit",
+    "estadoAnulada": "Annulées"
+  },
+  "tabla": {
+    "numero": "N°",
+    "fecha": "Date",
+    "cliente": "Client",
+    "tipo": "Type",
+    "total": "Total",
+    "saldo": "Solde",
+    "estado": "Statut",
+    "verRecibo": "Voir le reçu"
+  },
+  "tipo": {
+    "OT": "Ordre de travail",
+    "PRODUCTO": "Produit"
+  },
+  "estado": {
+    "PAGADA": "Payée",
+    "PENDIENTE": "À crédit",
+    "ANULADA": "Annulée"
+  },
+  "sinResultados": "Aucune facture correspondante.",
+  "mostrandoRecientes": "Affichage de {{n}} sur {{total}}. Utilisez la recherche pour en trouver d'autres."
+}

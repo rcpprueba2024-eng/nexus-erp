@@ -1,0 +1,8 @@
+{
+  "titulo": "登录",
+  "usuario": "用户名",
+  "contrasena": "密码",
+  "ingresar": "登录",
+  "ingresando": "正在登录...",
+  "error": "用户名或密码错误。"
+}

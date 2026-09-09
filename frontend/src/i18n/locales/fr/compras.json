@@ -1,0 +1,91 @@
+{
+  "titulo": "Achats",
+  "subtitulo": "Fournisseurs, bons de commande et devis aux clients",
+  "selector": {
+    "volver": "Retour",
+    "compras": {
+      "titulo": "Achats",
+      "descripcion": "Fournisseurs et bons de commande confirmés."
+    },
+    "cotizacionesClientes": {
+      "titulo": "Devis aux clients",
+      "descripcion": "Devis (PPTO) à remettre à un client — même format Excel que RCP utilise déjà."
+    }
+  },
+  "proveedores": {
+    "tituloNuevo": "Nouveau fournisseur",
+    "nombre": "Nom",
+    "documento": "Numéro fiscal",
+    "email": "Email",
+    "telefono": "Téléphone",
+    "botonAgregar": "Ajouter le fournisseur",
+    "columnas": {
+      "nombre": "Nom",
+      "documento": "Document",
+      "email": "Email",
+      "telefono": "Téléphone"
+    }
+  },
+  "ordenes": {
+    "tituloNueva": "Nouveau bon de commande",
+    "numero": "N° de commande",
+    "proveedorPlaceholder": "Fournisseur...",
+    "productoPlaceholder": "Produit...",
+    "cantidad": "Quantité",
+    "botonCrear": "Créer la commande",
+    "vacio": "Aucun bon de commande enregistré.",
+    "columnas": {
+      "numero": "N°",
+      "proveedor": "Fournisseur",
+      "fecha": "Date",
+      "total": "Total",
+      "estado": "Statut"
+    }
+  },
+  "estados": {
+    "RECIBIDA": "Reçue",
+    "CANCELADA": "Annulée",
+    "PENDIENTE": "En attente"
+  },
+  "cotizacionesClientes": {
+    "botonNueva": "Nouveau devis",
+    "botonEditar": "Modifier le devis",
+    "vacio": "Aucun devis client enregistré.",
+    "excel": "Excel",
+    "pdf": "PDF",
+    "confirmarEliminar": "Supprimer ce devis ?",
+    "columnas": {
+      "numero": "N° PPTO",
+      "cliente": "Client",
+      "fecha": "Date",
+      "totalUsd": "Total (US$)"
+    },
+    "form": {
+      "subtitulo": "Remplit le même format Excel (PPTO) que RCP utilise déjà avec ses clients — le fichier téléchargé est identique.",
+      "pptoNumero": "N° de PPTO (ex. PPTO-7006-210826/KP)",
+      "titulo": "Titre du PPTO",
+      "cliente": "Client",
+      "equipoMarca": "Équipement / Marque",
+      "servicioProducto": "Service / Produit",
+      "tipoTrabajo": "Type de travail",
+      "periodo": "Période (ex. Q3)",
+      "tipoCambio": "Taux de change",
+      "ruc": "N° NIF",
+      "datosContacto": "Autres données du client",
+      "contactoNombre": "Nom",
+      "contactoPuesto": "Poste",
+      "contactoTelefono": "Téléphone",
+      "contactoEmail": "Email",
+      "lineas": "Articles cotés",
+      "agregarLinea": "Ajouter une ligne",
+      "descripcion": "Description",
+      "precioUsd": "Prix unitaire (US$)",
+      "proveedorOpcional": "Fournisseur (optionnel)",
+      "costoProveedorOpcional": "Coût fournisseur (optionnel)",
+      "notaGarantia": "Note de garantie (optionnel)",
+      "observaciones": "Notes (taux de change, notes fiscales, etc.)",
+      "errorSinLineas": "Ajoutez au moins un article avec une description et un prix.",
+      "errorGenerico": "Une erreur s'est produite, veuillez réessayer."
+    }
+  }
+}

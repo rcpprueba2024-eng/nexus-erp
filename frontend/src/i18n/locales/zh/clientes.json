@@ -1,0 +1,116 @@
+{
+  "titulo": "客户管理",
+  "subtitulo": "每位客户的历史记录及联系方式",
+  "botonNuevo": "+ 新建客户",
+  "botonNuevaEmpresa": "+ 新建企业",
+  "buscarPlaceholder": "按姓名、电话、邮箱或身份证号搜索…",
+  "sinResultados": "没有找到结果。",
+  "frecuenteSi": "常客",
+  "frecuenteNo": "偶尔光顾",
+  "banderaRoja": {
+    "badge": "问题客户",
+    "avisoTitulo": "该客户已被标记为问题客户",
+    "avisoSinMotivo": "未填写具体原因。"
+  },
+  "tabs": {
+    "clientes": "客户",
+    "empresas": "企业"
+  },
+  "tabla": {
+    "nombre": "姓名",
+    "telefono": "电话",
+    "correo": "邮箱",
+    "ordenes": "工单数",
+    "frecuente": "常客"
+  },
+  "form": {
+    "tituloNuevo": "新建客户",
+    "tituloEditar": "编辑客户",
+    "nombre": "姓名",
+    "cedula": "身份证号",
+    "ruc": "税号（RUC）",
+    "correo": "邮箱",
+    "telefono": "电话",
+    "telefonoAlterno": "备用电话",
+    "direccion": "地址",
+    "direccionEntrega": "送货地址",
+    "empresa": "所属企业",
+    "sinEmpresa": "无所属企业",
+    "tipoClienteSeleccionar": "客户类型…",
+    "notasPlaceholder": "内部备注（偏好、历史、说明）…",
+    "notasAyuda": "仅供内部使用 — 不会出现在打印件或发票中。",
+    "whatsapp": "WhatsApp",
+    "esEmpresa": "是企业客户吗？",
+    "operadoraSeleccionar": "运营商…",
+    "departamentoPais": "省份 / 国家",
+    "problematico": "标记为问题客户 🚩",
+    "problematicoBadge": "问题客户",
+    "problematicoAyuda": "该客户已被标记为问题客户",
+    "motivoProblematicoPlaceholder": "原因是什么？（例如：未取走设备、决定不再继续维修…）"
+  },
+  "tiposCliente": {
+    "PARTICULAR": "个人",
+    "EMPRESA": "企业",
+    "GOBIERNO": "政府机构",
+    "MAYORISTA": "批发商",
+    "REVENDEDOR": "经销商"
+  },
+  "historial": {
+    "titulo": "工单历史",
+    "sinOrdenes": "暂无工单记录。"
+  },
+  "seleccionaCliente": "请从列表中选择一位客户，或创建新客户。",
+  "detalle": {
+    "saldoTitulo": "待收余额",
+    "saldoSinDeuda": "没有待收余额。",
+    "historialTitulo": "购买及服务记录",
+    "historialSinRegistros": "暂无购买或服务记录。",
+    "credito": "赊账",
+    "contado": "现结",
+    "tipoProducto": "产品",
+    "tipoServicio": "服务",
+    "cxc": {
+      "numeroFactura": "发票号",
+      "monto": "金额",
+      "vencimiento": "到期日",
+      "asesor": "负责顾问",
+      "referenciaOt": "关联工单",
+      "agregar": "+ 添加待收余额",
+      "marcarPagado": "标记为已付"
+    },
+    "tabla": {
+      "factura": "发票",
+      "fecha": "日期",
+      "item": "产品 / 服务",
+      "cantidad": "数量",
+      "subtotal": "小计",
+      "forma": "付款方式"
+    }
+  },
+  "empresas": {
+    "sinResultados": "暂无企业记录。",
+    "tabla": {
+      "nombre": "企业",
+      "ruc": "税号",
+      "contactos": "联系人",
+      "equipos": "设备数"
+    },
+    "tituloNuevo": "新建企业",
+    "tituloEditar": "编辑企业",
+    "form": {
+      "nombre": "企业名称",
+      "ruc": "税号（RUC）",
+      "telefono": "电话",
+      "correo": "邮箱",
+      "direccion": "地址",
+      "contactoTitulo": "企业联系人",
+      "contactoNombre": "联系人姓名",
+      "contactoPuesto": "联系人职位",
+      "contactoCorreo": "联系人邮箱",
+      "contactoTelefono": "联系人电话"
+    },
+    "contactosTitulo": "联系人",
+    "sinContactos": "暂无联系人记录。",
+    "seleccionaEmpresa": "请从列表中选择一家企业，或创建新企业。"
+  }
+}

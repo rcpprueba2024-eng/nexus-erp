@@ -1,0 +1,65 @@
+{
+  "titulo": "Overview",
+  "subtitulo": "RCP operations summary",
+  "cargando": "Loading dashboard...",
+  "tasaCambio": "Exchange rate: 1 US$ = C${{monto}}",
+  "notaMargen": "Profit margin is only precisely computed for product sales (using the purchase cost recorded in Inventory). Repair services have no cost recorded in the system, so their income is counted but their margin is not.",
+  "secciones": {
+    "ingresos": "Income",
+    "taller": "Workshop",
+    "inventario": "Inventory",
+    "personal": "Staff & purchasing",
+    "cuentas": "Accounts"
+  },
+  "stats": {
+    "productos": "Products",
+    "bajoStock": "Low stock",
+    "ordenesEnTaller": "Orders in workshop",
+    "listasParaEntrega": "Ready for pickup",
+    "facturasEmitidas": "Invoices issued",
+    "totalVentas": "Total sales",
+    "totalConsolidado": "Consolidated total (US$)",
+    "cobradoUsd": "Charged in dollars",
+    "cobradoNio": "Charged in córdobas",
+    "ordenesCompra": "Purchase orders",
+    "empleadosActivos": "Active employees",
+    "porCobrar": "Accounts receivable",
+    "porPagar": "Accounts payable",
+    "resguardoAcumulado": "Accrued storage fees (ready equipment)"
+  },
+  "charts": {
+    "inventarioPorSubgrupo": "Inventory by subgroup",
+    "ordenesPorEstado": "Work orders by status",
+    "sinOrdenes": "No work orders recorded yet.",
+    "tiempoReparacion": "Repair time (delivered work orders)",
+    "sinTiempoReparacion": "No delivered work orders yet to measure turnaround time.",
+    "bucket01": "0-1 day",
+    "bucket23": "2-3 days",
+    "bucket47": "4-7 days",
+    "bucket8mas": "8+ days",
+    "ventasPorTipo": "Income by sale type: cash, card, and credit",
+    "sinVentas": "No sales recorded yet.",
+    "equiposListos": "{{n}} device(s) ready for pickup — C${{monto}} accrued in storage fees.",
+    "ingresos": "Income",
+    "margen": "Margin"
+  },
+  "tiposPago": {
+    "contado": "Cash",
+    "tarjeta": "Card",
+    "credito": "Credit"
+  },
+  "subgrupos": {
+    "abandonadas": "Abandoned",
+    "enTaller": "In workshop",
+    "usoPersonal": "Personal use",
+    "repuestos": "Parts",
+    "insumosTaller": "Workshop supplies",
+    "listasEntrega": "Ready for pickup"
+  },
+  "estadoTaller": {
+    "recibido": "Received",
+    "enReparacion": "In repair",
+    "listoEntrega": "Ready for pickup",
+    "entregado": "Delivered"
+  }
+}

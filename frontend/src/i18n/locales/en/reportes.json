@@ -1,0 +1,100 @@
+{
+  "titulo": "Reports",
+  "subtitulo": "Sales, expense, inventory, collections and workshop indicators",
+  "sinAcceso": "You don't have any reports available for your role.",
+  "tabs": {
+    "ventas": "Sales",
+    "gastos": "Expenses",
+    "inventario": "Inventory",
+    "cobrar": "Accounts Receivable",
+    "taller": "Workshop",
+    "clientes": "Customers & Companies"
+  },
+  "agrupacion": {
+    "diario": "Daily",
+    "semanal": "Weekly",
+    "quincenal": "Biweekly",
+    "mensual": "Monthly"
+  },
+  "ventas": {
+    "porPeriodoTitulo": "Sales by period",
+    "sinVentas": "No sales recorded.",
+    "vendedoresTitulo": "Top-performing salespeople",
+    "tabla": {
+      "numero": "#",
+      "vendedor": "Salesperson",
+      "facturas": "Invoices",
+      "totalVendido": "Total sold"
+    }
+  },
+  "gastos": {
+    "exportarSufijo": "(supplies + payroll)",
+    "insumosTitulo": "Workshop supply expenses",
+    "totalGastado": "Total spent:",
+    "sinConsumo": "No consumption recorded.",
+    "mostrandoTop": "Showing the top {{n}} highest-cost supplies out of {{total}}. The Excel export includes the full detail.",
+    "tablaInsumos": {
+      "insumo": "Supply",
+      "cantidadUsada": "Quantity used",
+      "costoTotal": "Total cost"
+    },
+    "personalTitulo": "Payroll expenses",
+    "totalPlanilla": "Total monthly payroll:",
+    "tablaPersonal": {
+      "empleado": "Employee",
+      "puesto": "Position",
+      "area": "Area",
+      "salario": "Salary"
+    }
+  },
+  "inventario": {
+    "masMovidosTitulo": "Fastest-moving products",
+    "menosMovidosTitulo": "Slowest-moving products",
+    "tabla": {
+      "producto": "Product",
+      "movimientos": "Movements"
+    }
+  },
+  "cobrar": {
+    "titulo": "Pending accounts receivable",
+    "sinCuentas": "No pending accounts.",
+    "tabla": {
+      "cliente": "Customer",
+      "monto": "Amount",
+      "vencimiento": "Due date",
+      "equipo": "Device"
+    },
+    "faltaRetirar": "Device pickup pending",
+    "sinPendiente": "No device pending"
+  },
+  "taller": {
+    "eficienciaTitulo": "Technician efficiency",
+    "tabla": {
+      "numero": "#",
+      "tecnico": "Technician",
+      "reparadas": "Repaired",
+      "activas": "Active",
+      "promedioDias": "Average (days)"
+    },
+    "chartTitulo": "Orders repaired by technician"
+  },
+  "clientes": {
+    "totalClientes": "Total customers",
+    "totalEmpresas": "Registered companies",
+    "totalFrecuentes": "Frequent customers",
+    "equiposPorEmpresaTitulo": "Devices by company",
+    "sinEmpresas": "No companies with registered devices.",
+    "topClientesTitulo": "Most active customers (last 6 months)",
+    "sinActividad": "No recent activity.",
+    "frecuenteSi": "Frequent",
+    "frecuenteNo": "Occasional",
+    "tabla": {
+      "empresa": "Company",
+      "contactos": "Contacts",
+      "equipos": "Devices",
+      "cliente": "Customer",
+      "actividad": "Recent activity",
+      "frecuente": "Frequent"
+    }
+  }
+}

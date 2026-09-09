@@ -1,0 +1,14 @@
+{
+  "titulo": "Facturation",
+  "subtitulo": "Choisissez ce que vous voulez facturer.",
+  "opciones": {
+    "ots": {
+      "titulo": "Facturer les ordres de travail",
+      "descripcion": "Facturer les ordres d'atelier réparés ou livrés."
+    },
+    "productos": {
+      "titulo": "Facturer des produits",
+      "descripcion": "Point de vente pour les produits en stock."
+    }
+  }
+}

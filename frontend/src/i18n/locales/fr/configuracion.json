@@ -1,0 +1,63 @@
+{
+  "titulo": "Paramètres",
+  "subtitulo": "Taux de change et gestion des utilisateurs et des accès au système.",
+  "tasaCambio": {
+    "titulo": "Taux de change",
+    "guardar": "Enregistrer le taux",
+    "guardando": "Enregistrement...",
+    "actual": "Actuel : 1 US$ = C${{monto}}"
+  },
+  "impresora": {
+    "titulo": "Imprimante thermique (POS)",
+    "subtitulo": "Configurez comment le système envoie les reçus à l'imprimante thermique.",
+    "sinConfigurar": "Non configurée",
+    "win32": "Imprimante installée sous Windows",
+    "red": "Réseau (IP et port)",
+    "nombreWindows": "Nom exact de l'imprimante sous Windows",
+    "ip": "IP de l'imprimante",
+    "puerto": "Port",
+    "guardadoOk": "Enregistré."
+  },
+  "usuarios": {
+    "titulo": "Utilisateurs du système",
+    "añadir": "+ Ajouter un utilisateur",
+    "columnaUsuario": "Utilisateur",
+    "columnaNombre": "Nom",
+    "columnaRol": "Rôle",
+    "columnaModulos": "Modules accessibles",
+    "columnaEstado": "Statut",
+    "confirmarEliminar": "Supprimer cet utilisateur ? Le compte sera désactivé et supprimé définitivement dans 24 heures, sauf si vous annulez la suppression avant.",
+    "pendienteEliminacion": "Supprimé dans {{horas}}h",
+    "cancelarEliminacion": "Annuler la suppression"
+  },
+  "form": {
+    "tituloEditar": "Modifier l'utilisateur",
+    "tituloNuevo": "Ajouter un utilisateur",
+    "usuario": "Utilisateur",
+    "usuarioEditarAyuda": "Si vous le changez, la personne devra se connecter avec ce nouveau nom d'utilisateur — l'ancien ne fonctionnera plus.",
+    "nombre": "Nom complet",
+    "contrasena": "Mot de passe",
+    "contrasenaOpcional": "Nouveau mot de passe (facultatif)",
+    "activo": "Actif",
+    "modulosTitulo": "Sections du système accessibles",
+    "errorObligatorio": "Le nom d'utilisateur et le mot de passe sont obligatoires.",
+    "errorGenerico": "Impossible d'enregistrer l'utilisateur."
+  },
+  "subtituloAdmin": "Taux de change, apparence et gestion des utilisateurs et des accès au système.",
+  "subtituloUsuario": "Personnalisez la langue et l'apparence du système.",
+  "apariencia": {
+    "titulo": "Apparence",
+    "subtitulo": "La langue et le thème sont enregistrés dans votre compte et vous suivent sur tous vos appareils.",
+    "idioma": "Langue",
+    "tema": "Thème de l'interface",
+    "temas": {
+      "auto": "Automatique",
+      "claro": "Clair",
+      "oscuro": "Sombre",
+      "medianoche": "Minuit",
+      "esmeralda": "Émeraude",
+      "ambar": "Ambre",
+      "blanco": "Noir et blanc"
+    }
+  }
+}

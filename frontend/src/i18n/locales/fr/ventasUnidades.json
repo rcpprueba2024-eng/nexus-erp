@@ -1,0 +1,22 @@
+{
+  "titulo": "Unités de Mesure",
+  "subtitulo": "Catalogue d'unités pour vendre ou enregistrer des produits par unité, grammes, paquet, etc.",
+  "form": {
+    "titulo": "Nouvelle unité",
+    "nombre": "Nom (ex. Gramme, Paquet)",
+    "abreviatura": "Abréviation (ex. g, paq)",
+    "permiteFraccion": "Autorise les fractions (ex. 8 g, demi-paquet)",
+    "agregar": "Ajouter une unité"
+  },
+  "sinUnidades": "Aucune unité enregistrée.",
+  "errorGenerico": "Impossible d'enregistrer l'unité.",
+  "errorEnUso": "Impossible de supprimer : des produits utilisent cette unité.",
+  "columnas": {
+    "nombre": "Nom",
+    "abreviatura": "Abrév.",
+    "fraccion": "Fractionnable",
+    "productos": "Produits",
+    "si": "Oui",
+    "no": "Non"
+  }
+}

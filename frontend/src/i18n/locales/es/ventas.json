@@ -1,0 +1,29 @@
+{
+  "titulo": "Ventas",
+  "subtitulo": {
+    "texto": "Venta de celulares, computadoras, repuestos y artículos. Para mantenimiento, diagnóstico o reparación, usa",
+    "enlace": "+ Nueva Orden de Trabajo"
+  },
+  "form": {
+    "titulo": "Nueva venta de producto",
+    "numero": "N° Venta / Factura",
+    "cliente": "Cliente (nombre completo)",
+    "vendedor": "Vendedor: {{nombre}}",
+    "todasCategorias": "Todas las categorías",
+    "producto": "Producto...",
+    "cantidad": "Cantidad",
+    "errorObligatorio": "N° de venta, cliente y producto son obligatorios.",
+    "errorGenerico": "Ocurrió un error al registrar la venta.",
+    "registrar": "Registrar venta"
+  },
+  "tabla": {
+    "numero": "N°",
+    "cliente": "Cliente",
+    "vendedor": "Vendedor",
+    "detalle": "Detalle",
+    "fecha": "Fecha",
+    "total": "Total",
+    "estado": "Estado",
+    "sinVentas": "No hay ventas registradas."
+  }
+}

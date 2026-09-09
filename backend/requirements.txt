@@ -1,0 +1,21 @@
+Django==6.0.8
+djangorestframework==3.17.1
+django-cors-headers==4.9.0
+python-decouple==3.8
+openpyxl==3.1.5
+reportlab==5.0.1
+python-escpos==3.1
+Pillow==12.3.0
+waitress==3.0.2
+whitenoise==6.11.0
+
+# Base de datos de producción (PostgreSQL). En SQLite no se usa.
+psycopg[binary]==3.2.12
+
+# Solo Windows (impresión térmica y manejo de fechas):
+pywin32==312; sys_platform == "win32"
+tzdata==2026.3; sys_platform == "win32"
+
+# Opcional: solo si activás USE_POSTGRES=True en Configuración/.env.
+# Por defecto el sistema usa SQLite (no requiere nada extra).
+# psycopg2-binary==2.9.12

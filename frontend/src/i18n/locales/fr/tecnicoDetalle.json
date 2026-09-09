@@ -1,0 +1,19 @@
+{
+  "volver": "Retour au tableau",
+  "tecnicoNoEncontrado": "Technicien introuvable",
+  "buscarPlaceholder": "Rechercher par n° d'OT, appareil ou panne…",
+  "totalEquipos": "{{n}} appareils actifs",
+  "sinEquipos": "Aucun appareil assigné pour le moment.",
+  "diasCantidad": "{{n}} jours",
+  "tabla": {
+    "numero": "N° OT",
+    "equipo": "Appareil",
+    "tipoServicio": "Type de service",
+    "problemaReportado": "Panne signalée par le client",
+    "instruccionesAsesor": "Instructions du conseiller",
+    "ingreso": "Entrée",
+    "diasEnTaller": "Jours en atelier",
+    "estado": "Statut",
+    "sinDato": "—"
+  }
+}

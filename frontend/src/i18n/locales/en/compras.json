@@ -1,0 +1,91 @@
+{
+  "titulo": "Purchasing",
+  "subtitulo": "Suppliers, purchase orders and client quotes",
+  "selector": {
+    "volver": "Back",
+    "compras": {
+      "titulo": "Purchases",
+      "descripcion": "Suppliers and confirmed purchase orders."
+    },
+    "cotizacionesClientes": {
+      "titulo": "Client Quotes",
+      "descripcion": "Estimates (PPTO) to give a client — same Excel format RCP already uses."
+    }
+  },
+  "proveedores": {
+    "tituloNuevo": "New supplier",
+    "nombre": "Name",
+    "documento": "Tax ID",
+    "email": "Email",
+    "telefono": "Phone",
+    "botonAgregar": "Add supplier",
+    "columnas": {
+      "nombre": "Name",
+      "documento": "Tax ID",
+      "email": "Email",
+      "telefono": "Phone"
+    }
+  },
+  "ordenes": {
+    "tituloNueva": "New purchase order",
+    "numero": "Order #",
+    "proveedorPlaceholder": "Supplier...",
+    "productoPlaceholder": "Product...",
+    "cantidad": "Quantity",
+    "botonCrear": "Create order",
+    "vacio": "No purchase orders yet.",
+    "columnas": {
+      "numero": "#",
+      "proveedor": "Supplier",
+      "fecha": "Date",
+      "total": "Total",
+      "estado": "Status"
+    }
+  },
+  "estados": {
+    "RECIBIDA": "Received",
+    "CANCELADA": "Cancelled",
+    "PENDIENTE": "Pending"
+  },
+  "cotizacionesClientes": {
+    "botonNueva": "New quote",
+    "botonEditar": "Edit quote",
+    "vacio": "No client quotes yet.",
+    "excel": "Excel",
+    "pdf": "PDF",
+    "confirmarEliminar": "Delete this quote?",
+    "columnas": {
+      "numero": "PPTO No.",
+      "cliente": "Client",
+      "fecha": "Date",
+      "totalUsd": "Total (US$)"
+    },
+    "form": {
+      "subtitulo": "Fills the same Excel (PPTO) format RCP already uses with clients — the download looks exactly the same.",
+      "pptoNumero": "PPTO No. (e.g. PPTO-7006-210826/KP)",
+      "titulo": "PPTO title",
+      "cliente": "Client",
+      "equipoMarca": "Equipment / Brand",
+      "servicioProducto": "Service / Product",
+      "tipoTrabajo": "Type of work",
+      "periodo": "Period (e.g. Q3)",
+      "tipoCambio": "Exchange rate",
+      "ruc": "Tax ID No.",
+      "datosContacto": "Other client details",
+      "contactoNombre": "Name",
+      "contactoPuesto": "Position",
+      "contactoTelefono": "Phone",
+      "contactoEmail": "Email",
+      "lineas": "Quoted items",
+      "agregarLinea": "Add line",
+      "descripcion": "Description",
+      "precioUsd": "Unit price (US$)",
+      "proveedorOpcional": "Supplier (optional)",
+      "costoProveedorOpcional": "Supplier cost (optional)",
+      "notaGarantia": "Warranty note (optional)",
+      "observaciones": "Notes (exchange rate, tax notes, etc.)",
+      "errorSinLineas": "Add at least one item with a description and price.",
+      "errorGenerico": "Something went wrong, please try again."
+    }
+  }
+}

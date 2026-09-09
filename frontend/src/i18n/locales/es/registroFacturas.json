@@ -1,0 +1,41 @@
+{
+  "titulo": "Registro de Facturas",
+  "subtitulo": "Historial de todo lo facturado — órdenes de trabajo y productos, al contado o al crédito.",
+  "buscarPlaceholder": "Buscar por número o cliente…",
+  "stats": {
+    "totalFacturado": "Total facturado",
+    "facturasOt": "Facturas de OT",
+    "facturasProducto": "Facturas de producto",
+    "aCredito": "Con saldo (crédito)"
+  },
+  "filtros": {
+    "tipoTodas": "Todas",
+    "tipoOt": "Órdenes de trabajo",
+    "tipoProducto": "Productos",
+    "estadoTodas": "Todas",
+    "estadoPagada": "Pagadas",
+    "estadoPendiente": "A crédito",
+    "estadoAnulada": "Anuladas"
+  },
+  "tabla": {
+    "numero": "N.º",
+    "fecha": "Fecha",
+    "cliente": "Cliente",
+    "tipo": "Tipo",
+    "total": "Total",
+    "saldo": "Saldo",
+    "estado": "Estado",
+    "verRecibo": "Ver recibo"
+  },
+  "tipo": {
+    "OT": "Orden de trabajo",
+    "PRODUCTO": "Producto"
+  },
+  "estado": {
+    "PAGADA": "Pagada",
+    "PENDIENTE": "A crédito",
+    "ANULADA": "Anulada"
+  },
+  "sinResultados": "No hay facturas que coincidan.",
+  "mostrandoRecientes": "Mostrando {{n}} de {{total}}. Usa la búsqueda para encontrar otras."
+}

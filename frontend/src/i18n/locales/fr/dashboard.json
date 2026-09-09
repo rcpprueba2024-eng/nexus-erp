@@ -1,0 +1,65 @@
+{
+  "titulo": "Vue d'ensemble",
+  "subtitulo": "Résumé des opérations de RCP",
+  "cargando": "Chargement du tableau de bord...",
+  "tasaCambio": "Taux de change : 1 US$ = C${{monto}}",
+  "notaMargen": "La marge n'est calculée avec précision que pour la vente de produits (à partir du coût d'achat enregistré dans l'Inventaire). Les services de réparation n'ont pas de coût enregistré dans le système : leur revenu est donc comptabilisé, mais pas leur marge.",
+  "secciones": {
+    "ingresos": "Revenus",
+    "taller": "Atelier",
+    "inventario": "Inventaire",
+    "personal": "Personnel et achats",
+    "cuentas": "Comptes"
+  },
+  "stats": {
+    "productos": "Produits",
+    "bajoStock": "Stock faible",
+    "ordenesEnTaller": "Commandes en atelier",
+    "listasParaEntrega": "Prêtes pour retrait",
+    "facturasEmitidas": "Factures émises",
+    "totalVentas": "Total des ventes",
+    "totalConsolidado": "Total consolidé (US$)",
+    "cobradoUsd": "Encaissé en dollars",
+    "cobradoNio": "Encaissé en córdobas",
+    "ordenesCompra": "Bons de commande",
+    "empleadosActivos": "Employés actifs",
+    "porCobrar": "Comptes clients",
+    "porPagar": "Comptes fournisseurs",
+    "resguardoAcumulado": "Frais de garde cumulés (appareils prêts)"
+  },
+  "charts": {
+    "inventarioPorSubgrupo": "Inventaire par sous-groupe",
+    "ordenesPorEstado": "Ordres de travail par statut",
+    "sinOrdenes": "Aucun ordre de travail enregistré pour le moment.",
+    "tiempoReparacion": "Temps de réparation (ordres livrés)",
+    "sinTiempoReparacion": "Aucun ordre livré pour le moment pour mesurer les délais.",
+    "bucket01": "0-1 jour",
+    "bucket23": "2-3 jours",
+    "bucket47": "4-7 jours",
+    "bucket8mas": "8+ jours",
+    "ventasPorTipo": "Revenus par type de vente : comptant, carte et crédit",
+    "sinVentas": "Aucune vente enregistrée pour le moment.",
+    "equiposListos": "{{n}} appareil(s) prêt(s) pour retrait — C${{monto}} cumulés en frais de garde.",
+    "ingresos": "Revenus",
+    "margen": "Marge"
+  },
+  "tiposPago": {
+    "contado": "Comptant",
+    "tarjeta": "Carte",
+    "credito": "Crédit"
+  },
+  "subgrupos": {
+    "abandonadas": "Abandonnés",
+    "enTaller": "En atelier",
+    "usoPersonal": "Usage personnel",
+    "repuestos": "Pièces",
+    "insumosTaller": "Fournitures d'atelier",
+    "listasEntrega": "Prêts pour retrait"
+  },
+  "estadoTaller": {
+    "recibido": "Reçu",
+    "enReparacion": "En réparation",
+    "listoEntrega": "Prêt pour retrait",
+    "entregado": "Livré"
+  }
+}

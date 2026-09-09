@@ -1,0 +1,16 @@
+{
+  "encabezado": "手机与电脑维修",
+  "factura": "发票：",
+  "fecha": "日期：",
+  "cliente": "客户：",
+  "atendio": "接待：",
+  "total": "合计",
+  "vuelto": "找零",
+  "saldoPendiente": "待付余额（赊账）",
+  "gracias": "感谢您的惠顾！",
+  "imprimir": "打印",
+  "metodo": {
+    "EFECTIVO": "现金",
+    "TARJETA": "刷卡"
+  }
+}

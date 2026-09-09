@@ -1,0 +1,15 @@
+{
+  "titulo": "技师维修记录",
+  "subtitulo": "每位技师已维修并交付的设备，含工单号。",
+  "buscarPlaceholder": "按工单号或客户搜索…",
+  "sinTecnicos": "人力资源中没有登记的技师。",
+  "sinReparaciones": "还没有维修过任何设备。",
+  "reparados": "已修复 {{n}} 台",
+  "tabla": {
+    "numero": "工单号",
+    "cliente": "客户",
+    "equipo": "设备",
+    "fechaEntrega": "日期",
+    "estado": "状态"
+  }
+}

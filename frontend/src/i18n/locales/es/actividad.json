@@ -1,0 +1,32 @@
+{
+  "titulo": "Actividad del Sistema",
+  "subtitulo": "Bitácora de todo lo que crea, edita o elimina cada usuario, más cada inicio de sesión — se registra sola, sin depender de que cada módulo la reporte a mano.",
+  "totalRegistros": "{{n}} registros",
+  "sinRegistros": "No hay movimientos que coincidan con el filtro.",
+  "filtro": {
+    "todosUsuarios": "Todos los usuarios",
+    "todasAcciones": "Todas las acciones",
+    "todosModulos": "Todos los módulos",
+    "desde": "Desde",
+    "hasta": "Hasta",
+    "buscarPlaceholder": "Buscar en la ruta o el resumen…",
+    "limpiar": "Limpiar filtros"
+  },
+  "accion": {
+    "LOGIN": "Inicio de sesión",
+    "CREAR": "Creación",
+    "EDITAR": "Edición",
+    "ELIMINAR": "Eliminación"
+  },
+  "tabla": {
+    "fecha": "Fecha y hora",
+    "usuario": "Usuario",
+    "accion": "Acción",
+    "modulo": "Módulo",
+    "ruta": "Ruta",
+    "resumen": "Resumen",
+    "codigo": "Código",
+    "ip": "IP",
+    "usuarioBorrado": "(usuario eliminado)"
+  }
+}

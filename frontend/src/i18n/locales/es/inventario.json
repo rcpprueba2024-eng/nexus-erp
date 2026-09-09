@@ -1,0 +1,208 @@
+{
+  "titulo": "Inventario",
+  "subtitulo": "4 inventarios separados: Taller, Ventas, Activos Fijos y Huesera",
+  "selector": {
+    "volver": "Volver",
+    "taller": {
+      "titulo": "Inventario de Taller",
+      "descripcion": "Insumos que usa el taller para reparar equipos."
+    },
+    "ventas": {
+      "titulo": "Inventario de Ventas",
+      "descripcion": "Repuestos, insumos y equipos que se venden al cliente."
+    },
+    "activosFijos": {
+      "titulo": "Activos Fijos",
+      "descripcion": "Equipo de uso interno, asignado al personal."
+    },
+    "huesera": {
+      "titulo": "Huesera",
+      "descripcion": "Equipos abandonados de los que se sacan repuestos."
+    },
+    "marcas": {
+      "titulo": "Marcas y Modelos",
+      "descripcion": "Catálogo compartido por los 4 inventarios."
+    }
+  },
+  "subtabs": {
+    "productos": "Productos",
+    "agregar": "Añadir producto",
+    "categorias": "Categorías y subcategorías",
+    "marcas": "Marcas",
+    "importar": "Importar productos masivos",
+    "bajas": "Bajas"
+  },
+  "bajas": {
+    "darDeBaja": "Dar de baja",
+    "titulo": "Historial de bajas",
+    "subtitulo": "Productos que salieron definitivamente del inventario: quién lo dio de baja, de dónde salió, a qué área fue y a quién se le entregó de parte de la empresa.",
+    "sinBajas": "Aún no hay bajas registradas en este inventario.",
+    "tituloModal": "Dar de baja este producto",
+    "placeholders": {
+      "cantidad": "Cantidad a dar de baja (hay {{stock}} en existencia)",
+      "origen": "De dónde salió (ubicación o área de origen)",
+      "areaDestino": "A qué área o departamento va",
+      "entregadoA": "A quién se le entregó de parte de la empresa",
+      "motivo": "Motivo (opcional)"
+    },
+    "avisoTotal": "Esto agota todo el stock y marca el producto como inactivo. El registro queda en el historial de esta pestaña.",
+    "avisoParcial": "Se descuenta solo esta cantidad del stock; el resto sigue disponible y el producto sigue activo. El registro queda en el historial de esta pestaña.",
+    "errorCantidad": "Escribe cuántas unidades se dan de baja.",
+    "errorGenerico": "Ocurrió un error, intenta de nuevo.",
+    "confirmarBaja": "Confirmar baja",
+    "columnas": {
+      "fecha": "Fecha",
+      "producto": "Producto",
+      "cantidad": "Cantidad",
+      "origen": "Origen",
+      "areaDestino": "Área destino",
+      "entregadoA": "Entregado a",
+      "motivo": "Motivo",
+      "registradoPor": "Registrado por"
+    }
+  },
+  "tabla": {
+    "item": "ITEM",
+    "tipo": "TIPO",
+    "articulo": "ARTICULO",
+    "marca": "MARCA",
+    "modelo": "MODELO",
+    "noSerie": "N° SERIE",
+    "caracteristicas": "CARACTERISTICAS",
+    "existencia": "EXISTENCIA",
+    "ubicacion": "UBICACIÓN",
+    "asignacion": "ASIGNACION"
+  },
+  "subgrupos": {
+    "todos": "Todos",
+    "abandonada": "Computadoras abandonadas",
+    "enTaller": "Computadoras en taller",
+    "usoPersonal": "Equipo usado por personal",
+    "repuesto": "Repuestos",
+    "insumoTaller": "Insumo para taller",
+    "listoEntrega": "Listos para retiro"
+  },
+  "tiposCategoria": {
+    "producto": "Producto",
+    "repuesto": "Repuesto",
+    "insumo": "Insumo",
+    "accesorio": "Accesorio",
+    "otro": "Otro"
+  },
+  "condiciones": {
+    "NUEVO": "Nuevo",
+    "USADO": "Usado",
+    "MAL_ESTADO": "Mal estado"
+  },
+  "productos": {
+    "sinProductos": "No hay productos en este subgrupo.",
+    "mostrandoRecientes": "Mostrando los {{n}} productos más recientes de {{total}} en total. Usa los filtros por subgrupo para ver otros.",
+    "buscarPlaceholder": "Buscar por código, nombre, marca o modelo…",
+    "columnas": {
+      "codigo": "Código",
+      "nombre": "Nombre",
+      "marca": "Marca",
+      "modelo": "Modelo",
+      "categoria": "Categoría",
+      "subgrupo": "Subgrupo",
+      "condicion": "Condición",
+      "ubicacion": "Ubicación",
+      "precioVenta": "P. Venta",
+      "stock": "Stock",
+      "estado": "Estado"
+    },
+    "bajoStock": "Bajo stock",
+    "ok": "OK",
+    "registro": "Registro",
+    "registroSinCategoria": "Sin categoría",
+    "registroStock": "{{n}} disponibles"
+  },
+  "agregar": {
+    "titulo": "Añadir producto",
+    "fotoProducto": "Foto del producto",
+    "clicSubir": "(clic para subir)",
+    "placeholders": {
+      "codigo": "Código",
+      "nombre": "Nombre",
+      "marcaSeleccionar": "Marca...",
+      "categoriaSeleccionar": "Categoría...",
+      "subcategoriaSeleccionar": "Subcategoría...",
+      "modelo": "Modelo",
+      "modeloSeleccionar": "Modelo...",
+      "modeloSeleccionaMarcaPrimero": "Elige marca primero",
+      "noSerie": "N.º de serie",
+      "precioCompra": "Precio compra ({{simbolo}})",
+      "precioVenta": "Precio venta ({{simbolo}})",
+      "stockInicial": "Stock inicial",
+      "stockMinimo": "Stock mínimo",
+      "ubicacion": "Ubicación (estante/mueble)",
+      "nivel": "Nivel",
+      "asignacion": "Asignado a",
+      "descripcion": "Descripción",
+      "detalles": "Detalles / especificaciones técnicas",
+      "unidadSeleccionar": "Unidad de medida..."
+    },
+    "condicionSeleccionar": "Condición...",
+    "nuevoModelo": "Nuevo modelo",
+    "guardarProducto": "Guardar producto",
+    "tituloEditar": "Editar producto",
+    "guardarCambios": "Guardar cambios"
+  },
+  "categorias": {
+    "categoriasTitulo": "Categorías de producto",
+    "placeholderNombre": "Nombre (ej. Celulares)",
+    "placeholderDescripcion": "Descripción (opcional)",
+    "agregarCategoria": "Agregar categoría",
+    "columnas": {
+      "nombre": "Nombre",
+      "tipo": "Tipo",
+      "descripcion": "Descripción",
+      "productos": "Productos"
+    },
+    "subcategoriasTitulo": "Subcategorías",
+    "placeholderCategoriaSeleccionar": "Categoría...",
+    "placeholderNombreSubcategoria": "Nombre de subcategoría (ej. Gama alta)",
+    "agregarSubcategoria": "Agregar subcategoría",
+    "columnasSubcategoria": {
+      "categoria": "Categoría",
+      "subcategoria": "Subcategoría",
+      "descripcion": "Descripción",
+      "productos": "Productos"
+    }
+  },
+  "marcas": {
+    "titulo": "Marcas",
+    "placeholderNombre": "Nombre de marca (ej. HP, Samsung)",
+    "agregarMarca": "Agregar marca",
+    "columnas": {
+      "marca": "Marca",
+      "productos": "Productos"
+    }
+  },
+  "modelos": {
+    "titulo": "Modelos",
+    "ayuda": "Los modelos que crees aquí aparecen en la lista desplegable de Marca/Modelo al llenar una orden o un producto — no hace falta escribirlos de nuevo cada vez.",
+    "placeholderMarca": "Elige una marca...",
+    "placeholderNombre": "Nombre de modelo (ej. Pavilion 14, Galaxy A54)",
+    "agregarModelo": "Agregar modelo",
+    "sinModelos": "Sin modelos registrados.",
+    "columnas": {
+      "marca": "Marca",
+      "modelo": "Modelo",
+      "productos": "Productos"
+    }
+  },
+  "importar": {
+    "titulo": "Importar productos masivos",
+    "descripcion": "Sube un archivo <strong>.xlsx</strong>. Reconoce tanto el formato simple (<code>codigo</code>, <code>nombre</code>, <code>categoria</code>, <code>subgrupo</code>, <code>precio_compra</code>, <code>precio_venta</code>, <code>stock_actual</code>...) como el inventario real de control interno (<code>ITEM</code>, <code>ARTICULO</code>, <code>TIPO</code>, <code>MARCA</code>, <code>MODELO</code>, <code>N° SERIE</code>, <code>ESTADO</code>, <code>EXISTENCIA</code>, <code>VALOR UNITARIO</code>, <code>ESTANTE</code>, <code>NIVEL</code>, <code>DETALLE / COMPATIBILIDAD</code>, <code>ASIGNACION</code>...), en cualquier orden y aunque haya una fila de título antes de los encabezados. Solo el código y el nombre son obligatorios; si el código ya existe, se actualiza.",
+    "dropzoneText": "Clic para seleccionar el archivo .xlsx",
+    "importando": "Importando...",
+    "boton": "Importar",
+    "errorGenerico": "Error al importar el archivo.",
+    "resultados": {
+      "creados": "Creados",
+      "actualizados": "Actualizados",
+      "errores": "Errores"
+    }
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "titulo": "Facturación",
+  "subtitulo": "Elige qué vas a facturar.",
+  "opciones": {
+    "ots": {
+      "titulo": "Facturar OTs",
+      "descripcion": "Cobra órdenes de taller ya reparadas o entregadas."
+    },
+    "productos": {
+      "titulo": "Facturar Productos",
+      "descripcion": "Punto de venta para productos de inventario."
+    }
+  }
+}

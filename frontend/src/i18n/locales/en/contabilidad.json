@@ -1,0 +1,73 @@
+{
+  "titulo": "Accounting",
+  "subtitulo": "Income statement, sales, expenses and accounts",
+  "tabs": {
+    "resultados": "Income statement",
+    "ventas": "Sales",
+    "gastos": "Expenses",
+    "cuentas": "Accounts"
+  },
+  "resultados": {
+    "ingresos": "Sales income",
+    "gastosTitulo": "Expenses",
+    "totalGastos": "Total expenses",
+    "utilidadNeta": "Net profit",
+    "margenNeto": "Net margin",
+    "conceptos": {
+      "insumos": "Workshop supplies",
+      "planilla": "Payroll",
+      "compras": "Supplier purchases"
+    }
+  },
+  "ventas": {
+    "porDiaTitulo": "Sales by day",
+    "porVendedorTitulo": "Sales by salesperson",
+    "columnas": {
+      "periodo": "Date",
+      "total": "Total (US$)",
+      "facturas": "Invoices",
+      "vendedor": "Salesperson",
+      "promedio": "Average per sale (US$)"
+    },
+    "vacio": "No sales recorded yet."
+  },
+  "gastos": {
+    "porProveedorTitulo": "Expenses by supplier",
+    "porDiaTitulo": "Expenses by day",
+    "columnas": {
+      "proveedor": "Supplier",
+      "ordenes": "Orders",
+      "total": "Total paid (US$)",
+      "fecha": "Date",
+      "compras": "Supplier purchases (US$)",
+      "insumos": "Workshop supplies (US$)"
+    },
+    "vacio": "No expenses recorded yet."
+  },
+  "porCobrar": {
+    "titulo": "Accounts receivable",
+    "vacio": "No accounts receivable.",
+    "columnas": {
+      "cliente": "Customer",
+      "monto": "Amount",
+      "vencimiento": "Due date",
+      "asesor": "Sales rep",
+      "referenciaOts": "Work order no.",
+      "estado": "Status"
+    }
+  },
+  "porPagar": {
+    "titulo": "Accounts payable",
+    "vacio": "No accounts payable.",
+    "columnas": {
+      "proveedor": "Supplier",
+      "monto": "Amount",
+      "vencimiento": "Due date",
+      "estado": "Status"
+    }
+  },
+  "cuentas": {
+    "vencidasCobrar": "Overdue receivables",
+    "vencidasPagar": "Overdue payables"
+  }
+}

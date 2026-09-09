@@ -1,0 +1,14 @@
+{
+  "titulo": "开票",
+  "subtitulo": "选择要开具的发票类型。",
+  "opciones": {
+    "ots": {
+      "titulo": "工单开票",
+      "descripcion": "为已维修或已交付的工单收费。"
+    },
+    "productos": {
+      "titulo": "产品开票",
+      "descripcion": "库存产品销售点。"
+    }
+  }
+}

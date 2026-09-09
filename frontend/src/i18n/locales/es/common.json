@@ -1,0 +1,157 @@
+{
+  "app": {
+    "nombre": "NEXUS ERP",
+    "eslogan": "Reparación de Celulares y Portátiles"
+  },
+  "nav": {
+    "dashboard": "Panel",
+    "ordenes": "Órdenes de Trabajo",
+    "clientes": "Clientes",
+    "inventario": "Inventario",
+    "taller": "Taller",
+    "ventas": "Ventas",
+    "compras": "Compras",
+    "contabilidad": "Contabilidad",
+    "rrhh": "Recursos Humanos",
+    "reportes": "Reportes",
+    "gastos": "Gastos",
+    "caja_chica": "Caja Chica",
+    "configuracion": "Configuración",
+    "actividad": "Actividad del Sistema",
+    "cerrarSesion": "Cerrar sesión",
+    "abrirMenu": "Abrir menú",
+    "grupoOrdenesTrabajo": "Órdenes de Trabajo",
+    "postventas": "Postventas",
+    "grupoVentas": "Ventas",
+    "ordenesTrabajo": "Órdenes de Trabajo",
+    "facturacion": "Facturación",
+    "facturarOts": "Facturar OTs",
+    "facturarProductos": "Facturar Productos",
+    "categorias": "Categorías",
+    "unidades": "Unidades",
+    "importarProductos": "Importar Productos",
+    "grupoBackoffice": "BackOffice",
+    "productos": "Productos",
+    "flujoDiario": "Flujo diario",
+    "reporteFinanciero": "Reporte financiero",
+    "registroFacturas": "Registro de Facturas",
+    "grupoTaller": "Taller",
+    "tablero": "Tablero",
+    "equiposListos": "Equipos Listos",
+    "abandonados": "Abandonados",
+    "historialTecnicos": "Historial por Técnico"
+  },
+  "roles": {
+    "ADMIN": "Gerencia General",
+    "TALLER": "Taller",
+    "PASANTE": "Pasante de taller",
+    "VENTAS": "Ventas",
+    "RRHH": "Recursos Humanos",
+    "BACKOFFICE": "Backoffice / Contabilidad",
+    "JEFE_OPERACIONES": "Jefe de Operaciones",
+    "LIMPIEZA": "Limpieza"
+  },
+  "modulos": {
+    "dashboard": "Panel",
+    "ordenes": "Órdenes de Trabajo",
+    "clientes": "Clientes",
+    "inventario": "Inventario",
+    "taller": "Taller",
+    "ventas": "Ventas",
+    "compras": "Compras",
+    "contabilidad": "Contabilidad",
+    "rrhh": "Recursos Humanos",
+    "reportes": "Reportes",
+    "gastos": "Gastos",
+    "caja_chica": "Caja Chica",
+    "caja-chica": "Caja Chica",
+    "auth": "Autenticación"
+  },
+  "estadosOrden": {
+    "RECIBIDO": "Por empezar",
+    "DIAGNOSTICO": "Diagnóstico",
+    "ESPERANDO_AUTORIZACION": "Esperando autorización",
+    "EN_REPARACION": "En Proceso",
+    "IMPORTACION": "Importación",
+    "LISTO_ENTREGA": "Equipo listo",
+    "ENTREGADO": "Entregado",
+    "CANCELADO": "Cancelado",
+    "REINGRESO": "Reingreso",
+    "ABANDONADO": "Abandonado"
+  },
+  "monedas": {
+    "USD": "Dólares (US$)",
+    "NIO": "Córdobas (C$)"
+  },
+  "categoriaEquipo": {
+    "COMPUTADORA": "Computadora",
+    "CELULAR": "Celular",
+    "TABLET": "Tablet",
+    "OTRO": "Otro"
+  },
+  "paginacion": {
+    "mostrando": "{{desde}}–{{hasta}} de {{total}}",
+    "anterior": "Anterior",
+    "siguiente": "Siguiente"
+  },
+  "botones": {
+    "guardar": "Guardar",
+    "guardando": "Guardando...",
+    "cancelar": "Cancelar",
+    "editar": "Editar",
+    "eliminar": "Eliminar",
+    "buscar": "Buscar",
+    "confirmar": "Confirmar",
+    "volver": "Volver",
+    "exportarExcel": "Exportar Excel",
+    "exportarPdf": "Exportar PDF",
+    "imprimir": "Imprimir",
+    "descargarPdf": "Ver / Descargar PDF",
+    "verEImprimir": "Ver / Imprimir",
+    "crear": "Crear",
+    "añadir": "Añadir",
+    "cerrar": "Cerrar"
+  },
+  "estado": {
+    "activo": "Activo",
+    "inactivo": "Inactivo",
+    "pendiente": "Pendiente",
+    "pagada": "Pagada",
+    "anulada": "Anulada"
+  },
+  "mensajes": {
+    "cargando": "Cargando...",
+    "sinDatos": "No hay datos para mostrar.",
+    "errorGenerico": "Ocurrió un error. Intenta de nuevo."
+  },
+  "dias": {
+    "domingo": "domingo",
+    "lunes": "lunes",
+    "martes": "martes",
+    "miercoles": "miércoles",
+    "jueves": "jueves",
+    "viernes": "viernes",
+    "sabado": "sábado"
+  },
+  "meses": {
+    "enero": "enero",
+    "febrero": "febrero",
+    "marzo": "marzo",
+    "abril": "abril",
+    "mayo": "mayo",
+    "junio": "junio",
+    "julio": "julio",
+    "agosto": "agosto",
+    "septiembre": "septiembre",
+    "octubre": "octubre",
+    "noviembre": "noviembre",
+    "diciembre": "diciembre"
+  },
+  "idioma": {
+    "es": "Español",
+    "en": "English",
+    "zh": "中文",
+    "fr": "Français",
+    "selector": "Idioma"
+  }
+}

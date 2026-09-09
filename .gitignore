@@ -1,0 +1,51 @@
+# === Python / Django ===
+backend/venv/
+venv/
+env/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+
+# Configuración con secretos — NUNCA subir
+backend/.env
+.env
+*.env.local
+
+# Base de datos local y respaldos sueltos
+*.sqlite3
+*.sqlite3-journal
+backend/db.sqlite3*
+backend/db_backup*
+backend/db_backups/
+backend/respaldos/
+respaldos/
+dump_sqlite.json
+dump*.json
+
+# Estáticos recolectados y subidas de usuarios (se regeneran / van en backup)
+backend/staticfiles/
+backend/media/
+
+# === Node / Vite ===
+frontend/node_modules/
+node_modules/
+frontend/dist/
+dist/
+*.local
+
+# === Logs / temporales ===
+*.log
+scripts/logs/
+*.tmp
+.DS_Store
+Thumbs.db
+
+# === Editor / Claude ===
+.vscode/
+.idea/
+.claude/settings.local.json
+
+# Carpetas viejas del USB (copias que quedaron al migrar)
+backend/venv_usb_viejo/
+frontend/node_modules_usb_viejo/

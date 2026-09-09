@@ -1,0 +1,67 @@
+{
+  "titulo": "POS — Punto de Venta",
+  "subtitulo": "Vende productos de mostrador e imprime el recibo en la impresora térmica.",
+  "buscarPlaceholder": "Buscar producto por nombre o código…",
+  "sinProductos": "No hay productos que coincidan.",
+  "stock": "Stock: {{n}}",
+  "clienteGenerico": "Cliente general",
+  "moneda": {
+    "etiqueta": "Cobrar en",
+    "usd": "Dólares (US$)",
+    "nio": "Córdobas (C$)"
+  },
+  "categorias": {
+    "productos": "{{n}} productos",
+    "sinCategoria": "Sin categoría",
+    "sinCategorias": "Aún no hay categorías con productos.",
+    "volver": "Categorías"
+  },
+  "carrito": {
+    "titulo": "Carrito",
+    "clientePlaceholder": "Cliente (opcional — deja vacío para venta general)",
+    "vacio": "El carrito está vacío. Elige una categoría o busca un producto.",
+    "total": "Total",
+    "cobrarImprimir": "Cobrar e imprimir",
+    "cobrando": "Cobrando...",
+    "vaciar": "Vaciar carrito",
+    "items": "{{n}} ítems",
+    "clienteParticular": "Particular",
+    "clienteEmpresa": "Empresa",
+    "clienteNombrePlaceholder": "Nombre del cliente",
+    "cedula": "Cédula",
+    "ruc": "RUC",
+    "clienteHint": "Elige Particular o Empresa para registrar los datos del cliente (opcional — si no, se factura como venta general)."
+  },
+  "pago": {
+    "titulo": "Cobrar venta",
+    "pagos": "Pagos",
+    "agregarPago": "Agregar pago",
+    "efectivo": "Efectivo",
+    "tarjeta": "Tarjeta",
+    "credex": "Credex",
+    "tasaCero": "Tasa Cero",
+    "lineaCredito": "Línea de Crédito",
+    "cuotas": "N.º de cuotas",
+    "banco": "Banco/financiera",
+    "referencia": "Referencia/autorización",
+    "monto": "Monto",
+    "recibido": "Recibido",
+    "vuelto": "Vuelto",
+    "saldoPendiente": "Saldo pendiente",
+    "avisoCredito": "Queda saldo sin cubrir — se registrará como venta al crédito y aparecerá en Cuentas por Cobrar.",
+    "confirmarCredito": "Esta venta quedará con saldo pendiente (crédito). ¿Confirmar de todas formas?",
+    "confirmar": "Confirmar cobro",
+    "tipoVenta": {
+      "CONTADO": "Contado",
+      "TARJETA": "Tarjeta",
+      "CREDITO": "Crédito",
+      "MULTIPLE": "Pago múltiple"
+    },
+    "abonoInicial": "Abono inicial (opcional)"
+  },
+  "mensajes": {
+    "cobradoImpreso": "Venta {{numero}} registrada e impresa correctamente.",
+    "cobradoSinImprimir": "Venta {{numero}} registrada, pero no se pudo imprimir el recibo: {{error}}",
+    "errorCobro": "No se pudo registrar la venta. Intenta de nuevo."
+  }
+}

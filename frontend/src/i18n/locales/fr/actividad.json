@@ -1,0 +1,32 @@
+{
+  "titulo": "Activité du système",
+  "subtitulo": "Registre de tout ce que chaque utilisateur crée, modifie ou supprime, plus chaque connexion — enregistré automatiquement, sans que chaque module ait à le signaler manuellement.",
+  "totalRegistros": "{{n}} enregistrements",
+  "sinRegistros": "Aucun mouvement ne correspond à ce filtre.",
+  "filtro": {
+    "todosUsuarios": "Tous les utilisateurs",
+    "todasAcciones": "Toutes les actions",
+    "todosModulos": "Tous les modules",
+    "desde": "Du",
+    "hasta": "Au",
+    "buscarPlaceholder": "Rechercher dans la route ou le résumé…",
+    "limpiar": "Effacer les filtres"
+  },
+  "accion": {
+    "LOGIN": "Connexion",
+    "CREAR": "Création",
+    "EDITAR": "Modification",
+    "ELIMINAR": "Suppression"
+  },
+  "tabla": {
+    "fecha": "Date et heure",
+    "usuario": "Utilisateur",
+    "accion": "Action",
+    "modulo": "Module",
+    "ruta": "Route",
+    "resumen": "Résumé",
+    "codigo": "Code",
+    "ip": "IP",
+    "usuarioBorrado": "(utilisateur supprimé)"
+  }
+}

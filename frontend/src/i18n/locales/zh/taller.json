@@ -1,0 +1,83 @@
+{
+  "titulo": "维修车间",
+  "subtitulo": "服务工单、技术员和耗材",
+  "filtro": {
+    "todas": "全部"
+  },
+  "tablero": {
+    "titulo": "技术员和实习生",
+    "sinPersonal": "暂无技术员或实习生。",
+    "equiposCount": "{{n}} 台设备",
+    "estados": {
+      "EN_ESPERA": "等待中",
+      "EN_PROCESO": "处理中",
+      "TERMINADO": "已完成"
+    }
+  },
+  "nuevaOrden": {
+    "titulo": "新建维修工单（手动）",
+    "numeroOrden": "工单编号",
+    "clienteDefault": "客户...",
+    "equipoPlaceholder": "设备（例如：HP Pavilion 笔记本电脑）",
+    "tipoOrdenCCA": "CCA — 手机/平板",
+    "tipoOrdenCOM": "COM — 电脑",
+    "tecnicoDefault": "技术员...",
+    "costoEstimado": "预估费用",
+    "problemaReportado": "报修问题",
+    "crear": "创建工单"
+  },
+  "insumo": {
+    "titulo": "登记耗材使用",
+    "ordenDefault": "工单...",
+    "insumoDefault": "耗材...",
+    "stock": "（库存：{{stock}}）",
+    "cantidad": "数量",
+    "registrar": "登记"
+  },
+  "vacio": "该状态下没有工单。",
+  "mostrandoRecientes": "显示最近 {{n}} 条，共 {{total}} 条。",
+  "tabla": {
+    "numero": "编号",
+    "cliente": "客户",
+    "equipo": "设备",
+    "tecnico": "技术员",
+    "ingreso": "接收日期",
+    "estado": "状态",
+    "asesor": "顾问",
+    "asignar": "分配",
+    "cambiarEstado": "更改状态",
+    "sinAsignar": "未分配"
+  },
+  "servicios": {
+    "MANTENIMIENTO": "保养",
+    "DIAGNOSTICO": "诊断",
+    "REPARACION": "维修"
+  },
+  "ficha": {
+    "cliente": "客户",
+    "asesorAsignado": "指派顾问",
+    "recibidoPor": "接收人",
+    "valor": "金额",
+    "adelanto": "预付款",
+    "fechaHoraRecepcion": "接收日期与时间",
+    "tiempoReparacionEstimado": "预计维修时长",
+    "marcaModelo": "品牌 / 型号",
+    "color": "颜色",
+    "numeroSerie": "序列号",
+    "imei": "IMEI",
+    "accesorios": "配件",
+    "contrasenaEquipo": "设备密码",
+    "especificaciones": "规格说明",
+    "fallaReportada": "报修故障",
+    "diagnosticoTitulo": "技师诊断",
+    "diagnosticoPlaceholder": "写下你发现的问题和诊断结果……",
+    "diagnosticoVacio": "暂无诊断记录。",
+    "agregarDiagnostico": "添加诊断",
+    "diagnosticoFotosAyuda": "本次诊断已选 {{n}} / {{max}} 张照片。",
+    "guardarDiagnostico": "保存诊断",
+    "fotosTitulo": "设备照片",
+    "checklistEntrada": "入厂检查清单",
+    "checklistSalida": "出厂检查清单（交付时）",
+    "guardarChecklistSalida": "保存出厂检查清单"
+  }
+}

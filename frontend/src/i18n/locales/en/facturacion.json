@@ -1,0 +1,14 @@
+{
+  "titulo": "Billing",
+  "subtitulo": "Choose what you want to invoice.",
+  "opciones": {
+    "ots": {
+      "titulo": "Invoice Work Orders",
+      "descripcion": "Charge for repaired or delivered workshop orders."
+    },
+    "productos": {
+      "titulo": "Invoice Products",
+      "descripcion": "Point of sale for inventory products."
+    }
+  }
+}

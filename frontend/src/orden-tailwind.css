@@ -1,0 +1,86 @@
+/* Tailwind, cargado únicamente por las páginas de la Orden de Trabajo.
+   Todas las utilidades quedan encapsuladas bajo .orden-tw (ver tailwind.config.js) */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* El reset de Tailwind (preflight) está apagado a propósito para no afectar
+   el resto del sistema (ver tailwind.config.js). Sin embargo, eso deja que
+   el estilo global de <button> de index.css (fondo azul sólido, pensado
+   para los botones "clásicos" de Ventas/Compras/etc.) se filtre aquí y
+   tape cualquier botón de esta sección que no fije su propio fondo por
+   Tailwind — por ejemplo los botones tipo "enlace" (Limpiar patrón, Quitar
+   último) y los toggles sin seleccionar (Sí/No, Bueno/Regular/Malo,
+   Funciona/No funciona), dejando el texto casi ilegible sobre azul.
+   Este reset solo aplica dentro de .orden-tw; las utilidades de Tailwind
+   (bg-*, border-*, etc.) siguen ganando porque se compilan con mayor
+   especificidad gracias a `important: '.orden-tw'`. */
+.orden-tw button {
+  background: none;
+  color: inherit;
+  padding: 0;
+  border: none;
+  border-radius: 0;
+  font: inherit;
+  cursor: pointer;
+}
+
+/* Preflight trae normalmente este reset (border-style: solid + width: 0 en
+   todo), necesario para que las utilidades border-* dibujen un borde visible
+   en vez de nada (el navegador por defecto usa border-style: none, así que
+   "border border-line" sin esto se queda invisible aunque el color esté
+   bien puesto). Sin Preflight completo hay que traerlo a mano, igual que el
+   reset de <button> de arriba. */
+.orden-tw, .orden-tw *, .orden-tw *::before, .orden-tw *::after {
+  border-style: solid;
+  border-width: 0;
+}
+
+@media print {
+  .orden-tw .no-print {
+    display: none !important;
+  }
+
+  @page {
+    size: auto;
+    margin: 8mm;
+  }
+
+  /* El espaciado y la tipografía de Tailwind (p-5, text-sm, gap-4, mb-6...)
+     usan rem, relativo al tamaño de fuente del <html> — bajarlo aquí encoge
+     TODO el documento de forma proporcional para que cualquier orden quepa
+     en 1 página, sin tener que pisar cada clase de padding/margen una por
+     una. Una orden con muchas notas/fotos puede seguir pasando de 1 página;
+     esto la deja lo más compacta posible sin perder legibilidad. */
+  html {
+    font-size: 9px;
+  }
+
+  .orden-tw {
+    color: #111;
+    background: #fff;
+  }
+
+  .orden-tw section {
+    border: 1px solid #bbb !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+    break-inside: avoid;
+  }
+
+  .orden-tw .rounded-xl,
+  .orden-tw .rounded-lg,
+  .orden-tw .rounded-t-xl,
+  .orden-tw .rounded-full {
+    border-radius: 2px !important;
+  }
+
+  .orden-tw .shadow-sm,
+  .orden-tw .shadow,
+  .orden-tw .shadow-md,
+  .orden-tw .shadow-lg,
+  .orden-tw .shadow-card,
+  .orden-tw .shadow-pop {
+    box-shadow: none !important;
+  }
+}

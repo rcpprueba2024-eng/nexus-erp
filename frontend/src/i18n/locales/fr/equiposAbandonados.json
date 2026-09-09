@@ -1,0 +1,24 @@
+{
+  "titulo": "Équipements Abandonnés",
+  "subtitulo": "Équipements que personne n'a retirés dans le délai — peuvent servir à récupérer des pièces pour des réparations en cours.",
+  "buscarPlaceholder": "Rechercher par numéro d'ordre ou client…",
+  "sinResultados": "Aucun équipement abandonné.",
+  "stats": {
+    "total": "Équipements abandonnés"
+  },
+  "tabla": {
+    "verOrden": "Voir l'ordre complet",
+    "numero": "N° d'ordre",
+    "cliente": "Client",
+    "telefono": "Téléphone",
+    "equipo": "Équipement",
+    "marcaModelo": "Marque / Modèle",
+    "fechaIngreso": "Date de réception",
+    "recibidoPor": "Reçu par",
+    "tecnico": "Technicien",
+    "asesor": "Conseiller",
+    "diasListo": "Jours prêt",
+    "repuestosExtraidos": "Pièces récupérées",
+    "repuestosPlaceholder": "Ex. Écran et batterie utilisés"
+  }
+}

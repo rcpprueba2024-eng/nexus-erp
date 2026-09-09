@@ -1,0 +1,35 @@
+{
+  "titulo": "Categories",
+  "subtitulo": "Manage product categories and subcategories.",
+  "chart": {
+    "titulo": "Best-selling category",
+    "sinDatos": "No sales recorded yet."
+  },
+  "categoriasTitulo": "Product categories",
+  "placeholderNombre": "Name (e.g. Cell Phones)",
+  "placeholderDescripcion": "Description (optional)",
+  "agregarCategoria": "Add category",
+  "columnas": {
+    "nombre": "Name",
+    "tipo": "Type",
+    "descripcion": "Description",
+    "productos": "Products"
+  },
+  "subcategoriasTitulo": "Subcategories",
+  "placeholderCategoriaSeleccionar": "Category...",
+  "placeholderNombreSubcategoria": "Subcategory name (e.g. High-end)",
+  "agregarSubcategoria": "Add subcategory",
+  "columnasSubcategoria": {
+    "categoria": "Category",
+    "subcategoria": "Subcategory",
+    "descripcion": "Description",
+    "productos": "Products"
+  },
+  "tiposCategoria": {
+    "producto": "Product",
+    "repuesto": "Spare part",
+    "insumo": "Supply",
+    "accesorio": "Accessory",
+    "otro": "Other"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "titulo": "导入产品",
+  "subtitulo": "从 Excel 文件批量导入产品。",
+  "descripcion": "上传一个 <strong>.xlsx</strong> 文件。既支持简单格式（<code>codigo</code>、<code>nombre</code>、<code>categoria</code>、<code>subgrupo</code>、<code>precio_compra</code>、<code>precio_venta</code>、<code>stock_actual</code>…），也支持真实的内部库存格式（<code>ITEM</code>、<code>ARTICULO</code>、<code>TIPO</code>、<code>MARCA</code>、<code>MODELO</code>、<code>N° SERIE</code>、<code>ESTADO</code>、<code>EXISTENCIA</code>、<code>VALOR UNITARIO</code>、<code>ESTANTE</code>、<code>NIVEL</code>、<code>DETALLE / COMPATIBILIDAD</code>、<code>ASIGNACION</code>…），列的顺序不限，即使表头前有一行标题也没关系。只有编码和名称是必填项；如果编码已存在，将更新该记录。",
+  "dropzoneText": "点击选择 .xlsx 文件",
+  "importando": "正在导入...",
+  "boton": "导入",
+  "errorGenerico": "导入文件时出错。",
+  "resultados": {
+    "creados": "已创建",
+    "actualizados": "已更新",
+    "errores": "错误"
+  }
+}

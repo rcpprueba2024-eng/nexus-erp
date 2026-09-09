@@ -1,0 +1,100 @@
+{
+  "titulo": "报表",
+  "subtitulo": "销售、支出、库存、应收账款和维修车间指标",
+  "sinAcceso": "您的角色没有可用的报表。",
+  "tabs": {
+    "ventas": "销售",
+    "gastos": "支出",
+    "inventario": "库存",
+    "cobrar": "应收账款",
+    "taller": "维修车间",
+    "clientes": "客户与企业"
+  },
+  "agrupacion": {
+    "diario": "按日",
+    "semanal": "按周",
+    "quincenal": "按半月",
+    "mensual": "按月"
+  },
+  "ventas": {
+    "porPeriodoTitulo": "按周期销售额",
+    "sinVentas": "没有销售记录。",
+    "vendedoresTitulo": "业绩最佳的销售员",
+    "tabla": {
+      "numero": "#",
+      "vendedor": "销售员",
+      "facturas": "发票数",
+      "totalVendido": "销售总额"
+    }
+  },
+  "gastos": {
+    "exportarSufijo": "（耗材 + 工资单）",
+    "insumosTitulo": "维修耗材支出",
+    "totalGastado": "总支出：",
+    "sinConsumo": "没有消耗记录。",
+    "mostrandoTop": "显示成本最高的 {{n}} 项耗材（共 {{total}} 项）。导出 Excel 包含完整明细。",
+    "tablaInsumos": {
+      "insumo": "耗材",
+      "cantidadUsada": "使用数量",
+      "costoTotal": "总成本"
+    },
+    "personalTitulo": "人员支出（工资单）",
+    "totalPlanilla": "月度工资总额：",
+    "tablaPersonal": {
+      "empleado": "员工",
+      "puesto": "职位",
+      "area": "部门",
+      "salario": "薪资"
+    }
+  },
+  "inventario": {
+    "masMovidosTitulo": "周转最快的产品",
+    "menosMovidosTitulo": "周转最慢的产品",
+    "tabla": {
+      "producto": "产品",
+      "movimientos": "移动次数"
+    }
+  },
+  "cobrar": {
+    "titulo": "待收账款",
+    "sinCuentas": "没有待收账款。",
+    "tabla": {
+      "cliente": "客户",
+      "monto": "金额",
+      "vencimiento": "到期日",
+      "equipo": "设备"
+    },
+    "faltaRetirar": "设备待取",
+    "sinPendiente": "无待取设备"
+  },
+  "taller": {
+    "eficienciaTitulo": "技术员效率",
+    "tabla": {
+      "numero": "#",
+      "tecnico": "技术员",
+      "reparadas": "已修复",
+      "activas": "进行中",
+      "promedioDias": "平均天数"
+    },
+    "chartTitulo": "各技术员维修工单数"
+  },
+  "clientes": {
+    "totalClientes": "客户总数",
+    "totalEmpresas": "已登记企业数",
+    "totalFrecuentes": "常客数量",
+    "equiposPorEmpresaTitulo": "各企业设备数",
+    "sinEmpresas": "暂无登记设备的企业。",
+    "topClientesTitulo": "最活跃客户（近6个月）",
+    "sinActividad": "暂无近期活动。",
+    "frecuenteSi": "常客",
+    "frecuenteNo": "偶尔光顾",
+    "tabla": {
+      "empresa": "企业",
+      "contactos": "联系人",
+      "equipos": "设备数",
+      "cliente": "客户",
+      "actividad": "近期活动",
+      "frecuente": "常客"
+    }
+  }
+}

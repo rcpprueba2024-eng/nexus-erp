@@ -1,0 +1,35 @@
+{
+  "titulo": "分类",
+  "subtitulo": "管理产品分类和子分类。",
+  "chart": {
+    "titulo": "最畅销分类",
+    "sinDatos": "暂无销售记录。"
+  },
+  "categoriasTitulo": "产品分类",
+  "placeholderNombre": "名称（例如：手机）",
+  "placeholderDescripcion": "描述（可选）",
+  "agregarCategoria": "添加分类",
+  "columnas": {
+    "nombre": "名称",
+    "tipo": "类型",
+    "descripcion": "描述",
+    "productos": "产品数"
+  },
+  "subcategoriasTitulo": "子分类",
+  "placeholderCategoriaSeleccionar": "选择分类...",
+  "placeholderNombreSubcategoria": "子分类名称（例如：高端）",
+  "agregarSubcategoria": "添加子分类",
+  "columnasSubcategoria": {
+    "categoria": "分类",
+    "subcategoria": "子分类",
+    "descripcion": "描述",
+    "productos": "产品数"
+  },
+  "tiposCategoria": {
+    "producto": "产品",
+    "repuesto": "备件",
+    "insumo": "耗材",
+    "accesorio": "配件",
+    "otro": "其他"
+  }
+}

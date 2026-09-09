@@ -1,0 +1,48 @@
+{
+  "flujo": {
+    "titulo": "Flujo de trabajo diario",
+    "subtitulo": "Resumen operativo de hoy: equipos, inventario y ventas.",
+    "entradasHoy": "Equipos ingresados hoy",
+    "entregasHoy": "Equipos entregados hoy",
+    "ventasHoy": "Ventas de hoy",
+    "bajoStock": "Productos con bajo stock",
+    "ordenesActivas": "Órdenes activas en taller",
+    "valorEnTaller": "Valor estimado en taller",
+    "entradasHoyTitulo": "Ingresos de hoy",
+    "sinEntradas": "No han ingresado equipos hoy.",
+    "entregasHoyTitulo": "Entregas de hoy",
+    "sinEntregas": "No se ha entregado ningún equipo hoy.",
+    "bajoStockTitulo": "Productos con bajo stock",
+    "sinBajoStock": "Todo el inventario está por encima del mínimo.",
+    "accesosTitulo": "Accesos rápidos",
+    "irInventario": "Ver inventario",
+    "irReportes": "Ver reportes",
+    "irFinanciero": "Reporte financiero",
+    "irOrdenes": "Ver órdenes",
+    "tabla": {
+      "numero": "N°", "equipo": "Equipo", "cliente": "Cliente", "tecnico": "Técnico",
+      "producto": "Producto", "stockActual": "Stock actual", "stockMinimo": "Stock mínimo",
+      "factura": "Factura", "total": "Total"
+    }
+  },
+  "financiero": {
+    "titulo": "Reporte financiero mensual",
+    "subtitulo": "Ingresos por ventas, gastos y utilidad estimada.",
+    "ventasMes": "Ventas del mes actual",
+    "gastosMes": "Gastos (insumos + planilla)",
+    "utilidadNeta": "Utilidad neta estimada",
+    "porCobrar": "Cuentas por cobrar pendientes",
+    "ventasPorMesTitulo": "Ventas por mes",
+    "periodo": "Periodo",
+    "total": "Total",
+    "acumulado": "Acumulado",
+    "gastosTitulo": "Gastos",
+    "gastosInsumos": "Gastos en insumos:",
+    "gastosPersonal": "Gastos en planilla:",
+    "porCobrarTitulo": "Cuentas por cobrar",
+    "sinPorCobrar": "No hay cuentas por cobrar pendientes.",
+    "cliente": "Cliente",
+    "monto": "Monto",
+    "vencimiento": "Vencimiento"
+  }
+}

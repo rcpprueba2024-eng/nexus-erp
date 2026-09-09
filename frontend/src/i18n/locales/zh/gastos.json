@@ -1,0 +1,29 @@
+{
+  "titulo": "支出",
+  "subtitulo": "登记零用现金支取并管理支出类别。",
+  "cajaChica": {
+    "titulo": "零用现金",
+    "ajustarSaldo": "调整余额",
+    "placeholderSaldo": "当前余额",
+    "ayuda": "下面登记的每一笔支出都会自动从此余额中扣除。使用“调整余额”进行初始设置或登记资金补充。"
+  },
+  "registrarGasto": "登记支出",
+  "placeholderCategoriaSeleccionar": "类别...",
+  "placeholderDescripcion": "支出说明",
+  "placeholderMonto": "金额",
+  "agregarGasto": "登记支出",
+  "sinGastos": "尚无支出记录。",
+  "columnas": {
+    "fecha": "日期",
+    "categoria": "类别",
+    "descripcion": "说明",
+    "monto": "金额",
+    "saldoResultante": "现金余额",
+    "registradoPor": "登记人",
+    "nombre": "名称",
+    "gastos": "支出"
+  },
+  "categoriasTitulo": "支出类别",
+  "placeholderNombre": "名称（例如：办公用品）",
+  "agregarCategoria": "添加类别"
+}

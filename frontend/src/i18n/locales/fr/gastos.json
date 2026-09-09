@@ -1,0 +1,29 @@
+{
+  "titulo": "Dépenses",
+  "subtitulo": "Enregistrez les retraits de la petite caisse et gérez les catégories de dépenses.",
+  "cajaChica": {
+    "titulo": "Petite caisse",
+    "ajustarSaldo": "Ajuster le solde",
+    "placeholderSaldo": "Solde actuel",
+    "ayuda": "Chaque dépense enregistrée ci-dessous est automatiquement déduite de ce solde. Utilisez \"Ajuster le solde\" pour la configuration initiale ou pour enregistrer un réapprovisionnement de fonds."
+  },
+  "registrarGasto": "Enregistrer une dépense",
+  "placeholderCategoriaSeleccionar": "Catégorie...",
+  "placeholderDescripcion": "Description de la dépense",
+  "placeholderMonto": "Montant",
+  "agregarGasto": "Enregistrer la dépense",
+  "sinGastos": "Aucune dépense enregistrée pour le moment.",
+  "columnas": {
+    "fecha": "Date",
+    "categoria": "Catégorie",
+    "descripcion": "Description",
+    "monto": "Montant",
+    "saldoResultante": "Solde de caisse",
+    "registradoPor": "Enregistré par",
+    "nombre": "Nom",
+    "gastos": "Dépenses"
+  },
+  "categoriasTitulo": "Catégories de dépenses",
+  "placeholderNombre": "Nom (ex. Fournitures de bureau)",
+  "agregarCategoria": "Ajouter une catégorie"
+}

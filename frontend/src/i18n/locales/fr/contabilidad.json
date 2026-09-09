@@ -1,0 +1,73 @@
+{
+  "titulo": "Comptabilité",
+  "subtitulo": "Compte de résultat, ventes, dépenses et comptes",
+  "tabs": {
+    "resultados": "Compte de résultat",
+    "ventas": "Ventes",
+    "gastos": "Dépenses",
+    "cuentas": "Comptes"
+  },
+  "resultados": {
+    "ingresos": "Revenus des ventes",
+    "gastosTitulo": "Dépenses",
+    "totalGastos": "Total des dépenses",
+    "utilidadNeta": "Bénéfice net",
+    "margenNeto": "Marge nette",
+    "conceptos": {
+      "insumos": "Fournitures d'atelier",
+      "planilla": "Masse salariale",
+      "compras": "Achats fournisseurs"
+    }
+  },
+  "ventas": {
+    "porDiaTitulo": "Ventes par jour",
+    "porVendedorTitulo": "Ventes par vendeur",
+    "columnas": {
+      "periodo": "Date",
+      "total": "Total (US$)",
+      "facturas": "Factures",
+      "vendedor": "Vendeur",
+      "promedio": "Moyenne par vente (US$)"
+    },
+    "vacio": "Aucune vente enregistrée pour le moment."
+  },
+  "gastos": {
+    "porProveedorTitulo": "Dépenses par fournisseur",
+    "porDiaTitulo": "Dépenses par jour",
+    "columnas": {
+      "proveedor": "Fournisseur",
+      "ordenes": "Commandes",
+      "total": "Total payé (US$)",
+      "fecha": "Date",
+      "compras": "Achats fournisseurs (US$)",
+      "insumos": "Fournitures d'atelier (US$)"
+    },
+    "vacio": "Aucune dépense enregistrée pour le moment."
+  },
+  "porCobrar": {
+    "titulo": "Comptes clients",
+    "vacio": "Aucun compte client.",
+    "columnas": {
+      "cliente": "Client",
+      "monto": "Montant",
+      "vencimiento": "Échéance",
+      "asesor": "Conseiller",
+      "referenciaOts": "N° de bon de travail",
+      "estado": "Statut"
+    }
+  },
+  "porPagar": {
+    "titulo": "Comptes fournisseurs",
+    "vacio": "Aucun compte fournisseur.",
+    "columnas": {
+      "proveedor": "Fournisseur",
+      "monto": "Montant",
+      "vencimiento": "Échéance",
+      "estado": "Statut"
+    }
+  },
+  "cuentas": {
+    "vencidasCobrar": "Créances échues",
+    "vencidasPagar": "Dettes échues"
+  }
+}

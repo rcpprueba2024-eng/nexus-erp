@@ -1,0 +1,73 @@
+{
+  "titulo": "Contabilidad",
+  "subtitulo": "Estado de resultados, ventas, gastos y cuentas",
+  "tabs": {
+    "resultados": "Estado de resultados",
+    "ventas": "Ventas",
+    "gastos": "Gastos",
+    "cuentas": "Cuentas"
+  },
+  "resultados": {
+    "ingresos": "Ingresos por ventas",
+    "gastosTitulo": "Gastos",
+    "totalGastos": "Total de gastos",
+    "utilidadNeta": "Utilidad neta",
+    "margenNeto": "Margen neto",
+    "conceptos": {
+      "insumos": "Insumos de taller",
+      "planilla": "Planilla",
+      "compras": "Compras a proveedores"
+    }
+  },
+  "ventas": {
+    "porDiaTitulo": "Ventas por día",
+    "porVendedorTitulo": "Ventas por vendedor",
+    "columnas": {
+      "periodo": "Fecha",
+      "total": "Total (US$)",
+      "facturas": "Facturas",
+      "vendedor": "Vendedor",
+      "promedio": "Promedio por venta (US$)"
+    },
+    "vacio": "No hay ventas registradas todavía."
+  },
+  "gastos": {
+    "porProveedorTitulo": "Gastos por proveedor",
+    "porDiaTitulo": "Gastos por día",
+    "columnas": {
+      "proveedor": "Proveedor",
+      "ordenes": "Órdenes",
+      "total": "Total pagado (US$)",
+      "fecha": "Fecha",
+      "compras": "Compras a proveedores (US$)",
+      "insumos": "Insumos de taller (US$)"
+    },
+    "vacio": "No hay gastos registrados todavía."
+  },
+  "porCobrar": {
+    "titulo": "Cuentas por cobrar",
+    "vacio": "Sin cuentas por cobrar.",
+    "columnas": {
+      "cliente": "Cliente",
+      "monto": "Monto",
+      "vencimiento": "Vencimiento",
+      "asesor": "Asesor",
+      "referenciaOts": "N.º de OT",
+      "estado": "Estado"
+    }
+  },
+  "porPagar": {
+    "titulo": "Cuentas por pagar",
+    "vacio": "Sin cuentas por pagar.",
+    "columnas": {
+      "proveedor": "Proveedor",
+      "monto": "Monto",
+      "vencimiento": "Vencimiento",
+      "estado": "Estado"
+    }
+  },
+  "cuentas": {
+    "vencidasCobrar": "Cxc vencidas",
+    "vencidasPagar": "Cxp vencidas"
+  }
+}

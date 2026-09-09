@@ -1,0 +1,157 @@
+{
+  "app": {
+    "nombre": "NEXUS ERP",
+    "eslogan": "Phone & Laptop Repair"
+  },
+  "nav": {
+    "dashboard": "Dashboard",
+    "ordenes": "Work Orders",
+    "clientes": "Clients",
+    "inventario": "Inventory",
+    "taller": "Workshop",
+    "ventas": "Sales",
+    "compras": "Purchasing",
+    "contabilidad": "Accounting",
+    "rrhh": "Human Resources",
+    "reportes": "Reports",
+    "gastos": "Expenses",
+    "caja_chica": "Petty Cash",
+    "configuracion": "Settings",
+    "actividad": "System Activity",
+    "cerrarSesion": "Log out",
+    "abrirMenu": "Open menu",
+    "grupoOrdenesTrabajo": "Work Orders",
+    "grupoVentas": "Sales",
+    "ordenesTrabajo": "Work Orders",
+    "facturacion": "Invoicing",
+    "facturarOts": "Invoice Work Orders",
+    "facturarProductos": "Invoice Products",
+    "categorias": "Categories",
+    "unidades": "Units",
+    "importarProductos": "Import Products",
+    "postventas": "After-Sales",
+    "grupoBackoffice": "BackOffice",
+    "productos": "Products",
+    "flujoDiario": "Daily Workflow",
+    "reporteFinanciero": "Financial Report",
+    "registroFacturas": "Invoice Log",
+    "grupoTaller": "Workshop",
+    "tablero": "Board",
+    "equiposListos": "Ready Equipment",
+    "abandonados": "Abandoned",
+    "historialTecnicos": "Technician History"
+  },
+  "roles": {
+    "ADMIN": "General Management",
+    "TALLER": "Workshop",
+    "PASANTE": "Workshop Intern",
+    "VENTAS": "Sales",
+    "RRHH": "Human Resources",
+    "BACKOFFICE": "Backoffice / Accounting",
+    "JEFE_OPERACIONES": "Head of Operations",
+    "LIMPIEZA": "Cleaning"
+  },
+  "modulos": {
+    "dashboard": "Dashboard",
+    "ordenes": "Work Orders",
+    "clientes": "Clients",
+    "inventario": "Inventory",
+    "taller": "Workshop",
+    "ventas": "Sales",
+    "compras": "Purchasing",
+    "contabilidad": "Accounting",
+    "rrhh": "Human Resources",
+    "reportes": "Reports",
+    "gastos": "Expenses",
+    "caja_chica": "Petty Cash",
+    "caja-chica": "Petty Cash",
+    "auth": "Authentication"
+  },
+  "estadosOrden": {
+    "RECIBIDO": "To Start",
+    "DIAGNOSTICO": "Diagnosis",
+    "ESPERANDO_AUTORIZACION": "Awaiting Authorization",
+    "EN_REPARACION": "In Progress",
+    "IMPORTACION": "Importing",
+    "LISTO_ENTREGA": "Ready Equipment",
+    "ENTREGADO": "Delivered",
+    "CANCELADO": "Cancelled",
+    "REINGRESO": "Re-intake",
+    "ABANDONADO": "Abandoned"
+  },
+  "monedas": {
+    "USD": "US Dollars (US$)",
+    "NIO": "Nicaraguan Córdobas (C$)"
+  },
+  "categoriaEquipo": {
+    "COMPUTADORA": "Computer",
+    "CELULAR": "Phone",
+    "TABLET": "Tablet",
+    "OTRO": "Other"
+  },
+  "paginacion": {
+    "mostrando": "{{desde}}–{{hasta}} of {{total}}",
+    "anterior": "Previous",
+    "siguiente": "Next"
+  },
+  "botones": {
+    "guardar": "Save",
+    "guardando": "Saving...",
+    "cancelar": "Cancel",
+    "editar": "Edit",
+    "eliminar": "Delete",
+    "buscar": "Search",
+    "confirmar": "Confirm",
+    "volver": "Back",
+    "exportarExcel": "Export to Excel",
+    "exportarPdf": "Export to PDF",
+    "imprimir": "Print",
+    "descargarPdf": "View / Download PDF",
+    "verEImprimir": "View / Print",
+    "crear": "Create",
+    "añadir": "Add",
+    "cerrar": "Close"
+  },
+  "estado": {
+    "activo": "Active",
+    "inactivo": "Inactive",
+    "pendiente": "Pending",
+    "pagada": "Paid",
+    "anulada": "Voided"
+  },
+  "mensajes": {
+    "cargando": "Loading...",
+    "sinDatos": "No data to display.",
+    "errorGenerico": "Something went wrong. Please try again."
+  },
+  "dias": {
+    "domingo": "Sunday",
+    "lunes": "Monday",
+    "martes": "Tuesday",
+    "miercoles": "Wednesday",
+    "jueves": "Thursday",
+    "viernes": "Friday",
+    "sabado": "Saturday"
+  },
+  "meses": {
+    "enero": "January",
+    "febrero": "February",
+    "marzo": "March",
+    "abril": "April",
+    "mayo": "May",
+    "junio": "June",
+    "julio": "July",
+    "agosto": "August",
+    "septiembre": "September",
+    "octubre": "October",
+    "noviembre": "November",
+    "diciembre": "December"
+  },
+  "idioma": {
+    "es": "Español",
+    "en": "English",
+    "zh": "中文",
+    "fr": "Français",
+    "selector": "Language"
+  }
+}

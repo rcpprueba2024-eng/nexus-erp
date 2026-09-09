@@ -1,0 +1,157 @@
+{
+  "app": {
+    "nombre": "NEXUS ERP",
+    "eslogan": "Réparation de téléphones et ordinateurs portables"
+  },
+  "nav": {
+    "dashboard": "Tableau de bord",
+    "ordenes": "Ordres de travail",
+    "clientes": "Clients",
+    "inventario": "Inventaire",
+    "taller": "Atelier",
+    "ventas": "Ventes",
+    "compras": "Achats",
+    "contabilidad": "Comptabilité",
+    "rrhh": "Ressources humaines",
+    "reportes": "Rapports",
+    "gastos": "Dépenses",
+    "caja_chica": "Petite caisse",
+    "configuracion": "Paramètres",
+    "actividad": "Activité du système",
+    "cerrarSesion": "Déconnexion",
+    "abrirMenu": "Ouvrir le menu",
+    "grupoOrdenesTrabajo": "Ordres de travail",
+    "grupoVentas": "Ventes",
+    "ordenesTrabajo": "Ordres de travail",
+    "facturacion": "Facturation",
+    "facturarOts": "Facturer les ordres",
+    "facturarProductos": "Facturer des produits",
+    "categorias": "Catégories",
+    "unidades": "Unités",
+    "importarProductos": "Importer des produits",
+    "postventas": "Service après-vente",
+    "grupoBackoffice": "BackOffice",
+    "productos": "Produits",
+    "flujoDiario": "Flux quotidien",
+    "reporteFinanciero": "Rapport financier",
+    "registroFacturas": "Registre des factures",
+    "grupoTaller": "Atelier",
+    "tablero": "Tableau",
+    "equiposListos": "Équipements prêts",
+    "abandonados": "Abandonnés",
+    "historialTecnicos": "Historique par technicien"
+  },
+  "roles": {
+    "ADMIN": "Direction générale",
+    "TALLER": "Atelier",
+    "PASANTE": "Stagiaire d'atelier",
+    "VENTAS": "Ventes",
+    "RRHH": "Ressources humaines",
+    "BACKOFFICE": "Back-office / Comptabilité",
+    "JEFE_OPERACIONES": "Chef des opérations",
+    "LIMPIEZA": "Nettoyage"
+  },
+  "modulos": {
+    "dashboard": "Tableau de bord",
+    "ordenes": "Ordres de travail",
+    "clientes": "Clients",
+    "inventario": "Inventaire",
+    "taller": "Atelier",
+    "ventas": "Ventes",
+    "compras": "Achats",
+    "contabilidad": "Comptabilité",
+    "rrhh": "Ressources humaines",
+    "reportes": "Rapports",
+    "gastos": "Dépenses",
+    "caja_chica": "Petite caisse",
+    "caja-chica": "Petite caisse",
+    "auth": "Authentification"
+  },
+  "estadosOrden": {
+    "RECIBIDO": "À commencer",
+    "DIAGNOSTICO": "Diagnostic",
+    "ESPERANDO_AUTORIZACION": "En attente d'autorisation",
+    "EN_REPARACION": "En cours",
+    "IMPORTACION": "En importation",
+    "LISTO_ENTREGA": "Équipement prêt",
+    "ENTREGADO": "Livré",
+    "CANCELADO": "Annulé",
+    "REINGRESO": "Nouvelle entrée",
+    "ABANDONADO": "Abandonné"
+  },
+  "monedas": {
+    "USD": "Dollars américains (US$)",
+    "NIO": "Córdobas nicaraguayens (C$)"
+  },
+  "categoriaEquipo": {
+    "COMPUTADORA": "Ordinateur",
+    "CELULAR": "Téléphone",
+    "TABLET": "Tablette",
+    "OTRO": "Autre"
+  },
+  "paginacion": {
+    "mostrando": "{{desde}}–{{hasta}} sur {{total}}",
+    "anterior": "Précédent",
+    "siguiente": "Suivant"
+  },
+  "botones": {
+    "guardar": "Enregistrer",
+    "guardando": "Enregistrement...",
+    "cancelar": "Annuler",
+    "editar": "Modifier",
+    "eliminar": "Supprimer",
+    "buscar": "Rechercher",
+    "confirmar": "Confirmer",
+    "volver": "Retour",
+    "exportarExcel": "Exporter vers Excel",
+    "exportarPdf": "Exporter en PDF",
+    "imprimir": "Imprimer",
+    "descargarPdf": "Voir / Télécharger le PDF",
+    "verEImprimir": "Voir / Imprimer",
+    "crear": "Créer",
+    "añadir": "Ajouter",
+    "cerrar": "Fermer"
+  },
+  "estado": {
+    "activo": "Actif",
+    "inactivo": "Inactif",
+    "pendiente": "En attente",
+    "pagada": "Payée",
+    "anulada": "Annulée"
+  },
+  "mensajes": {
+    "cargando": "Chargement...",
+    "sinDatos": "Aucune donnée à afficher.",
+    "errorGenerico": "Une erreur est survenue. Veuillez réessayer."
+  },
+  "dias": {
+    "domingo": "dimanche",
+    "lunes": "lundi",
+    "martes": "mardi",
+    "miercoles": "mercredi",
+    "jueves": "jeudi",
+    "viernes": "vendredi",
+    "sabado": "samedi"
+  },
+  "meses": {
+    "enero": "janvier",
+    "febrero": "février",
+    "marzo": "mars",
+    "abril": "avril",
+    "mayo": "mai",
+    "junio": "juin",
+    "julio": "juillet",
+    "agosto": "août",
+    "septiembre": "septembre",
+    "octubre": "octobre",
+    "noviembre": "novembre",
+    "diciembre": "décembre"
+  },
+  "idioma": {
+    "es": "Español",
+    "en": "English",
+    "zh": "中文",
+    "fr": "Français",
+    "selector": "Langue"
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "flujo": {
+    "titulo": "Daily Workflow",
+    "subtitulo": "Today's operational summary: equipment, inventory and sales.",
+    "entradasHoy": "Equipment received today",
+    "entregasHoy": "Equipment delivered today",
+    "ventasHoy": "Today's sales",
+    "bajoStock": "Low-stock products",
+    "ordenesActivas": "Active workshop orders",
+    "valorEnTaller": "Estimated value in workshop",
+    "entradasHoyTitulo": "Today's intake",
+    "sinEntradas": "No equipment has come in today.",
+    "entregasHoyTitulo": "Today's deliveries",
+    "sinEntregas": "No equipment has been delivered today.",
+    "bajoStockTitulo": "Low-stock products",
+    "sinBajoStock": "All inventory is above the minimum.",
+    "accesosTitulo": "Quick links",
+    "irInventario": "View inventory",
+    "irReportes": "View reports",
+    "irFinanciero": "Financial report",
+    "irOrdenes": "View orders",
+    "tabla": {
+      "numero": "No.", "equipo": "Device", "cliente": "Customer", "tecnico": "Technician",
+      "producto": "Product", "stockActual": "Current stock", "stockMinimo": "Minimum stock",
+      "factura": "Invoice", "total": "Total"
+    }
+  },
+  "financiero": {
+    "titulo": "Monthly Financial Report",
+    "subtitulo": "Sales revenue, expenses and estimated profit.",
+    "ventasMes": "Current month sales",
+    "gastosMes": "Expenses (supplies + payroll)",
+    "utilidadNeta": "Estimated net profit",
+    "porCobrar": "Outstanding receivables",
+    "ventasPorMesTitulo": "Sales by month",
+    "periodo": "Period",
+    "total": "Total",
+    "acumulado": "Accumulated",
+    "gastosTitulo": "Expenses",
+    "gastosInsumos": "Supply expenses:",
+    "gastosPersonal": "Payroll expenses:",
+    "porCobrarTitulo": "Receivables",
+    "sinPorCobrar": "No outstanding receivables.",
+    "cliente": "Customer",
+    "monto": "Amount",
+    "vencimiento": "Due date"
+  }
+}

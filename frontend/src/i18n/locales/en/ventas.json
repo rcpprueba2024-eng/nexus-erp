@@ -1,0 +1,29 @@
+{
+  "titulo": "Sales",
+  "subtitulo": {
+    "texto": "Sale of phones, computers, parts, and accessories. For maintenance, diagnostics, or repairs, use",
+    "enlace": "+ New Work Order"
+  },
+  "form": {
+    "titulo": "New product sale",
+    "numero": "Sale / Invoice No.",
+    "cliente": "Customer (full name)",
+    "vendedor": "Salesperson: {{nombre}}",
+    "todasCategorias": "All categories",
+    "producto": "Product...",
+    "cantidad": "Quantity",
+    "errorObligatorio": "Sale number, customer, and product are required.",
+    "errorGenerico": "An error occurred while registering the sale.",
+    "registrar": "Register sale"
+  },
+  "tabla": {
+    "numero": "No.",
+    "cliente": "Customer",
+    "vendedor": "Salesperson",
+    "detalle": "Details",
+    "fecha": "Date",
+    "total": "Total",
+    "estado": "Status",
+    "sinVentas": "No sales registered."
+  }
+}

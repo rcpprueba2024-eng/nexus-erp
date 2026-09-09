@@ -1,0 +1,83 @@
+{
+  "titulo": "Atelier",
+  "subtitulo": "Ordres de service, techniciens et fournitures",
+  "filtro": {
+    "todas": "Toutes"
+  },
+  "tablero": {
+    "titulo": "Techniciens et stagiaires",
+    "sinPersonal": "Aucun technicien ni stagiaire enregistré.",
+    "equiposCount": "{{n}} appareils",
+    "estados": {
+      "EN_ESPERA": "En attente",
+      "EN_PROCESO": "En cours",
+      "TERMINADO": "Terminé"
+    }
+  },
+  "nuevaOrden": {
+    "titulo": "Nouvel ordre d'atelier (manuel)",
+    "numeroOrden": "N° d'ordre",
+    "clienteDefault": "Client...",
+    "equipoPlaceholder": "Appareil (ex. Ordinateur portable HP Pavilion)",
+    "tipoOrdenCCA": "CCA — Téléphone/Tablette",
+    "tipoOrdenCOM": "COM — Ordinateur",
+    "tecnicoDefault": "Technicien...",
+    "costoEstimado": "Coût estimé",
+    "problemaReportado": "Problème signalé",
+    "crear": "Créer l'ordre"
+  },
+  "insumo": {
+    "titulo": "Enregistrer une fourniture utilisée",
+    "ordenDefault": "Ordre...",
+    "insumoDefault": "Fourniture...",
+    "stock": "(stock : {{stock}})",
+    "cantidad": "Quantité",
+    "registrar": "Enregistrer"
+  },
+  "vacio": "Aucun ordre dans ce statut.",
+  "mostrandoRecientes": "Affichage des {{n}} plus récents sur {{total}}.",
+  "tabla": {
+    "numero": "N°",
+    "cliente": "Client",
+    "equipo": "Appareil",
+    "tecnico": "Technicien",
+    "ingreso": "Réception",
+    "estado": "Statut",
+    "asesor": "Conseiller",
+    "asignar": "Assigner",
+    "cambiarEstado": "Changer le statut",
+    "sinAsignar": "Non assigné"
+  },
+  "servicios": {
+    "MANTENIMIENTO": "Entretien",
+    "DIAGNOSTICO": "Diagnostic",
+    "REPARACION": "Réparation"
+  },
+  "ficha": {
+    "cliente": "Client",
+    "asesorAsignado": "Conseiller assigné",
+    "recibidoPor": "Reçu par",
+    "valor": "Valeur",
+    "adelanto": "Acompte",
+    "fechaHoraRecepcion": "Date et heure de réception",
+    "tiempoReparacionEstimado": "Temps de réparation estimé",
+    "marcaModelo": "Marque / Modèle",
+    "color": "Couleur",
+    "numeroSerie": "N° de série",
+    "imei": "IMEI",
+    "accesorios": "Accessoires",
+    "contrasenaEquipo": "Mot de passe de l'appareil",
+    "especificaciones": "Spécifications",
+    "fallaReportada": "Panne signalée",
+    "diagnosticoTitulo": "Diagnostic du technicien",
+    "diagnosticoPlaceholder": "Écris ce que tu as trouvé et quel a été le diagnostic...",
+    "diagnosticoVacio": "Aucun diagnostic enregistré pour l'instant.",
+    "agregarDiagnostico": "Ajouter un diagnostic",
+    "diagnosticoFotosAyuda": "{{n}} sur {{max}} photos pour ce diagnostic.",
+    "guardarDiagnostico": "Enregistrer le diagnostic",
+    "fotosTitulo": "Photos de l'équipement",
+    "checklistEntrada": "Liste de contrôle d'entrée",
+    "checklistSalida": "Liste de contrôle de sortie (à la livraison)",
+    "guardarChecklistSalida": "Enregistrer la liste de contrôle de sortie"
+  }
+}

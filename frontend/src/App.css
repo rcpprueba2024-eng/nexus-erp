@@ -1,0 +1,2689 @@
+.layout {
+  display: flex;
+  min-height: 100vh;
+}
+
+.sidebar {
+  width: 220px;
+  flex-shrink: 0;
+  background: var(--sidebar-bg);
+  color: var(--sidebar-text);
+  padding: 20px 14px;
+}
+
+.menu-toggle {
+  display: none;
+  background: none;
+  border: 1px solid var(--border);
+  color: var(--text-h);
+  font-size: 18px;
+  line-height: 1;
+  width: 38px;
+  height: 38px;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-right: auto;
+}
+
+/* ---------- celular / pantalla angosta: el menú lateral no cabe fijo,
+   se convierte en un panel que se abre encima del contenido ---------- */
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .sidebar {
+    position: fixed;
+    inset: 0 auto 0 0;
+    z-index: 100;
+    height: 100vh;
+    transform: translateX(-100%);
+    transition: transform 0.22s ease;
+    box-shadow: 2px 0 16px rgba(0, 0, 0, 0.3);
+    overflow-y: auto;
+  }
+
+  .sidebar.abierto {
+    transform: translateX(0);
+  }
+
+  .sidebar-backdrop {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.45);
+    z-index: 99;
+  }
+
+  .content {
+    padding: 18px 16px;
+  }
+}
+
+.brand {
+  display: flex;
+  align-items: baseline;
+  gap: 6px;
+  padding: 6px 10px 24px;
+}
+
+.brand-mark {
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--sidebar-heading);
+  letter-spacing: 0.5px;
+}
+
+.brand-sub {
+  font-size: 12px;
+  color: var(--sidebar-text);
+  letter-spacing: 1px;
+}
+
+.sidebar nav {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.nav-link {
+  display: block;
+  padding: 10px 12px;
+  border-radius: 6px;
+  color: var(--sidebar-text);
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.nav-link:hover {
+  background: var(--sidebar-hover);
+}
+
+.nav-link.active {
+  background: var(--sidebar-active);
+  color: #fff;
+}
+
+.nav-grupo {
+  margin: 2px 0;
+}
+
+.nav-grupo-titulo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 6px;
+  width: 100%;
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--sidebar-text);
+  opacity: 0.75;
+  padding: 10px 12px;
+  border-radius: 6px;
+  font-family: inherit;
+  font-weight: 600;
+}
+
+.nav-grupo-titulo:hover {
+  background: var(--sidebar-hover);
+  opacity: 1;
+}
+
+.nav-grupo-flecha {
+  display: inline-block;
+  font-size: 13px;
+  line-height: 1;
+  transition: transform 0.15s;
+}
+
+.nav-grupo-flecha.abierta {
+  transform: rotate(90deg);
+}
+
+.nav-link-sub {
+  padding-left: 22px;
+  font-size: 13px;
+}
+
+.nav-subgrupo {
+  margin: 1px 0;
+}
+
+.nav-subgrupo-titulo {
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-family: inherit;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 6px;
+  width: 100%;
+  text-align: left;
+  opacity: 0.85;
+}
+
+.nav-subgrupo-titulo .nav-grupo-flecha {
+  font-size: 11px;
+}
+
+.nav-link-sub2 {
+  padding-left: 34px;
+  font-size: 12.5px;
+}
+
+.content {
+  flex: 1;
+  padding: 28px 36px;
+  overflow-x: auto;
+}
+
+.page-header {
+  margin-bottom: 24px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid var(--border);
+}
+
+.page-header h1 {
+  font-size: 22px;
+  letter-spacing: -0.01em;
+}
+
+.page-header p {
+  margin: 0;
+  color: var(--text);
+  font-size: 13.5px;
+}
+
+.card {
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-sm);
+  padding: 20px 22px;
+  margin-bottom: 20px;
+}
+
+/* Para tablas con muchas columnas (ej. Equipos en Abandono): el scroll
+   horizontal queda contenido dentro de la tarjeta en vez de que la tabla se
+   salga del borde blanco y el botón de acción quede cortado a la mitad. */
+.table-scroll {
+  overflow-x: auto;
+}
+.table-scroll table {
+  min-width: max-content;
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+/* ---------- secciones del panel general ---------- */
+.dash-seccion {
+  margin-bottom: 28px;
+}
+
+.dash-seccion-titulo {
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--text);
+  opacity: 0.7;
+  margin: 0 0 12px;
+}
+
+.dash-nota {
+  font-size: 12.5px;
+  color: var(--text);
+  opacity: 0.6;
+  margin: -6px 0 12px;
+}
+
+.dash-ingresos {
+  background: linear-gradient(135deg, var(--panel) 0%, var(--accent-bg) 180%);
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  box-shadow: var(--shadow-md);
+  padding: 24px 28px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  overflow: hidden;
+}
+
+.dash-ingresos::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 4px;
+  background: var(--accent);
+}
+
+.dash-ingresos-total {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.dash-ingresos-label {
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: var(--text);
+}
+
+.dash-ingresos-valor {
+  font-size: 36px;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  color: var(--text-h);
+  font-variant-numeric: tabular-nums;
+}
+
+.dash-ingresos-tasa {
+  font-size: 11.5px;
+  color: var(--text);
+  opacity: 0.75;
+}
+
+.dash-ingresos-desglose {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 22px;
+}
+
+.dash-moneda-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.dash-moneda-chip {
+  flex-shrink: 0;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.dash-moneda-chip.usd { background: rgba(37, 99, 235, 0.14); color: #2563eb; }
+.dash-moneda-chip.nio { background: rgba(5, 150, 105, 0.14); color: #059669; }
+.dash-moneda-chip.neutro { background: rgba(124, 58, 237, 0.14); color: #7c3aed; }
+
+.dash-moneda-label {
+  font-size: 11.5px;
+  color: var(--text);
+  white-space: nowrap;
+}
+
+.dash-moneda-valor {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--text-h);
+  font-variant-numeric: tabular-nums;
+}
+
+/* .stat es un patrón compartido por ~8 páginas (Dashboard, Contabilidad,
+   BackOfficeFlujo, EquiposListos/Abandonados, RegistroFacturas,
+   ReporteFinanciero, VentasImportar) con el mismo DOM plano: .stat-icon
+   (opcional) + .stat-label + .stat-value como hijos directos, sin wrapper.
+   Por eso el layout "ícono circular a la izquierda, label arriba/valor
+   abajo a la derecha" se arma con CSS Grid puro (grid-column/row en cada
+   hijo) en vez de flexbox — así se actualiza el look en todas las páginas
+   sin tener que tocar el JSX de cada una. */
+.stat {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  column-gap: 14px;
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  box-shadow: var(--shadow-sm);
+  padding: 18px 20px;
+  transition: transform 0.15s, box-shadow 0.15s;
+}
+
+.stat:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+}
+
+.stat-icon {
+  grid-column: 1;
+  grid-row: 1 / 3;
+  flex-shrink: 0;
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--accent-bg);
+  color: var(--accent);
+}
+
+.stat-icon svg {
+  width: 20px;
+  height: 20px;
+}
+
+/* Paleta de acentos por tarjeta — igual estilo en los 6 temas: un overlay
+   translúcido sobre el color sólido del ícono, así se ve bien tanto en
+   fondos claros como oscuros sin tener que ajustar cada tema a mano. */
+.stat-icon.blue { background: rgba(37, 99, 235, 0.14); color: #2563eb; }
+.stat-icon.green { background: rgba(5, 150, 105, 0.14); color: #059669; }
+.stat-icon.amber { background: rgba(217, 119, 6, 0.14); color: #d97706; }
+.stat-icon.red { background: rgba(220, 38, 38, 0.14); color: #dc2626; }
+.stat-icon.purple { background: rgba(124, 58, 237, 0.14); color: #7c3aed; }
+.stat-icon.cyan { background: rgba(8, 145, 178, 0.14); color: #0891b2; }
+.stat-icon.pink { background: rgba(219, 39, 119, 0.14); color: #db2777; }
+
+.stat-label {
+  grid-column: 2;
+  grid-row: 1;
+  align-self: end;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+  color: var(--text);
+  opacity: 0.75;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.stat-value {
+  grid-column: 2;
+  grid-row: 2;
+  align-self: start;
+  font-size: 23px;
+  font-weight: 800;
+  letter-spacing: -0.01em;
+  color: var(--text-h);
+  margin-top: 3px;
+  font-variant-numeric: tabular-nums;
+}
+
+.form-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.form-row input, .form-row select {
+  flex: 1 1 160px;
+  min-width: 120px;
+}
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 3px 10px;
+  border-radius: 999px;
+  font-size: 11.5px;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+
+.badge::before {
+  content: '';
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: currentColor;
+}
+
+.badge.ok { background: rgba(22, 163, 74, 0.15); color: var(--success); }
+.badge.pending { background: rgba(217, 119, 6, 0.15); color: #d97706; }
+.badge.off { background: rgba(220, 38, 38, 0.15); color: var(--danger); }
+
+.actions {
+  display: flex;
+  gap: 8px;
+}
+
+.loading, .empty {
+  padding: 40px 24px;
+  text-align: center;
+  color: var(--text);
+  font-size: 13.5px;
+}
+
+.empty-icon {
+  width: 46px;
+  height: 46px;
+  margin: 0 auto 12px;
+  border-radius: 13px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--panel-2);
+  color: var(--text);
+  opacity: 0.7;
+}
+
+.empty-icon svg {
+  width: 22px;
+  height: 22px;
+}
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar nav {
+  flex: 1;
+}
+
+.sidebar-user {
+  border-top: 1px solid var(--sidebar-border);
+  padding-top: 14px;
+  margin-top: 14px;
+}
+
+.sidebar-user-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 12px;
+  min-width: 0;
+}
+
+.sidebar-user-text {
+  min-width: 0;
+  overflow: hidden;
+}
+
+.sidebar-user-name {
+  color: var(--sidebar-heading);
+  font-size: 14px;
+  font-weight: 600;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.sidebar-user-role {
+  color: var(--sidebar-text);
+  font-size: 12px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.sidebar-user button {
+  width: 100%;
+  background: transparent;
+  border-color: var(--sidebar-border);
+  color: var(--sidebar-heading);
+  font-size: 13px;
+  padding: 6px 10px;
+}
+
+.login-screen {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--bg);
+}
+
+.login-card {
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 32px;
+  width: 100%;
+  max-width: 340px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+.login-card input {
+  width: 100%;
+}
+
+.tabs {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+  margin-bottom: 16px;
+}
+
+.tab {
+  padding: 7px 14px;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  background: var(--panel);
+  color: var(--text);
+  font-size: 12.5px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: border-color 0.15s, color 0.15s, background 0.15s;
+}
+
+.tab:hover:not(.active) {
+  border-color: var(--accent);
+  color: var(--text-h);
+}
+
+.tab.active {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: #fff;
+  box-shadow: var(--shadow-sm);
+}
+
+.pagination {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  margin-top: 14px;
+  padding-top: 14px;
+  border-top: 1px solid var(--border);
+}
+
+.pagination-info {
+  font-size: 12.5px;
+  color: var(--text-muted, var(--text));
+  opacity: 0.75;
+}
+
+.pagination-controls {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  flex-wrap: wrap;
+}
+
+.pagination-page {
+  min-width: 30px;
+  padding: 6px 8px;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--border);
+  background: var(--panel);
+  color: var(--text);
+  font-size: 12.5px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: border-color 0.15s, color 0.15s, background 0.15s;
+}
+
+.pagination-page:hover:not(.active) {
+  border-color: var(--accent);
+  color: var(--text-h);
+}
+
+.pagination-page.active {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: #fff;
+  box-shadow: var(--shadow-sm);
+}
+
+.pagination-ellipsis {
+  padding: 0 4px;
+  color: var(--text);
+  opacity: 0.5;
+  font-size: 12.5px;
+}
+
+.charts-row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 20px;
+  margin-bottom: 24px;
+}
+
+.charts-row-hero {
+  margin-top: 4px;
+}
+
+.charts-row-hero .chart-card h3 {
+  margin: 0 0 8px;
+  font-size: 15px;
+}
+
+.chart-card {
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  box-shadow: var(--shadow-sm);
+  padding: 20px 22px;
+}
+
+.chip-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.chip {
+  background: var(--accent-bg);
+  color: var(--accent);
+  border-radius: 999px;
+  padding: 3px 10px;
+  font-size: 12px;
+}
+
+.detail-link {
+  background: none;
+  border: none;
+  color: var(--accent);
+  padding: 0;
+  text-decoration: underline;
+  font-size: inherit;
+}
+
+.modal-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(8, 10, 16, 0.55);
+  backdrop-filter: blur(2px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 50;
+}
+
+.modal {
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-md);
+  padding: 26px;
+  width: 100%;
+  max-width: 420px;
+  max-height: 80vh;
+  overflow-y: auto;
+}
+
+.modal.wide {
+  max-width: 720px;
+}
+
+/* ---------- header bar: clock + logo ---------- */
+.topbar {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 18px;
+}
+
+@media (max-width: 768px) {
+  /* En celular el botón de menú va a la izquierda y el reloj a la derecha,
+     en vez de todo pegado a la derecha como en escritorio. */
+  .topbar {
+    justify-content: space-between;
+  }
+}
+
+.clock {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  padding: 6px 16px;
+  font-size: 13px;
+  color: var(--text);
+}
+
+.clock .time {
+  font-weight: 700;
+  color: var(--text-h);
+  font-variant-numeric: tabular-nums;
+  letter-spacing: 0.5px;
+}
+
+.clock .dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--success);
+  box-shadow: 0 0 0 3px rgba(22, 163, 74, 0.15);
+}
+
+.sidebar-logo {
+  width: 100%;
+  max-width: 130px;
+  height: auto;
+  display: block;
+  margin: 0 auto 6px;
+}
+
+/* ---------- checklist grid ---------- */
+.checklist-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  gap: 6px 14px;
+}
+
+.checklist-item {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 13px;
+  color: var(--text);
+  cursor: pointer;
+}
+
+.checklist-item input {
+  width: auto;
+  flex: 0 0 auto;
+}
+
+/* ---------- legal fine print box ---------- */
+.legal-box {
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 10px 14px;
+  margin-bottom: 16px;
+  background: var(--code-bg, var(--accent-bg));
+}
+
+.legal-box summary {
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--accent);
+}
+
+.legal-box p {
+  font-size: 11px;
+  line-height: 1.5;
+  color: var(--text);
+  margin-top: 10px;
+  text-align: justify;
+}
+
+.legal-box-fixed {
+  border: 1px solid var(--border);
+  border-left: 3px solid var(--danger);
+  border-radius: 6px;
+  padding: 14px 16px;
+  margin-top: 18px;
+  background: var(--code-bg, var(--accent-bg));
+}
+
+.legal-box-fixed > strong {
+  display: block;
+  font-size: 12.5px;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  color: var(--text-h);
+  margin-bottom: 8px;
+}
+
+.legal-box-fixed p {
+  font-size: 11.5px;
+  line-height: 1.55;
+  color: var(--text);
+  margin: 0 0 10px;
+  text-align: justify;
+}
+
+.legal-box-fixed p:last-child {
+  margin-bottom: 0;
+}
+
+/* ---------- printable work order ---------- */
+.orden-doc {
+  font-size: 13px;
+  color: #1f2937;
+}
+
+.orden-doc-head {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  border-bottom: 3px solid #c00000;
+  padding-bottom: 12px;
+  margin-bottom: 18px;
+}
+
+.orden-doc-logo {
+  width: 70px;
+  height: auto;
+}
+
+.orden-doc-head h2 {
+  margin: 0;
+  font-size: 18px;
+  color: #c00000;
+}
+
+.orden-doc-sub {
+  font-size: 12.5px;
+  color: #374151;
+  margin-top: 2px;
+}
+
+.orden-doc section {
+  margin-bottom: 16px;
+}
+
+.orden-doc h4 {
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  color: #1e3a8a;
+  border-bottom: 1px solid #e5e7eb;
+  padding-bottom: 4px;
+  margin-bottom: 8px;
+}
+
+.orden-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 6px 20px;
+}
+
+.orden-grid > div {
+  font-size: 12.5px;
+  display: flex;
+  gap: 6px;
+}
+
+.orden-grid > div span {
+  color: #6b7280;
+  min-width: 130px;
+  flex-shrink: 0;
+}
+
+.orden-checklist {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 4px 12px;
+  font-size: 12px;
+}
+
+.check-ok { color: #16a34a; }
+.check-off { color: #9ca3af; }
+
+.orden-legal p {
+  font-size: 9.5px;
+  line-height: 1.5;
+  color: #4b5563;
+  text-align: justify;
+  margin-bottom: 8px;
+}
+
+.orden-firma {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  margin-top: 16px;
+  font-size: 11px;
+  color: #374151;
+  text-align: center;
+  align-items: center;
+}
+
+.recibo-conforme {
+  border: 2px solid #c00000;
+  color: #c00000;
+  font-weight: 700;
+  font-size: 13px;
+  letter-spacing: 0.06em;
+  border-radius: 6px;
+  padding: 14px;
+  transform: rotate(-3deg);
+  justify-self: center;
+}
+
+@media print {
+  /* La orden de trabajo YA NO se imprime directamente desde el formulario
+     editable (.orden-tw) — ese formulario completo, con todo su espaciado
+     de edición, no cabe legible en una hoja. Ahora se imprime desde
+     OrdenPreview.jsx (.orden-print), un documento compacto de una sola
+     página armado aparte, igual que .recibo-print/.cotizacion-print. */
+  body * { visibility: hidden; }
+  .orden-print, .orden-print *, .recibo-print, .recibo-print *, .cotizacion-print, .cotizacion-print *, .permiso-print, .permiso-print * { visibility: visible; }
+  .orden-print { position: absolute; top: 0; left: 0; width: 100%; page: documento !important; }
+  .recibo-print { position: absolute; top: 0; left: 0; width: 80mm; }
+  .cotizacion-print { position: absolute; top: 0; left: 0; width: 100%; page: documento !important; }
+  .permiso-print { position: absolute; top: 0; left: 0; width: 100%; page: documento !important; }
+  .no-print { display: none !important; }
+  /* El modal en pantalla recorta su contenido a 92vh con scroll interno
+     (para que quepa en la ventana) — esa misma caja seguía recortando el
+     documento al imprimir, aunque .orden-print ya no dependiera de ella
+     para su posición: todo lo que no entraba en esos 92vh (ej. la mitad de
+     abajo de una orden larga) se cortaba en vez de seguir a la página 2. */
+  .modal { overflow: visible !important; max-height: none !important; }
+  @page { margin: 8mm; }
+  /* Sin un tamaño de hoja explícito, Chrome usa el que haya quedado
+     seleccionado la última vez en esa computadora (o el de la impresora
+     configurada por defecto — ver nota de RECARGAS/NEXUS sobre impresoras
+     virtuales) — si esa hoja recordada es angosta/pequeña, el mismo
+     documento de ~1 página se reparte en 8-9 "páginas" chiquitas aunque el
+     contenido no haya cambiado. Carta fuerza el tamaño real del documento
+     (recibo térmico de 80mm queda fuera, no lleva `page: documento`). */
+  @page documento { size: letter; margin: 8mm; }
+}
+
+/* ---------- vista previa de recibo (voucher): pensada para imprimirse en
+   una impresora térmica de 80mm, pero renderizada en HTML normal — la
+   impresora térmica configurada por ESC/POS puede no existir o ser virtual
+   (ej. "Microsoft Print to PDF", que no entiende esos comandos), así que
+   esta vista SIEMPRE funciona: se ve en pantalla y se imprime con el
+   diálogo normal del navegador a cualquier impresora, incluida una PDF. ---------- */
+.recibo-print {
+  width: 300px;
+  margin: 0 auto;
+  background: #fff;
+  color: #111;
+  font-family: 'Courier New', ui-monospace, monospace;
+  font-size: 12px;
+  line-height: 1.5;
+  padding: 16px;
+}
+
+.recibo-header {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.recibo-header strong {
+  font-size: 16px;
+  letter-spacing: 0.5px;
+}
+
+.recibo-header p {
+  margin: 2px 0 0;
+  font-size: 11px;
+}
+
+.recibo-separador {
+  border: none;
+  border-top: 1px dashed #999;
+  margin: 8px 0;
+}
+
+.recibo-meta div {
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.recibo-linea {
+  margin-bottom: 6px;
+}
+
+.recibo-linea-detalle {
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+  opacity: 0.85;
+}
+
+.recibo-total-row {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.recibo-pago-row {
+  display: flex;
+  justify-content: space-between;
+  font-size: 11.5px;
+}
+
+.recibo-footer {
+  text-align: center;
+  margin-top: 10px;
+  font-size: 11px;
+}
+
+.recibo-badge-credito {
+  text-align: center;
+  font-weight: 700;
+  margin: 8px 0;
+  padding: 4px;
+  border: 1px dashed #999;
+}
+
+/* ---------- vista previa de cotización a proveedor: replica el formato en
+   Excel que RCP ya usa (Century Gothic, azul marino #002060) para que la
+   versión digital y la impresa/PDF luzcan igual. ---------- */
+.cotizacion-print {
+  width: 100%;
+  max-width: 640px;
+  margin: 0 auto;
+  background: #fff;
+  color: #002060;
+  font-family: 'Century Gothic', 'Trebuchet MS', ui-sans-serif, sans-serif;
+  font-size: 13px;
+  padding: 8px;
+}
+
+.cotizacion-print-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 18px;
+}
+
+.cotizacion-print-header img {
+  height: 52px;
+  width: auto;
+}
+
+.cotizacion-print-titulo {
+  text-align: right;
+}
+
+.cotizacion-print-titulo h2 {
+  margin: 0;
+  font-size: 20px;
+  letter-spacing: 0.5px;
+  color: #002060;
+}
+
+.cotizacion-print-titulo span {
+  display: block;
+  font-size: 15px;
+  font-weight: 700;
+  color: #c00000;
+}
+
+.cotizacion-print-info {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4px 24px;
+  border: 1px solid #002060;
+  border-radius: 6px;
+  padding: 10px 14px;
+  margin-bottom: 16px;
+}
+
+.cotizacion-print-fila {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 3px 0;
+  font-size: 12.5px;
+}
+
+.cotizacion-print-fila span {
+  opacity: 0.75;
+}
+
+.cotizacion-print-tabla {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 12px;
+}
+
+.cotizacion-print-tabla th {
+  background: #002060;
+  color: #fff;
+  font-size: 11.5px;
+  text-transform: uppercase;
+  padding: 7px 8px;
+  text-align: left;
+}
+
+.cotizacion-print-tabla th:not(:first-child),
+.cotizacion-print-tabla td:not(:first-child) {
+  text-align: center;
+}
+
+.cotizacion-print-tabla td {
+  padding: 7px 8px;
+  border-bottom: 1px solid #d6dce8;
+  font-size: 12.5px;
+}
+
+.cotizacion-print-total {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 12px;
+  padding: 8px 12px;
+  border: 1px solid #002060;
+  border-radius: 6px;
+  margin-bottom: 14px;
+}
+
+.cotizacion-print-total span {
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+
+.cotizacion-print-total strong {
+  font-size: 16px;
+}
+
+.cotizacion-print-footer {
+  font-size: 10.5px;
+  opacity: 0.8;
+  border-top: 1px solid #d6dce8 !important;
+  padding-top: 8px;
+  line-height: 1.4;
+}
+
+/* ---------- orden de trabajo imprimible: documento compacto de una sola
+   página (a diferencia del formulario editable completo). Las cláusulas
+   legales van en dos columnas con letra pequeña, como en un contrato real,
+   para que quepan sin sacrificar el resto de la información. ---------- */
+.orden-print {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  background: #fff;
+  color: #1e293b;
+  font-family: ui-sans-serif, system-ui, sans-serif;
+  font-size: 11px;
+  /* Sin esto, el line-height heredado del modal (fijo en px, calculado
+     sobre un font-size mayor) se aplica tal cual a todo el texto chico de
+     aquí abajo — cada fila terminaba ocupando el doble de alto de lo que
+     su propio font-size necesitaba. */
+  line-height: 1.15;
+  padding: 4px;
+  /* Red de seguridad: si algún dato (nombre largo, firma con proporción
+     rara, etiqueta de traducción sin espacios) fuerza un ancho mayor al
+     de la hoja, que se recorte aquí en vez de "explotar" en varias
+     páginas al imprimir — Chrome tilea horizontalmente cualquier
+     contenido más ancho que el área imprimible. */
+  overflow-x: hidden;
+  overflow-wrap: break-word;
+}
+
+/* ---------- comprobante de permiso/vacación (RRHH): documento de una sola
+   página con espacio de firma, reutiliza las mismas clases visuales del
+   comprobante de OT (.orden-print-header, .op-seccion, .op-row,
+   .orden-print-firma-*) en vez de reinventar el mismo look. ---------- */
+.permiso-print {
+  width: 100%;
+  max-width: 620px;
+  margin: 0 auto;
+  background: #fff;
+  color: #1e293b;
+  font-family: ui-sans-serif, system-ui, sans-serif;
+  font-size: 12px;
+  line-height: 1.3;
+  padding: 4px;
+}
+
+.permiso-print-titulo {
+  text-align: center;
+  margin: 4px 0 14px;
+  font-size: 16px;
+  color: #1d4ed8;
+  letter-spacing: 0.3px;
+}
+
+.permiso-print-campo {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 7px 0;
+  border-bottom: 1px solid #e2e8f0;
+  font-size: 12.5px;
+}
+
+.permiso-print-campo .lbl { color: #64748b; }
+.permiso-print-campo .val { font-weight: 600; color: #1e293b; text-align: right; }
+
+/* !important en esta sección y las que siguen: el preview se renderiza
+   dentro de un modal .orden-tw, cuyo reset de Tailwind (configurado con
+   important: '.orden-tw') deja todo border-width en 0 por defecto y le
+   gana a un border normal — sin esto, los recuadros del documento
+   impreso quedaban invisibles aunque el CSS "se viera bien" en el editor. */
+.orden-print-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  border-bottom: 2px solid #1d4ed8 !important;
+  padding-bottom: 2px;
+  margin-bottom: 4px;
+}
+
+.orden-print-header img {
+  height: 40px;
+  width: auto;
+}
+
+.orden-print-header-titulo {
+  text-align: right;
+}
+
+.orden-print-header-titulo h2 {
+  margin: 0 0 3px;
+  font-size: 15px;
+  color: #1d4ed8;
+  letter-spacing: 0.3px;
+}
+
+.orden-print-header-meta {
+  font-size: 10.5px;
+  color: #475569;
+}
+
+.orden-print-badge {
+  display: inline-block;
+  padding: 1px 8px;
+  border-radius: 999px;
+  font-size: 9.5px;
+  font-weight: 700;
+  background: #eff6ff;
+  color: #1d4ed8;
+  margin-left: 4px;
+}
+
+.orden-print-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 7px;
+  margin-bottom: 4px;
+}
+
+.orden-print-box {
+  border: 1px solid #cbd5e1 !important;
+  border-radius: 6px;
+  padding: 3px 7px;
+}
+
+.orden-print-box h4, .orden-print-texto h4 {
+  margin: 0 0 3px;
+  font-size: 8.5px;
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
+  color: #1d4ed8;
+  border-bottom: 1px solid #e2e8f0 !important;
+  padding-bottom: 2px;
+  column-span: all;
+}
+
+.orden-print-fila {
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+  font-size: 8.5px;
+  padding: 0;
+}
+
+.orden-print-fila span:first-child {
+  color: #64748b;
+}
+
+.orden-print-fila span:last-child {
+  font-weight: 600;
+  text-align: right;
+}
+
+/* Bloques de texto (datos técnicos COM, diagnóstico, entrega): a dos
+   columnas igual que las cláusulas, porque son varios párrafos cortos
+   independientes — así ocupan la mitad del alto sin perder contenido.
+   DESACTIVADO (ver columnCount:1 inline en OrdenPreview.jsx): la columna
+   doble de CSS, combinada con impresión, le hace calcular mal a Chrome
+   cuántas páginas necesita — de 1 página real puede saltar a 10+ páginas
+   fantasma. El valor de acá abajo queda de referencia nada más. */
+.orden-print-texto {
+  border: 1px solid #cbd5e1 !important;
+  border-radius: 6px;
+  padding: 2px 7px;
+  margin-bottom: 3px;
+  font-size: 9.4px;
+  column-count: 2;
+  column-gap: 14px;
+}
+
+.orden-print-texto p {
+  margin: 0 0 1px;
+  line-height: 1.1;
+  break-inside: avoid;
+  color: #000;
+}
+
+.orden-print-tabla {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 4px;
+  font-size: 8.3px;
+}
+
+.orden-print-tabla th {
+  background: #1d4ed8;
+  color: #fff;
+  font-size: 7.8px;
+  text-transform: uppercase;
+  padding: 1px 5px;
+  text-align: left;
+}
+
+.orden-print-tabla td {
+  padding: 1px 5px;
+  border-bottom: 1px solid #e2e8f0 !important;
+}
+
+.orden-print-tabla th:last-child, .orden-print-tabla td:last-child {
+  text-align: right;
+}
+
+.orden-print-total {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  padding: 2.5px 8px;
+  border: 1px solid #1d4ed8 !important;
+  border-radius: 6px;
+  margin-bottom: 4px;
+  font-size: 8.3px;
+}
+
+.orden-print-total strong {
+  font-size: 13px;
+  color: #1d4ed8;
+}
+
+.orden-print-firmas {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 7px;
+  margin-bottom: 4px;
+  break-inside: avoid;
+}
+
+.orden-print-firma-box {
+  border: 1px solid #cbd5e1 !important;
+  border-radius: 6px;
+  padding: 2px 10px;
+  text-align: center;
+}
+
+.orden-print-firma-box img {
+  max-height: 38px;
+  max-width: 100%;
+  width: auto;
+  margin: 0 auto 3px;
+  display: block;
+}
+
+/* Línea real donde firma el cliente — antes solo se veía cuando ya había
+   una firma digital cargada; el espacio en blanco (sin firma todavía, para
+   firmar a mano al imprimir) se quedaba sin ninguna línea encima.
+   !important: el preview se renderiza dentro de un modal .orden-tw, cuyo
+   reset de Tailwind (configurado con important: '.orden-tw') deja todo
+   border-width en 0 por defecto y le gana a una regla normal. */
+.orden-print-firma-espacio {
+  height: 26px !important;
+  border-bottom: 1.3px solid #000 !important;
+  margin: 0 6px !important;
+}
+
+.orden-print-firma-linea {
+  border-top: 1px solid #94a3b8 !important;
+  margin-top: 3px;
+  padding-top: 3px;
+  font-size: 9px;
+  color: #64748b;
+}
+
+/* DESACTIVADO (ver columnCount:1 inline en OrdenPreview.jsx) — mismo
+   motivo que .orden-print-texto arriba: columna doble + impresión hace
+   que Chrome calcule mal cuántas páginas necesita. */
+.orden-print-clausulas {
+  border-top: 2px solid #1d4ed8 !important;
+  padding-top: 3px;
+  column-count: 2;
+  column-gap: 15px;
+  font-size: 7.8px;
+  line-height: 1.14;
+  color: #000;
+}
+
+.orden-print-clausulas h3 {
+  column-span: all;
+  margin: 0 0 4px;
+  font-size: 9.5px;
+  text-transform: uppercase;
+  text-align: center;
+  color: #1d4ed8;
+  letter-spacing: 0.4px;
+}
+
+.orden-print-clausulas strong {
+  display: block;
+  margin: 2.5px 0 1px;
+  font-size: 8.4px;
+  color: #000;
+  break-after: avoid;
+}
+
+.orden-print-clausulas p {
+  margin: 0 0 2px;
+  break-inside: avoid;
+  color: #000;
+}
+
+/* ---------- orden-print: secciones numeradas al estilo de la hoja de
+   papel física (recuadro azul con título, casillas ☐/☒ en vez de texto
+   plano) — se apoya en las clases .orden-print-* de arriba para las
+   piezas que ya existían (grid/box/texto/tabla/firma). ---------- */
+.op-seccion {
+  border: 1.3px solid #1d4ed8 !important;
+  border-radius: 6px;
+  margin-bottom: 2px;
+  overflow: hidden;
+  break-inside: avoid;
+}
+
+.op-seccion-titulo {
+  background: #1d4ed8;
+  color: #fff;
+  font-size: 9px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.3px;
+  padding: 2px 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+}
+
+.op-hl-right {
+  background: #fef08a;
+  color: #713f12;
+  border-radius: 3px;
+  padding: 0 5px;
+  text-transform: none;
+  font-size: 8px;
+}
+
+.op-seccion-body {
+  padding: 1.5px 7px 2px;
+}
+
+.op-hl {
+  background: #fef08a;
+  color: #713f12;
+  border-radius: 2px;
+  padding: 0 4px;
+  font-weight: 700;
+}
+
+.op-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 2px 12px;
+  font-size: 7.9px;
+  margin-bottom: 1px;
+}
+
+.op-row .lbl {
+  color: #64748b;
+}
+
+.op-row .val {
+  font-weight: 600;
+  color: #1e293b;
+}
+
+.op-casilla {
+  font-size: 7.9px;
+}
+
+.op-casilla.op-on {
+  font-weight: 700;
+  color: #1d4ed8;
+}
+
+.op-checkgrid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0 8px;
+  font-size: 7.1px;
+  line-height: 1.15;
+}
+
+/* Checklist de entrada y de salida como dos listados completos e
+   independientes (mismo ítem repetido en ambos) — en vez de una sola fila
+   combinada, para que quede igual al formato físico que usa el taller:
+   un bloque azul "CHECK LIST TÉCNICO DE ENTRADA" con todos los ítems, y
+   debajo un bloque rosado "CHECK LIST TÉCNICO DE SALIDA" con los mismos. */
+.op-checklist-doble {
+  font-size: 8.6px;
+}
+
+.op-checklist-titulo {
+  margin: 4px 0 2px;
+  font-size: 8.8px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.3px;
+}
+
+.op-checklist-titulo-entrada {
+  color: #1d4ed8;
+}
+
+.op-checklist-titulo-salida {
+  color: #be123c;
+}
+
+.op-checklist-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 1.5px 10px;
+  margin-bottom: 3px;
+}
+
+.op-checklist-grid-item {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 1px 0;
+  color: #94a3b8;
+}
+
+.op-checklist-grid-item.on {
+  color: #1d4ed8;
+  font-weight: 600;
+}
+
+.op-checklist-grid-item.salida.on {
+  color: #be123c;
+}
+
+.op-danos {
+  flex-shrink: 0;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  padding: 3px 6px;
+  background: #f8fafc;
+}
+
+/* max-width fija el ancho a "2 columnas" (2 siluetas + gap): con 2 vistas
+   (celular apagado/CCA) entran en una sola fila igual que antes; con 4
+   vistas (laptop: frente/atrás/lateral izq/lateral der) ya no caben en una
+   sola fila angosta y saltan a una grilla 2x2 — antes se apretujaban las 4
+   en una tira de ~205px con texto ilegible. */
+.op-danos-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  max-width: 106px;
+}
+
+.op-danos-item {
+  text-align: center;
+}
+
+.op-danos-item svg {
+  width: 50px;
+  height: 75px;
+  display: block;
+}
+
+.op-danos-item span {
+  display: block;
+  font-size: 7.2px;
+  color: #64748b;
+}
+
+.op-nota {
+  font-size: 7.6px;
+  line-height: 1.2;
+  color: #475569;
+  margin: 1px 0;
+}
+
+/* Lista de daños numerada — el número acá es el mismo que lleva la X en el
+   diagrama de arriba (ver OrdenPreview.jsx), para que quede claro a qué
+   marca corresponde cada nota en vez de un solo párrafo con todas juntas. */
+.op-danos-lista {
+  margin-top: 3px;
+  text-align: left;
+}
+
+.op-danos-lista-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 3px;
+  font-size: 7.6px;
+  line-height: 1.25;
+  color: #475569;
+}
+
+.op-danos-num {
+  flex-shrink: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 9.5px;
+  height: 9.5px;
+  border-radius: 50%;
+  background: #dc2626;
+  color: #fff;
+  font-size: 6.3px;
+  font-weight: 700;
+  margin-top: 1px;
+}
+
+.op-footer {
+  margin-top: 4px;
+  border-top: 1px solid #cbd5e1 !important;
+  padding-top: 3px;
+  text-align: center;
+  font-size: 7px;
+  /* Amarillo dorado en vez de gris pálido — un amarillo puro casi no se
+     vería sobre papel blanco, así que se usa un tono más oscuro que se
+     lea bien impreso y en pantalla. */
+  color: #ca8a04;
+}
+
+/* ---------- inventario sub-tabs ---------- */
+.subtabs {
+  display: flex;
+  gap: 4px;
+  border-bottom: 1px solid var(--border);
+  margin-bottom: 20px;
+}
+
+.subtab {
+  padding: 10px 16px;
+  border: none;
+  background: none;
+  color: var(--text);
+  font-size: 13.5px;
+  font-weight: 500;
+  cursor: pointer;
+  border-bottom: 2px solid transparent;
+  margin-bottom: -1px;
+  transition: color 0.15s, border-color 0.15s;
+}
+
+.subtab:hover:not(.active) {
+  color: var(--text-h);
+}
+
+.subtab.active {
+  color: var(--accent);
+  border-bottom-color: var(--accent);
+  font-weight: 700;
+}
+
+.producto-form-grid {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  gap: 20px;
+}
+
+.imagen-drop {
+  width: 200px;
+  height: 200px;
+  border: 2px dashed var(--border);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 8px;
+  color: var(--text-faint, var(--text));
+  font-size: 12px;
+  overflow: hidden;
+  cursor: pointer;
+  background: var(--bg);
+}
+
+.imagen-drop img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.dropzone {
+  border: 2px dashed var(--border);
+  border-radius: 8px;
+  padding: 40px 20px;
+  text-align: center;
+  color: var(--text);
+  cursor: pointer;
+}
+
+.dropzone:hover {
+  border-color: var(--accent);
+}
+
+.import-summary {
+  display: flex;
+  gap: 16px;
+  margin-top: 14px;
+  flex-wrap: wrap;
+}
+
+.import-summary .stat {
+  min-width: 120px;
+}
+
+.export-btn {
+  font-size: 12.5px;
+  padding: 6px 12px;
+  background: var(--success);
+}
+
+.card-head-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+
+.card-head-row h3 {
+  margin: 0;
+}
+
+.tasa-cambio {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  padding: 6px 14px;
+  font-size: 12.5px;
+  color: var(--text);
+}
+
+.tasa-cambio button {
+  padding: 3px 10px;
+  font-size: 12px;
+}
+
+.tema-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 12px;
+}
+
+.tema-card {
+  position: relative;
+  border: 2px solid var(--border);
+  border-radius: 12px;
+  padding: 12px;
+  cursor: pointer;
+  background: var(--panel);
+  text-align: left;
+  transition: border-color 0.15s, transform 0.1s;
+  font: inherit;
+  color: var(--text-h);
+}
+
+.tema-card:hover {
+  transform: translateY(-2px);
+}
+
+.tema-card.selected {
+  border-color: var(--accent);
+}
+
+.tema-swatch {
+  display: flex;
+  height: 40px;
+  border-radius: 8px;
+  overflow: hidden;
+  margin-bottom: 10px;
+  border: 1px solid var(--border);
+}
+
+.tema-swatch span {
+  flex: 1;
+}
+
+.tema-swatch .tema-dot {
+  flex: 0 0 14px;
+  align-self: center;
+  margin-left: -20px;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.15);
+}
+
+.tema-nombre {
+  font-weight: 600;
+  font-size: 13.5px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.tema-desc {
+  font-size: 11.5px;
+  color: var(--text);
+  margin-top: 2px;
+}
+
+.tema-check {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: var(--accent);
+  color: #fff;
+  font-size: 11px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Tablero de técnicos/pasantes (Taller) */
+.tablero-tecnicos {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 14px;
+  align-items: start;
+}
+
+.tecnico-card {
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 14px;
+  background: var(--bg);
+  overflow: hidden;
+  min-width: 0;
+  cursor: pointer;
+  transition: border-color 0.15s, box-shadow 0.15s;
+}
+
+.tecnico-card:hover {
+  border-color: var(--accent);
+}
+
+.tecnico-card-activa {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 1px var(--accent);
+}
+
+.tecnico-card-resumen {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.tecnico-card-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 12px;
+  min-width: 0;
+}
+
+.tecnico-card-info {
+  flex: 1 1 auto;
+  min-width: 0;
+  overflow: hidden;
+}
+
+.tecnico-card-nombre {
+  font-weight: 700;
+  font-size: 14px;
+  color: var(--text-h);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.tecnico-card-rol {
+  font-size: 12px;
+  color: var(--text);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.tecnico-card-badge {
+  flex-shrink: 0;
+  white-space: nowrap;
+}
+
+/* Antes esto quedaba fijo en 3 columnas aunque solo hay 2 estados
+   (En espera / En proceso), dejando un tercio de la tarjeta vacío. */
+.tecnico-card-columnas {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  align-items: start;
+}
+
+.tecnico-card-columna {
+  min-width: 0;
+}
+
+.tecnico-card-vacio {
+  color: var(--border);
+  font-size: 12px;
+  text-align: center;
+  padding: 10px 0;
+}
+
+/* Antes las órdenes de un técnico se apilaban en "chorrera" (links azules
+   subrayados uno tras otro, sin tope) — con muchos equipos, la tarjeta de
+   ese técnico se disparaba en altura muy por encima de las demás y
+   descuadraba toda la cuadrícula. Ahora cada orden es una chip compacta y
+   la lista tiene un tope de altura con scroll propio. */
+.tecnico-card-lista {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  max-height: 220px;
+  overflow-y: auto;
+  padding-right: 2px;
+}
+
+.tecnico-card-lista::-webkit-scrollbar {
+  width: 6px;
+}
+.tecnico-card-lista::-webkit-scrollbar-thumb {
+  background: var(--border);
+  border-radius: 3px;
+}
+
+.tecnico-card-orden {
+  display: block;
+  width: 100%;
+  text-align: left;
+  font-size: 12px;
+  padding: 6px 8px;
+  border-radius: 6px;
+  background: var(--panel);
+  border: 1px solid var(--border);
+  color: var(--text-h);
+  text-decoration: none;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  transition: background 0.15s, border-color 0.15s;
+}
+
+.tecnico-card-orden:hover {
+  background: var(--accent-bg);
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+.tecnico-detalle {
+  margin-top: 16px;
+  padding-top: 16px;
+  border-top: 1px solid var(--border);
+}
+
+.tecnico-detalle-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+
+.tecnico-detalle-header h4 {
+  flex: 1 1 auto;
+  margin: 0;
+  font-size: 15px;
+  color: var(--text-h);
+}
+
+.tecnico-detalle-cerrar {
+  padding: 6px;
+  line-height: 0;
+}
+
+.tecnico-card-lista-grande {
+  max-height: 340px;
+}
+
+/* Grid de empleados (RRHH) */
+.rrhh-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  gap: 14px;
+}
+
+/* Uniforme de la semana: antes cada día era una columna suelta (form-row)
+   con un solo campo de texto — sin color real, y con tanto padding heredado
+   que 6 días apenas cabían en pantalla. Ahora son tarjetas chicas en grid
+   (más por fila, sin espacio desperdiciado) con un swatch de color real. */
+.uniforme-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(108px, 1fr));
+  gap: 8px;
+}
+
+.uniforme-dia-card {
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 8px 9px;
+  background: var(--bg);
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.uniforme-dia-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 6px;
+}
+
+.uniforme-dia-nombre {
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--text-h);
+}
+
+/* El <input type="color"> nativo trae su propio borde/padding feo — se
+   agranda y recorta dentro de un círculo chico para que solo se vea el
+   color, sin el borde por defecto del navegador. */
+.uniforme-swatch {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  box-shadow: 0 0 0 2px var(--panel), 0 0 0 3px var(--border);
+  overflow: hidden;
+  cursor: pointer;
+  flex-shrink: 0;
+  display: block;
+}
+
+.uniforme-swatch input[type="color"] {
+  width: 140%;
+  height: 140%;
+  margin: -20%;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  background: none;
+}
+
+.uniforme-dia-input {
+  width: 100%;
+  font-size: 12.5px;
+  padding: 5px 7px;
+}
+
+.rrhh-empleado-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  text-align: center;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 16px 10px;
+  background: var(--bg);
+  cursor: pointer;
+  transition: box-shadow 0.15s, border-color 0.15s;
+}
+
+.rrhh-empleado-card:hover {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 3px var(--accent-bg);
+}
+
+.rrhh-empleado-card.inactivo {
+  opacity: 0.6;
+}
+
+.rrhh-empleado-nombre {
+  font-weight: 700;
+  font-size: 13px;
+  color: var(--text-h);
+  margin-top: 4px;
+}
+
+.rrhh-empleado-puesto {
+  font-size: 12px;
+  color: var(--text);
+}
+
+.rrhh-empleado-ordenes {
+  font-size: 11px;
+  color: var(--text);
+}
+
+/* POS (punto de venta) */
+.pos-layout {
+  display: grid;
+  grid-template-columns: 1fr 360px;
+  gap: 16px;
+  align-items: start;
+}
+
+@media (max-width: 900px) {
+  .pos-layout { grid-template-columns: 1fr; }
+}
+
+.pos-grid-productos {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  gap: 10px;
+  max-height: 60vh;
+  overflow-y: auto;
+}
+
+.pos-producto-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 4px;
+  padding: 12px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  background: var(--panel);
+  box-shadow: var(--shadow-sm);
+  text-align: left;
+  cursor: pointer;
+  transition: transform 0.1s, box-shadow 0.1s, border-color 0.1s;
+}
+
+.pos-producto-card:hover:not(:disabled) {
+  border-color: var(--accent);
+  transform: translateY(-1px);
+  box-shadow: var(--shadow-md);
+}
+
+.pos-producto-card:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.pos-producto-nombre {
+  font-weight: 600;
+  font-size: 13px;
+  color: var(--text-h);
+}
+
+.pos-producto-precio {
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--accent);
+}
+
+.pos-producto-stock {
+  font-size: 11px;
+  color: var(--text);
+}
+
+.pos-carrito {
+  position: sticky;
+  top: 0;
+}
+
+.pos-carrito-lista {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  max-height: 40vh;
+  overflow-y: auto;
+  margin-bottom: 12px;
+}
+
+.pos-carrito-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 14px;
+}
+
+.pos-carrito-header h3 {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 0;
+}
+
+.pos-carrito-header h3 svg {
+  width: 17px;
+  height: 17px;
+  color: var(--accent);
+}
+
+.pos-carrito-badge {
+  background: var(--accent);
+  color: #fff;
+  font-size: 11px;
+  font-weight: 700;
+  padding: 2px 9px;
+  border-radius: 999px;
+  font-variant-numeric: tabular-nums;
+}
+
+.pos-cliente-tipo {
+  display: flex;
+  gap: 6px;
+  margin-bottom: 10px;
+}
+
+.pos-cliente-tipo .tab {
+  flex: 1;
+  text-align: center;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  padding: 7px 10px;
+}
+
+.pos-cliente-tipo .tab.active {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: #fff;
+}
+
+.pos-cliente-hint {
+  font-size: 12px;
+  color: var(--text);
+  opacity: 0.75;
+  margin: 0 0 12px;
+}
+
+.pos-carrito-item {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  padding: 10px 12px;
+  border-radius: var(--radius-sm);
+  background: var(--panel-2);
+  border: 1px solid transparent;
+  transition: border-color 0.12s;
+}
+
+.pos-carrito-item:hover {
+  border-color: var(--border);
+}
+
+.pos-carrito-item-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.pos-carrito-item-nombre {
+  font-weight: 600;
+  font-size: 13px;
+  color: var(--text-h);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.pos-carrito-item-remove {
+  flex-shrink: 0;
+  width: 22px;
+  height: 22px;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  color: var(--text);
+  border: none;
+  box-shadow: none;
+  opacity: 0.6;
+}
+
+.pos-carrito-item-remove:hover {
+  color: var(--danger);
+  opacity: 1;
+  box-shadow: none;
+}
+
+.pos-carrito-item-remove svg {
+  width: 15px;
+  height: 15px;
+}
+
+.pos-carrito-item-detalle {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 12px;
+  color: var(--text);
+}
+
+.pos-carrito-item-cantidad {
+  width: 52px;
+  padding: 5px 4px;
+  text-align: center;
+  font-size: 12.5px;
+}
+
+.pos-carrito-item-precio {
+  width: 70px;
+  padding: 5px 6px;
+  text-align: right;
+  font-size: 12.5px;
+}
+
+.pos-carrito-item-signo {
+  color: var(--text);
+  opacity: 0.5;
+  flex-shrink: 0;
+}
+
+.pos-carrito-item-subtotal {
+  margin-left: auto;
+  font-weight: 800;
+  color: var(--accent);
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+
+.pos-total {
+  border-top: 1px solid var(--border);
+  padding-top: 12px;
+  margin-top: 4px;
+}
+
+.pos-total-principal {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  font-size: 22px;
+  font-weight: 800;
+  letter-spacing: -0.01em;
+  color: var(--text-h);
+  font-variant-numeric: tabular-nums;
+}
+
+.pos-total-secundario {
+  display: flex;
+  justify-content: flex-end;
+  font-size: 13px;
+  color: var(--text);
+  margin-top: 2px;
+  font-variant-numeric: tabular-nums;
+}
+
+/* ---------- selector de categorías: pantalla previa a la grilla de
+   productos, para que la venta sea "primero categoría, luego producto" ---------- */
+.pos-breadcrumb {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 14px;
+}
+
+.pos-breadcrumb-back {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: var(--panel-2);
+  border: 1px solid var(--border);
+  color: var(--text-h);
+  font-size: 12.5px;
+  font-weight: 600;
+  padding: 7px 12px;
+  box-shadow: none;
+}
+
+.pos-breadcrumb-back:hover {
+  opacity: 1;
+  border-color: var(--accent);
+}
+
+.pos-breadcrumb-titulo {
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--text-h);
+}
+
+.pos-categorias-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 12px;
+}
+
+.pos-categoria-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 18px 16px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--panel);
+  box-shadow: var(--shadow-sm);
+  text-align: left;
+  cursor: pointer;
+  transition: transform 0.12s, box-shadow 0.12s, border-color 0.12s;
+}
+
+.pos-categoria-card:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+  border-color: var(--accent);
+}
+
+.pos-categoria-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--accent-bg);
+  color: var(--accent);
+}
+
+.pos-categoria-icon svg {
+  width: 20px;
+  height: 20px;
+}
+
+.pos-categoria-nombre {
+  font-weight: 700;
+  font-size: 13.5px;
+  color: var(--text-h);
+}
+
+.pos-categoria-count {
+  font-size: 11.5px;
+  color: var(--text);
+  opacity: 0.8;
+}
+
+/* ---------- modal de cobro: método de pago, pagos múltiples, vuelto ---------- */
+.pos-pago-resumen {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--panel-2);
+  border-radius: var(--radius-sm);
+  padding: 12px 14px;
+  margin-bottom: 14px;
+  font-size: 14px;
+}
+
+.pos-pago-resumen strong {
+  font-size: 17px;
+  color: var(--text-h);
+}
+
+.pos-pago-fila {
+  display: grid;
+  grid-template-columns: 100px 1fr 1fr auto;
+  gap: 8px;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.pos-pago-fila select, .pos-pago-fila input {
+  padding: 7px 9px;
+  font-size: 12.5px;
+}
+
+.pos-pago-agregar {
+  background: none;
+  color: var(--accent);
+  box-shadow: none;
+  padding: 4px 0;
+  font-size: 12.5px;
+  font-weight: 600;
+}
+
+.pos-pago-agregar:hover {
+  opacity: 0.75;
+  box-shadow: none;
+}
+
+.pos-pago-label-sm {
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--text);
+  opacity: 0.8;
+  margin: 0;
+}
+
+.pos-pago-fila-simple {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: var(--panel-2);
+  border-radius: var(--radius-sm);
+  padding: 10px 12px;
+  margin-bottom: 8px;
+}
+
+.pos-pago-metodo-fijo {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--text-h);
+}
+
+.pos-pago-monto-fijo {
+  font-size: 15px;
+  font-weight: 800;
+  color: var(--accent);
+  font-variant-numeric: tabular-nums;
+  margin-right: auto;
+}
+
+.pos-pago-fila-simple input {
+  width: 130px;
+  padding: 7px 9px;
+  font-size: 12.5px;
+}
+
+.pos-saldo-fila {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  padding: 10px 0;
+  border-top: 1px solid var(--border);
+  margin-top: 6px;
+}
+
+.pos-saldo-credito {
+  color: #d97706;
+  font-size: 12px;
+  margin: -4px 0 10px;
+}
+
+.pos-vuelto {
+  color: var(--success);
+  font-size: 13px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+/* ---------- selector de área (Compras/Cotizaciones y similares):
+   pantalla de entrada tipo "elige a dónde quieres ir" ---------- */
+.area-selector-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 20px;
+  max-width: 980px;
+}
+
+.area-selector-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 26px 24px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--panel);
+  box-shadow: var(--shadow-sm);
+  text-align: left;
+  cursor: pointer;
+  transition: transform 0.14s, box-shadow 0.14s, border-color 0.14s;
+}
+
+.area-selector-card:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-md);
+  border-color: var(--accent);
+}
+
+.area-selector-card h3 {
+  margin: 0;
+  font-size: 16px;
+}
+
+.area-selector-card p {
+  margin: 0;
+  font-size: 13px;
+  color: var(--text);
+  line-height: 1.4;
+}
+
+.area-selector-icon {
+  width: 46px;
+  height: 46px;
+  border-radius: 13px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--accent-bg);
+  color: var(--accent);
+}
+
+.area-selector-icon svg {
+  width: 22px;
+  height: 22px;
+}
+
+.area-volver {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 16px;
+}

@@ -1,0 +1,67 @@
+{
+  "titulo": "POS — Point of Sale",
+  "subtitulo": "Sell counter products and print the receipt on the thermal printer.",
+  "buscarPlaceholder": "Search product by name or code…",
+  "sinProductos": "No matching products.",
+  "stock": "Stock: {{n}}",
+  "clienteGenerico": "Walk-in customer",
+  "moneda": {
+    "etiqueta": "Charge in",
+    "usd": "Dollars (US$)",
+    "nio": "Córdobas (C$)"
+  },
+  "categorias": {
+    "productos": "{{n}} products",
+    "sinCategoria": "No category",
+    "sinCategorias": "No categories with products yet.",
+    "volver": "Categories"
+  },
+  "carrito": {
+    "titulo": "Cart",
+    "clientePlaceholder": "Customer (optional — leave blank for a general sale)",
+    "vacio": "The cart is empty. Pick a category or search a product.",
+    "total": "Total",
+    "cobrarImprimir": "Charge & print",
+    "cobrando": "Charging...",
+    "vaciar": "Clear cart",
+    "items": "{{n}} items",
+    "clienteParticular": "Individual",
+    "clienteEmpresa": "Company",
+    "clienteNombrePlaceholder": "Customer name",
+    "cedula": "ID number",
+    "ruc": "Tax ID",
+    "clienteHint": "Pick Individual or Company to record customer details (optional — otherwise it's billed as a general sale)."
+  },
+  "pago": {
+    "titulo": "Charge sale",
+    "pagos": "Payments",
+    "agregarPago": "Add payment",
+    "efectivo": "Cash",
+    "tarjeta": "Card",
+    "credex": "Credex",
+    "tasaCero": "0% Installments",
+    "lineaCredito": "Credit Line",
+    "cuotas": "No. of installments",
+    "banco": "Bank/lender",
+    "referencia": "Reference/authorization",
+    "monto": "Amount",
+    "recibido": "Received",
+    "vuelto": "Change",
+    "saldoPendiente": "Balance due",
+    "avisoCredito": "There's an unpaid balance — this will be recorded as a credit sale and show up in Accounts Receivable.",
+    "confirmarCredito": "This sale will be left with a balance due (credit). Confirm anyway?",
+    "confirmar": "Confirm payment",
+    "tipoVenta": {
+      "CONTADO": "Cash",
+      "TARJETA": "Card",
+      "CREDITO": "Credit",
+      "MULTIPLE": "Split payment"
+    },
+    "abonoInicial": "Initial deposit (optional)"
+  },
+  "mensajes": {
+    "cobradoImpreso": "Sale {{numero}} recorded and printed successfully.",
+    "cobradoSinImprimir": "Sale {{numero}} recorded, but the receipt could not be printed: {{error}}",
+    "errorCobro": "Could not record the sale. Please try again."
+  }
+}

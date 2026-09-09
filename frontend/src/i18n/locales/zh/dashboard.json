@@ -1,0 +1,65 @@
+{
+  "titulo": "总览",
+  "subtitulo": "RCP 运营摘要",
+  "cargando": "正在加载面板...",
+  "tasaCambio": "汇率：1 美元 = {{monto}} 科多巴",
+  "notaMargen": "利润率仅对产品销售精确计算（使用库存中登记的进货成本）。维修服务在系统中没有登记成本，因此其收入会计入统计，但利润率不会。",
+  "secciones": {
+    "ingresos": "收入",
+    "taller": "维修车间",
+    "inventario": "库存",
+    "personal": "人事与采购",
+    "cuentas": "账款"
+  },
+  "stats": {
+    "productos": "产品",
+    "bajoStock": "库存不足",
+    "ordenesEnTaller": "车间工单",
+    "listasParaEntrega": "待取件",
+    "facturasEmitidas": "已开发票",
+    "totalVentas": "销售总额",
+    "totalConsolidado": "合并总额（美元）",
+    "cobradoUsd": "美元收款",
+    "cobradoNio": "科多巴收款",
+    "ordenesCompra": "采购订单",
+    "empleadosActivos": "在职员工",
+    "porCobrar": "应收账款",
+    "porPagar": "应付账款",
+    "resguardoAcumulado": "累计保管费（已完工设备）"
+  },
+  "charts": {
+    "inventarioPorSubgrupo": "按子类分类的库存",
+    "ordenesPorEstado": "按状态分类的工单",
+    "sinOrdenes": "暂无工单记录。",
+    "tiempoReparacion": "维修时长（已交付工单）",
+    "sinTiempoReparacion": "暂无已交付的工单，无法统计时长。",
+    "bucket01": "0-1 天",
+    "bucket23": "2-3 天",
+    "bucket47": "4-7 天",
+    "bucket8mas": "8 天以上",
+    "ventasPorTipo": "按销售方式划分的收入：现金、刷卡与赊销",
+    "sinVentas": "暂无销售记录。",
+    "equiposListos": "{{n}} 台设备待取件 — 累计保管费 C${{monto}}。",
+    "ingresos": "收入",
+    "margen": "利润率"
+  },
+  "tiposPago": {
+    "contado": "现金",
+    "tarjeta": "刷卡",
+    "credito": "赊销"
+  },
+  "subgrupos": {
+    "abandonadas": "已弃置",
+    "enTaller": "维修中",
+    "usoPersonal": "自用",
+    "repuestos": "配件",
+    "insumosTaller": "车间耗材",
+    "listasEntrega": "待取件"
+  },
+  "estadoTaller": {
+    "recibido": "已接收",
+    "enReparacion": "维修中",
+    "listoEntrega": "待取件",
+    "entregado": "已交付"
+  }
+}

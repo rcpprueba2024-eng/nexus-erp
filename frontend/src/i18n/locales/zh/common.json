@@ -1,0 +1,157 @@
+{
+  "app": {
+    "nombre": "NEXUS ERP",
+    "eslogan": "手机与笔记本电脑维修"
+  },
+  "nav": {
+    "dashboard": "仪表盘",
+    "ordenes": "工单",
+    "clientes": "客户",
+    "inventario": "库存",
+    "taller": "维修车间",
+    "ventas": "销售",
+    "compras": "采购",
+    "contabilidad": "财务",
+    "rrhh": "人力资源",
+    "reportes": "报表",
+    "gastos": "支出",
+    "caja_chica": "备用金",
+    "configuracion": "设置",
+    "actividad": "系统活动记录",
+    "cerrarSesion": "退出登录",
+    "abrirMenu": "打开菜单",
+    "grupoOrdenesTrabajo": "工单",
+    "grupoVentas": "销售",
+    "ordenesTrabajo": "工单",
+    "facturacion": "开票",
+    "facturarOts": "工单开票",
+    "facturarProductos": "产品开票",
+    "categorias": "分类",
+    "unidades": "计量单位",
+    "importarProductos": "批量导入产品",
+    "postventas": "售后",
+    "grupoBackoffice": "后勤管理",
+    "productos": "产品",
+    "flujoDiario": "每日工作流程",
+    "reporteFinanciero": "财务报表",
+    "registroFacturas": "发票记录",
+    "grupoTaller": "维修车间",
+    "tablero": "看板",
+    "equiposListos": "待取设备",
+    "abandonados": "已放弃设备",
+    "historialTecnicos": "技师维修记录"
+  },
+  "roles": {
+    "ADMIN": "总经理",
+    "TALLER": "维修车间",
+    "PASANTE": "车间实习生",
+    "VENTAS": "销售",
+    "RRHH": "人力资源",
+    "BACKOFFICE": "后勤 / 财务",
+    "JEFE_OPERACIONES": "运营主管",
+    "LIMPIEZA": "清洁"
+  },
+  "modulos": {
+    "dashboard": "仪表盘",
+    "ordenes": "工单",
+    "clientes": "客户",
+    "inventario": "库存",
+    "taller": "维修车间",
+    "ventas": "销售",
+    "compras": "采购",
+    "contabilidad": "财务",
+    "rrhh": "人力资源",
+    "reportes": "报表",
+    "gastos": "支出",
+    "caja_chica": "备用金",
+    "caja-chica": "备用金",
+    "auth": "身份验证"
+  },
+  "estadosOrden": {
+    "RECIBIDO": "待开始",
+    "DIAGNOSTICO": "诊断中",
+    "ESPERANDO_AUTORIZACION": "等待授权",
+    "EN_REPARACION": "处理中",
+    "IMPORTACION": "等待进口配件",
+    "LISTO_ENTREGA": "设备就绪",
+    "ENTREGADO": "已交付",
+    "CANCELADO": "已取消",
+    "REINGRESO": "再次接收",
+    "ABANDONADO": "已放弃"
+  },
+  "monedas": {
+    "USD": "美元 (US$)",
+    "NIO": "尼加拉瓜科多巴 (C$)"
+  },
+  "categoriaEquipo": {
+    "COMPUTADORA": "电脑",
+    "CELULAR": "手机",
+    "TABLET": "平板电脑",
+    "OTRO": "其他"
+  },
+  "paginacion": {
+    "mostrando": "{{total}} 条中的 {{desde}}–{{hasta}}",
+    "anterior": "上一页",
+    "siguiente": "下一页"
+  },
+  "botones": {
+    "guardar": "保存",
+    "guardando": "保存中...",
+    "cancelar": "取消",
+    "editar": "编辑",
+    "eliminar": "删除",
+    "buscar": "搜索",
+    "confirmar": "确认",
+    "volver": "返回",
+    "exportarExcel": "导出到 Excel",
+    "exportarPdf": "导出为 PDF",
+    "imprimir": "打印",
+    "descargarPdf": "查看 / 下载 PDF",
+    "verEImprimir": "查看 / 打印",
+    "crear": "创建",
+    "añadir": "添加",
+    "cerrar": "关闭"
+  },
+  "estado": {
+    "activo": "启用",
+    "inactivo": "停用",
+    "pendiente": "待处理",
+    "pagada": "已付款",
+    "anulada": "已作废"
+  },
+  "mensajes": {
+    "cargando": "加载中...",
+    "sinDatos": "暂无数据。",
+    "errorGenerico": "发生错误，请重试。"
+  },
+  "dias": {
+    "domingo": "星期日",
+    "lunes": "星期一",
+    "martes": "星期二",
+    "miercoles": "星期三",
+    "jueves": "星期四",
+    "viernes": "星期五",
+    "sabado": "星期六"
+  },
+  "meses": {
+    "enero": "一月",
+    "febrero": "二月",
+    "marzo": "三月",
+    "abril": "四月",
+    "mayo": "五月",
+    "junio": "六月",
+    "julio": "七月",
+    "agosto": "八月",
+    "septiembre": "九月",
+    "octubre": "十月",
+    "noviembre": "十一月",
+    "diciembre": "十二月"
+  },
+  "idioma": {
+    "es": "西班牙语",
+    "en": "英语",
+    "zh": "中文",
+    "fr": "法语",
+    "selector": "语言"
+  }
+}

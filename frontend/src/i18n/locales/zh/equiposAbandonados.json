@@ -1,0 +1,24 @@
+{
+  "titulo": "已放弃设备",
+  "subtitulo": "客户未在期限内取回的设备 — 可用于拆取配件，用于当前的维修。",
+  "buscarPlaceholder": "按工单号或客户搜索…",
+  "sinResultados": "暂无已放弃的设备。",
+  "stats": {
+    "total": "已放弃设备数"
+  },
+  "tabla": {
+    "verOrden": "查看完整工单",
+    "numero": "工单号",
+    "cliente": "客户",
+    "telefono": "电话",
+    "equipo": "设备",
+    "marcaModelo": "品牌 / 型号",
+    "fechaIngreso": "接收日期",
+    "recibidoPor": "接收人",
+    "tecnico": "技师",
+    "asesor": "顾问",
+    "diasListo": "完成天数",
+    "repuestosExtraidos": "已拆取配件",
+    "repuestosPlaceholder": "例如：使用了屏幕和电池"
+  }
+}

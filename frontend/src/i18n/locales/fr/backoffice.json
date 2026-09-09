@@ -1,0 +1,48 @@
+{
+  "flujo": {
+    "titulo": "Flux de travail quotidien",
+    "subtitulo": "Résumé opérationnel du jour : appareils, inventaire et ventes.",
+    "entradasHoy": "Appareils reçus aujourd'hui",
+    "entregasHoy": "Appareils livrés aujourd'hui",
+    "ventasHoy": "Ventes du jour",
+    "bajoStock": "Produits en stock faible",
+    "ordenesActivas": "Ordres actifs à l'atelier",
+    "valorEnTaller": "Valeur estimée à l'atelier",
+    "entradasHoyTitulo": "Entrées du jour",
+    "sinEntradas": "Aucun appareil reçu aujourd'hui.",
+    "entregasHoyTitulo": "Livraisons du jour",
+    "sinEntregas": "Aucun appareil livré aujourd'hui.",
+    "bajoStockTitulo": "Produits en stock faible",
+    "sinBajoStock": "Tout l'inventaire est au-dessus du minimum.",
+    "accesosTitulo": "Accès rapides",
+    "irInventario": "Voir l'inventaire",
+    "irReportes": "Voir les rapports",
+    "irFinanciero": "Rapport financier",
+    "irOrdenes": "Voir les ordres",
+    "tabla": {
+      "numero": "N°", "equipo": "Appareil", "cliente": "Client", "tecnico": "Technicien",
+      "producto": "Produit", "stockActual": "Stock actuel", "stockMinimo": "Stock minimum",
+      "factura": "Facture", "total": "Total"
+    }
+  },
+  "financiero": {
+    "titulo": "Rapport financier mensuel",
+    "subtitulo": "Revenus des ventes, dépenses et bénéfice estimé.",
+    "ventasMes": "Ventes du mois en cours",
+    "gastosMes": "Dépenses (fournitures + salaires)",
+    "utilidadNeta": "Bénéfice net estimé",
+    "porCobrar": "Créances en attente",
+    "ventasPorMesTitulo": "Ventes par mois",
+    "periodo": "Période",
+    "total": "Total",
+    "acumulado": "Cumulé",
+    "gastosTitulo": "Dépenses",
+    "gastosInsumos": "Dépenses en fournitures :",
+    "gastosPersonal": "Masse salariale :",
+    "porCobrarTitulo": "Créances",
+    "sinPorCobrar": "Aucune créance en attente.",
+    "cliente": "Client",
+    "monto": "Montant",
+    "vencimiento": "Échéance"
+  }
+}

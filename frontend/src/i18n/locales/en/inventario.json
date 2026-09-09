@@ -1,0 +1,208 @@
+{
+  "titulo": "Inventory",
+  "subtitulo": "4 separate inventories: Workshop, Sales, Fixed Assets, and Salvage",
+  "selector": {
+    "volver": "Back",
+    "taller": {
+      "titulo": "Workshop Inventory",
+      "descripcion": "Supplies the shop uses to repair equipment."
+    },
+    "ventas": {
+      "titulo": "Sales Inventory",
+      "descripcion": "Parts, supplies, and equipment sold to customers."
+    },
+    "activosFijos": {
+      "titulo": "Fixed Assets",
+      "descripcion": "Internal-use equipment assigned to staff."
+    },
+    "huesera": {
+      "titulo": "Salvage",
+      "descripcion": "Abandoned equipment used as a source of spare parts."
+    },
+    "marcas": {
+      "titulo": "Brands & Models",
+      "descripcion": "Catalog shared by all 4 inventories."
+    }
+  },
+  "subtabs": {
+    "productos": "Products",
+    "agregar": "Add Product",
+    "categorias": "Categories & Subcategories",
+    "marcas": "Brands",
+    "importar": "Bulk Import Products",
+    "bajas": "Write-offs"
+  },
+  "bajas": {
+    "darDeBaja": "Write off",
+    "titulo": "Write-off history",
+    "subtitulo": "Products permanently removed from inventory: who wrote it off, where it came from, which area it went to, and who the company handed it to.",
+    "sinBajas": "No write-offs recorded yet in this inventory.",
+    "tituloModal": "Write off this product",
+    "placeholders": {
+      "cantidad": "Quantity to write off (stock on hand: {{stock}})",
+      "origen": "Where it came from (location or area of origin)",
+      "areaDestino": "Which area or department it's going to",
+      "entregadoA": "Who the company handed it to",
+      "motivo": "Reason (optional)"
+    },
+    "avisoTotal": "This clears all of its stock and marks the product as inactive. The record stays in this tab's history.",
+    "avisoParcial": "Only this quantity is deducted from stock; the rest stays available and the product remains active. The record stays in this tab's history.",
+    "errorCantidad": "Enter how many units are being written off.",
+    "errorGenerico": "Something went wrong, try again.",
+    "confirmarBaja": "Confirm write-off",
+    "columnas": {
+      "fecha": "Date",
+      "producto": "Product",
+      "cantidad": "Quantity",
+      "origen": "Origin",
+      "areaDestino": "Destination area",
+      "entregadoA": "Handed to",
+      "motivo": "Reason",
+      "registradoPor": "Recorded by"
+    }
+  },
+  "tabla": {
+    "item": "ITEM",
+    "tipo": "TYPE",
+    "articulo": "ARTICLE",
+    "marca": "BRAND",
+    "modelo": "MODEL",
+    "noSerie": "SERIAL NO.",
+    "caracteristicas": "CHARACTERISTICS",
+    "existencia": "STOCK",
+    "ubicacion": "LOCATION",
+    "asignacion": "ASSIGNMENT"
+  },
+  "subgrupos": {
+    "todos": "All",
+    "abandonada": "Abandoned computers",
+    "enTaller": "Computers in the shop",
+    "usoPersonal": "Staff-used equipment",
+    "repuesto": "Spare parts",
+    "insumoTaller": "Shop supplies",
+    "listoEntrega": "Ready for pickup"
+  },
+  "tiposCategoria": {
+    "producto": "Product",
+    "repuesto": "Spare part",
+    "insumo": "Supply",
+    "accesorio": "Accessory",
+    "otro": "Other"
+  },
+  "condiciones": {
+    "NUEVO": "New",
+    "USADO": "Used",
+    "MAL_ESTADO": "Poor condition"
+  },
+  "productos": {
+    "sinProductos": "No products in this subgroup.",
+    "mostrandoRecientes": "Showing the {{n}} most recent products out of {{total}} total. Use the subgroup filters to see others.",
+    "buscarPlaceholder": "Search by code, name, brand, or model…",
+    "columnas": {
+      "codigo": "Code",
+      "nombre": "Name",
+      "marca": "Brand",
+      "modelo": "Model",
+      "categoria": "Category",
+      "subgrupo": "Subgroup",
+      "condicion": "Condition",
+      "ubicacion": "Location",
+      "precioVenta": "Sale Price",
+      "stock": "Stock",
+      "estado": "Status"
+    },
+    "bajoStock": "Low stock",
+    "ok": "OK",
+    "registro": "Preview",
+    "registroSinCategoria": "No category",
+    "registroStock": "{{n}} available"
+  },
+  "agregar": {
+    "titulo": "Add Product",
+    "fotoProducto": "Product photo",
+    "clicSubir": "(click to upload)",
+    "placeholders": {
+      "codigo": "Code",
+      "nombre": "Name",
+      "marcaSeleccionar": "Brand...",
+      "categoriaSeleccionar": "Category...",
+      "subcategoriaSeleccionar": "Subcategory...",
+      "modelo": "Model",
+      "modeloSeleccionar": "Model...",
+      "modeloSeleccionaMarcaPrimero": "Pick a brand first",
+      "noSerie": "Serial number",
+      "precioCompra": "Purchase price ({{simbolo}})",
+      "precioVenta": "Sale price ({{simbolo}})",
+      "stockInicial": "Initial stock",
+      "stockMinimo": "Minimum stock",
+      "ubicacion": "Location (shelf/cabinet)",
+      "nivel": "Level",
+      "asignacion": "Assigned to",
+      "descripcion": "Description",
+      "detalles": "Details / technical specifications",
+      "unidadSeleccionar": "Unit of measure..."
+    },
+    "condicionSeleccionar": "Condition...",
+    "nuevoModelo": "New model",
+    "guardarProducto": "Save product",
+    "tituloEditar": "Edit product",
+    "guardarCambios": "Save changes"
+  },
+  "categorias": {
+    "categoriasTitulo": "Product categories",
+    "placeholderNombre": "Name (e.g. Cell Phones)",
+    "placeholderDescripcion": "Description (optional)",
+    "agregarCategoria": "Add category",
+    "columnas": {
+      "nombre": "Name",
+      "tipo": "Type",
+      "descripcion": "Description",
+      "productos": "Products"
+    },
+    "subcategoriasTitulo": "Subcategories",
+    "placeholderCategoriaSeleccionar": "Category...",
+    "placeholderNombreSubcategoria": "Subcategory name (e.g. High-end)",
+    "agregarSubcategoria": "Add subcategory",
+    "columnasSubcategoria": {
+      "categoria": "Category",
+      "subcategoria": "Subcategory",
+      "descripcion": "Description",
+      "productos": "Products"
+    }
+  },
+  "marcas": {
+    "titulo": "Brands",
+    "placeholderNombre": "Brand name (e.g. HP, Samsung)",
+    "agregarMarca": "Add brand",
+    "columnas": {
+      "marca": "Brand",
+      "productos": "Products"
+    }
+  },
+  "modelos": {
+    "titulo": "Models",
+    "ayuda": "Models you create here show up in the Brand/Model dropdown when filling out an order or a product — no need to type them again each time.",
+    "placeholderMarca": "Pick a brand...",
+    "placeholderNombre": "Model name (e.g. Pavilion 14, Galaxy A54)",
+    "agregarModelo": "Add model",
+    "sinModelos": "No models registered.",
+    "columnas": {
+      "marca": "Brand",
+      "modelo": "Model",
+      "productos": "Products"
+    }
+  },
+  "importar": {
+    "titulo": "Bulk Import Products",
+    "descripcion": "Upload an <strong>.xlsx</strong> file. Recognizes both the simple format (<code>codigo</code>, <code>nombre</code>, <code>categoria</code>, <code>subgrupo</code>, <code>precio_compra</code>, <code>precio_venta</code>, <code>stock_actual</code>...) and a real internal inventory format (<code>ITEM</code>, <code>ARTICULO</code>, <code>TIPO</code>, <code>MARCA</code>, <code>MODELO</code>, <code>N° SERIE</code>, <code>ESTADO</code>, <code>EXISTENCIA</code>, <code>VALOR UNITARIO</code>, <code>ESTANTE</code>, <code>NIVEL</code>, <code>DETALLE / COMPATIBILIDAD</code>, <code>ASIGNACION</code>...), in any order and even with a title row before the headers. Only the code and name are required; if the code already exists, it will be updated.",
+    "dropzoneText": "Click to select the .xlsx file",
+    "importando": "Importing...",
+    "boton": "Import",
+    "errorGenerico": "Error importing the file.",
+    "resultados": {
+      "creados": "Created",
+      "actualizados": "Updated",
+      "errores": "Errors"
+    }
+  }
+}

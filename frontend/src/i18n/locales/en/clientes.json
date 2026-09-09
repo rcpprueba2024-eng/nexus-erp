@@ -1,0 +1,116 @@
+{
+  "titulo": "Customer Management",
+  "subtitulo": "History and contact details for each customer",
+  "botonNuevo": "+ New Customer",
+  "botonNuevaEmpresa": "+ New Company",
+  "buscarPlaceholder": "Search by name, phone, email, or ID…",
+  "sinResultados": "No results.",
+  "frecuenteSi": "Frequent",
+  "frecuenteNo": "Occasional",
+  "banderaRoja": {
+    "badge": "Problematic",
+    "avisoTitulo": "This customer is flagged as problematic",
+    "avisoSinMotivo": "No reason was given."
+  },
+  "tabs": {
+    "clientes": "Customers",
+    "empresas": "Companies"
+  },
+  "tabla": {
+    "nombre": "Name",
+    "telefono": "Phone",
+    "correo": "Email",
+    "ordenes": "Work Orders",
+    "frecuente": "Frequent"
+  },
+  "form": {
+    "tituloNuevo": "New customer",
+    "tituloEditar": "Edit customer",
+    "nombre": "Name",
+    "cedula": "ID Number",
+    "ruc": "Tax ID (RUC)",
+    "correo": "Email",
+    "telefono": "Phone",
+    "telefonoAlterno": "Alternate phone",
+    "direccion": "Address",
+    "direccionEntrega": "Delivery address",
+    "empresa": "Business",
+    "sinEmpresa": "No company",
+    "tipoClienteSeleccionar": "Customer type…",
+    "notasPlaceholder": "Internal notes (preferences, history, remarks)…",
+    "notasAyuda": "Internal use only — never shown on prints or invoices.",
+    "whatsapp": "WhatsApp",
+    "esEmpresa": "Is this a business?",
+    "operadoraSeleccionar": "Carrier…",
+    "departamentoPais": "State / Country",
+    "problematico": "Flag as problematic customer 🚩",
+    "problematicoBadge": "Problematic",
+    "problematicoAyuda": "Customer flagged as problematic",
+    "motivoProblematicoPlaceholder": "Why? (e.g. never picked up the device, decided not to proceed with the repair…)"
+  },
+  "tiposCliente": {
+    "PARTICULAR": "Individual",
+    "EMPRESA": "Business",
+    "GOBIERNO": "Government",
+    "MAYORISTA": "Wholesale",
+    "REVENDEDOR": "Reseller"
+  },
+  "historial": {
+    "titulo": "Work order history",
+    "sinOrdenes": "No work orders registered."
+  },
+  "seleccionaCliente": "Select a customer from the list, or create a new one.",
+  "detalle": {
+    "saldoTitulo": "Outstanding balance",
+    "saldoSinDeuda": "No outstanding balance.",
+    "historialTitulo": "Purchase and service history",
+    "historialSinRegistros": "No purchases or services on record.",
+    "credito": "Credit",
+    "contado": "Cash",
+    "tipoProducto": "Product",
+    "tipoServicio": "Service",
+    "cxc": {
+      "numeroFactura": "Invoice #",
+      "monto": "Amount",
+      "vencimiento": "Due date",
+      "asesor": "Advisor",
+      "referenciaOt": "Reference WO",
+      "agregar": "+ Add outstanding balance",
+      "marcarPagado": "Mark as paid"
+    },
+    "tabla": {
+      "factura": "Invoice",
+      "fecha": "Date",
+      "item": "Product / service",
+      "cantidad": "Qty.",
+      "subtotal": "Subtotal",
+      "forma": "Payment method"
+    }
+  },
+  "empresas": {
+    "sinResultados": "No companies registered.",
+    "tabla": {
+      "nombre": "Company",
+      "ruc": "Tax ID",
+      "contactos": "Contacts",
+      "equipos": "Devices"
+    },
+    "tituloNuevo": "New company",
+    "tituloEditar": "Edit company",
+    "form": {
+      "nombre": "Company name",
+      "ruc": "Tax ID (RUC)",
+      "telefono": "Phone",
+      "correo": "Email",
+      "direccion": "Address",
+      "contactoTitulo": "Company contact",
+      "contactoNombre": "Contact name",
+      "contactoPuesto": "Contact job title",
+      "contactoCorreo": "Contact email",
+      "contactoTelefono": "Contact phone"
+    },
+    "contactosTitulo": "Contacts",
+    "sinContactos": "No contacts registered.",
+    "seleccionaEmpresa": "Select a company from the list, or create a new one."
+  }
+}

@@ -1,0 +1,100 @@
+{
+  "titulo": "Reportes",
+  "subtitulo": "Indicadores de ventas, gastos, inventario, cobranza y taller",
+  "sinAcceso": "No tienes reportes disponibles para tu rol.",
+  "tabs": {
+    "ventas": "Ventas",
+    "gastos": "Gastos",
+    "inventario": "Inventario",
+    "cobrar": "Cuentas por cobrar",
+    "taller": "Taller",
+    "clientes": "Clientes y empresas"
+  },
+  "agrupacion": {
+    "diario": "Diario",
+    "semanal": "Semanal",
+    "quincenal": "Quincenal",
+    "mensual": "Mensual"
+  },
+  "ventas": {
+    "porPeriodoTitulo": "Ventas por período",
+    "sinVentas": "Sin ventas registradas.",
+    "vendedoresTitulo": "Vendedores más productivos",
+    "tabla": {
+      "numero": "#",
+      "vendedor": "Vendedor",
+      "facturas": "Facturas",
+      "totalVendido": "Total vendido"
+    }
+  },
+  "gastos": {
+    "exportarSufijo": "(insumos + planilla)",
+    "insumosTitulo": "Gastos en insumos de taller",
+    "totalGastado": "Total gastado:",
+    "sinConsumo": "Sin consumo registrado.",
+    "mostrandoTop": "Mostrando los {{n}} insumos con mayor costo de {{total}} en total. La exportación a Excel trae el detalle completo.",
+    "tablaInsumos": {
+      "insumo": "Insumo",
+      "cantidadUsada": "Cantidad usada",
+      "costoTotal": "Costo total"
+    },
+    "personalTitulo": "Gastos de personal (planilla)",
+    "totalPlanilla": "Total planilla mensual:",
+    "tablaPersonal": {
+      "empleado": "Empleado",
+      "puesto": "Puesto",
+      "area": "Área",
+      "salario": "Salario"
+    }
+  },
+  "inventario": {
+    "masMovidosTitulo": "Productos que más se mueven",
+    "menosMovidosTitulo": "Productos que menos se mueven",
+    "tabla": {
+      "producto": "Producto",
+      "movimientos": "Movimientos"
+    }
+  },
+  "cobrar": {
+    "titulo": "Cuentas por cobrar pendientes",
+    "sinCuentas": "Sin cuentas pendientes.",
+    "tabla": {
+      "cliente": "Cliente",
+      "monto": "Monto",
+      "vencimiento": "Vencimiento",
+      "equipo": "Equipo"
+    },
+    "faltaRetirar": "Falta retirar equipo",
+    "sinPendiente": "Sin equipo pendiente"
+  },
+  "taller": {
+    "eficienciaTitulo": "Eficiencia de técnicos",
+    "tabla": {
+      "numero": "#",
+      "tecnico": "Técnico",
+      "reparadas": "Reparadas",
+      "activas": "Activas",
+      "promedioDias": "Promedio (días)"
+    },
+    "chartTitulo": "Órdenes reparadas por técnico"
+  },
+  "clientes": {
+    "totalClientes": "Clientes totales",
+    "totalEmpresas": "Empresas registradas",
+    "totalFrecuentes": "Clientes frecuentes",
+    "equiposPorEmpresaTitulo": "Equipos por empresa",
+    "sinEmpresas": "Sin empresas con equipos registrados.",
+    "topClientesTitulo": "Clientes más activos (últimos 6 meses)",
+    "sinActividad": "Sin actividad reciente.",
+    "frecuenteSi": "Frecuente",
+    "frecuenteNo": "Ocasional",
+    "tabla": {
+      "empresa": "Empresa",
+      "contactos": "Contactos",
+      "equipos": "Equipos",
+      "cliente": "Cliente",
+      "actividad": "Actividad reciente",
+      "frecuente": "Frecuente"
+    }
+  }
+}

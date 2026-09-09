@@ -1,0 +1,116 @@
+{
+  "titulo": "Gestion des clients",
+  "subtitulo": "Historique et coordonnées de chaque client",
+  "botonNuevo": "+ Nouveau client",
+  "botonNuevaEmpresa": "+ Nouvelle entreprise",
+  "buscarPlaceholder": "Rechercher par nom, téléphone, e-mail ou numéro d'identité…",
+  "sinResultados": "Aucun résultat.",
+  "frecuenteSi": "Fréquent",
+  "frecuenteNo": "Occasionnel",
+  "banderaRoja": {
+    "badge": "Problématique",
+    "avisoTitulo": "Ce client est signalé comme problématique",
+    "avisoSinMotivo": "Aucun motif indiqué."
+  },
+  "tabs": {
+    "clientes": "Clients",
+    "empresas": "Entreprises"
+  },
+  "tabla": {
+    "nombre": "Nom",
+    "telefono": "Téléphone",
+    "correo": "E-mail",
+    "ordenes": "Ordres",
+    "frecuente": "Fréquent"
+  },
+  "form": {
+    "tituloNuevo": "Nouveau client",
+    "tituloEditar": "Modifier le client",
+    "nombre": "Nom",
+    "cedula": "Numéro d'identité",
+    "ruc": "Numéro fiscal (RUC)",
+    "correo": "E-mail",
+    "telefono": "Téléphone",
+    "telefonoAlterno": "Téléphone secondaire",
+    "direccion": "Adresse",
+    "direccionEntrega": "Adresse de livraison",
+    "empresa": "Entreprise",
+    "sinEmpresa": "Sans entreprise",
+    "tipoClienteSeleccionar": "Type de client…",
+    "notasPlaceholder": "Notes internes (préférences, historique, remarques)…",
+    "notasAyuda": "Usage interne — jamais affiché sur les impressions ni les factures.",
+    "whatsapp": "WhatsApp",
+    "esEmpresa": "Est-ce une entreprise ?",
+    "operadoraSeleccionar": "Opérateur…",
+    "departamentoPais": "Département / Pays",
+    "problematico": "Signaler comme client problématique 🚩",
+    "problematicoBadge": "Problématique",
+    "problematicoAyuda": "Client signalé comme problématique",
+    "motivoProblematicoPlaceholder": "Pourquoi ? (ex. n'a jamais récupéré l'appareil, a décidé de ne pas poursuivre la réparation…)"
+  },
+  "tiposCliente": {
+    "PARTICULAR": "Particulier",
+    "EMPRESA": "Entreprise",
+    "GOBIERNO": "Gouvernement",
+    "MAYORISTA": "Grossiste",
+    "REVENDEDOR": "Revendeur"
+  },
+  "historial": {
+    "titulo": "Historique des ordres de travail",
+    "sinOrdenes": "Aucun ordre de travail enregistré."
+  },
+  "seleccionaCliente": "Sélectionnez un client dans la liste, ou créez-en un nouveau.",
+  "detalle": {
+    "saldoTitulo": "Solde impayé",
+    "saldoSinDeuda": "Aucun solde impayé.",
+    "historialTitulo": "Historique des achats et services",
+    "historialSinRegistros": "Aucun achat ni service enregistré.",
+    "credito": "Crédit",
+    "contado": "Comptant",
+    "tipoProducto": "Produit",
+    "tipoServicio": "Service",
+    "cxc": {
+      "numeroFactura": "N° de facture",
+      "monto": "Montant",
+      "vencimiento": "Échéance",
+      "asesor": "Conseiller",
+      "referenciaOt": "Ordre de référence",
+      "agregar": "+ Ajouter un solde impayé",
+      "marcarPagado": "Marquer comme payé"
+    },
+    "tabla": {
+      "factura": "Facture",
+      "fecha": "Date",
+      "item": "Produit / service",
+      "cantidad": "Qté",
+      "subtotal": "Sous-total",
+      "forma": "Mode de paiement"
+    }
+  },
+  "empresas": {
+    "sinResultados": "Aucune entreprise enregistrée.",
+    "tabla": {
+      "nombre": "Entreprise",
+      "ruc": "Numéro fiscal",
+      "contactos": "Contacts",
+      "equipos": "Appareils"
+    },
+    "tituloNuevo": "Nouvelle entreprise",
+    "tituloEditar": "Modifier l'entreprise",
+    "form": {
+      "nombre": "Nom de l'entreprise",
+      "ruc": "Numéro fiscal (RUC)",
+      "telefono": "Téléphone",
+      "correo": "E-mail",
+      "direccion": "Adresse",
+      "contactoTitulo": "Contact de l'entreprise",
+      "contactoNombre": "Nom du contact",
+      "contactoPuesto": "Poste du contact",
+      "contactoCorreo": "E-mail du contact",
+      "contactoTelefono": "Téléphone du contact"
+    },
+    "contactosTitulo": "Contacts",
+    "sinContactos": "Aucun contact enregistré.",
+    "seleccionaEmpresa": "Sélectionnez une entreprise dans la liste, ou créez-en une nouvelle."
+  }
+}
