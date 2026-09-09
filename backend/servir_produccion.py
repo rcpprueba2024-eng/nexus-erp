@@ -14,5 +14,7 @@ from waitress import serve
 from config.wsgi import application
 
 if __name__ == "__main__":
-    print("NEXUS ERP - Backend (producción) escuchando en el puerto 8000...")
-    serve(application, host="0.0.0.0", port=8000, threads=8)
+    # Solo localhost: el único que habla con el backend es el proxy (Caddy),
+    # que expone la app a la red. Así la API no queda accesible directamente.
+    print("NEXUS ERP - Backend (produccion) escuchando en 127.0.0.1:8000...")
+    serve(application, host="127.0.0.1", port=8000, threads=8)
