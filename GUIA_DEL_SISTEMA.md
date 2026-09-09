@@ -172,3 +172,5 @@ Todo gira alrededor del **Inventario**: es la base que usan tanto Ventas como Co
 - Generación automática de cuentas por cobrar/pagar al crear una factura u orden.
 - Cambiar de SQLite a PostgreSQL cuando el sistema pase a uso real.
 - Reportes (ventas por periodo, productos más vendidos, etc.).
+
+<!-- servidor: auto-deploy activo desde 2026-09-09 -->
