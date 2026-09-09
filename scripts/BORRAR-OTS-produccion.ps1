@@ -1,4 +1,4 @@
-# ============================================================
+﻿# ============================================================
 #  NEXUS ERP - Vaciar las órdenes de taller (OTs) en PRODUCCIÓN
 #  Correr EN el servidor (DESKTOP-N8VJVGN).
 #

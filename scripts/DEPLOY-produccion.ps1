@@ -1,4 +1,4 @@
-# ============================================================
+﻿# ============================================================
 #  NEXUS ERP - Deploy manual a producción
 #  Correr EN el servidor. Trae los últimos commits de main, rebuild
 #  del frontend, migraciones, y reinicia el backend.

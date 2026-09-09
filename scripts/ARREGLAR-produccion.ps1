@@ -1,4 +1,4 @@
-# ============================================================
+﻿# ============================================================
 #  NEXUS ERP - Arreglar producción: los POST/escrituras se cuelgan
 #  Correr EN el servidor (DESKTOP-N8VJVGN) en PowerShell como Administrador.
 #
