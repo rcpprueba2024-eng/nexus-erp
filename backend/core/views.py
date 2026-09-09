@@ -90,6 +90,11 @@ def _config_payload(config):
         "impresora_ip": config.impresora_ip,
         "impresora_puerto": config.impresora_puerto,
         "impresora_ancho_papel": config.impresora_ancho_papel,
+        # Próximo consecutivo por tipo — el asistente de Nueva Orden lo
+        # muestra como vista previa ("esta orden será COM-1234"). El número
+        # real se fija al guardar (Configuracion.siguiente_numero_orden).
+        "siguiente_numero_com": config.siguiente_numero_com,
+        "siguiente_numero_cca": config.siguiente_numero_cca,
     }
 
 

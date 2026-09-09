@@ -52,7 +52,9 @@
     "tecnicoAsignado": "Técnico asignado",
     "asesorAsignado": "Asesor asignado",
     "sinAsignar": "Sin asignar",
-    "registrarOrden": "Registrar orden"
+    "registrarOrden": "Registrar orden",
+    "numeroOrden": "N° de orden",
+    "numeroOrdenAyuda": "se confirma al guardar"
   },
   "listado": {
     "titulo": "Órdenes de Trabajo",

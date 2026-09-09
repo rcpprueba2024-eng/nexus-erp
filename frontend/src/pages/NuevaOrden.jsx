@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
 import { Laptop, Smartphone, ArrowLeft, ArrowRight, Lock } from 'lucide-react'
-import { tallerApi, ventasApi, rrhhApi, inventarioApi } from '../api.js'
+import { tallerApi, ventasApi, rrhhApi, inventarioApi, configApi } from '../api.js'
 import { useAuth, esRolSinAccesoCliente } from '../AuthContext.jsx'
 import DanosVisibles from '../components/orden/DanosVisibles.jsx'
 import PatronDesbloqueo from '../components/orden/PatronDesbloqueo.jsx'
@@ -31,6 +31,8 @@ function NuevaOrden() {
   const [paso, setPaso] = useState(0)
   const [tipo, setTipo] = useState(null)
   const [orden, setOrden] = useState(ORDEN_VACIA)
+  // Próximo consecutivo (COM / CCA) para mostrar el número que tendrá la orden.
+  const [proximoNumero, setProximoNumero] = useState(null)
 
   const [clienteNombre, setClienteNombre] = useState('')
   const [clienteCedula, setClienteCedula] = useState('')
@@ -67,6 +69,10 @@ function NuevaOrden() {
     ventasApi.clientes().then((r) => setClientesExistentes(r.data))
     inventarioApi.marcas().then((r) => setMarcasCatalogo(r.data))
     inventarioApi.modelos().then((r) => setModelosCatalogo(r.data))
+    configApi.obtener().then((r) => setProximoNumero({
+      COM: r.data.siguiente_numero_com,
+      CCA: r.data.siguiente_numero_cca,
+    })).catch(() => {})
   }, [sinAccesoCliente, navigate])
 
   const set = (patch) => setOrden((o) => ({ ...o, ...patch }))
@@ -82,6 +88,9 @@ function NuevaOrden() {
   }, [])
   const detalle = orden.detalle_com || DETALLE_COM_VACIO
   const esCelular = tipo === 'CCA'
+  // Vista previa del consecutivo: "COM-1234" / "CCA-1234". El backend fija el
+  // número definitivo al guardar (puede variar si entra otra orden en el medio).
+  const numeroPreview = tipo && proximoNumero?.[tipo] != null ? `${tipo}-${proximoNumero[tipo]}` : null
 
   const TIPOS_SERVICIO = TIPOS_SERVICIO_VALUES.map((v) => ({ v, l: t(`tipoServicio.${v}`) }))
   const OPERADORAS = OPERADORAS_VALUES.map((v) => ({ v, l: t(`operadora.${v}`) }))
@@ -265,6 +274,16 @@ function NuevaOrden() {
                   {i < PASOS.length - 1 && <div className="mx-1 h-px w-8 bg-line" />}
                 </div>
               ))}
+            </div>
+          )}
+
+          {paso > 0 && numeroPreview && (
+            <div className="mb-6 flex items-center justify-center">
+              <span className="inline-flex items-center gap-2 rounded-full border border-line bg-surface px-4 py-1.5 text-sm shadow-sm">
+                <span className="font-semibold uppercase tracking-wide text-muted">{t('wizard.numeroOrden')}</span>
+                <span className="text-base font-extrabold" style={{ color: tipo === 'CCA' ? '#7c3aed' : '#0284c7' }}>{numeroPreview}</span>
+                <span className="text-xs font-normal text-muted">{t('wizard.numeroOrdenAyuda')}</span>
+              </span>
             </div>
           )}
 

@@ -52,7 +52,9 @@
     "tecnicoAsignado": "Assigned technician",
     "asesorAsignado": "Assigned sales advisor",
     "sinAsignar": "Unassigned",
-    "registrarOrden": "Register order"
+    "registrarOrden": "Register order",
+    "numeroOrden": "Order No.",
+    "numeroOrdenAyuda": "confirmed on save"
   },
   "listado": {
     "titulo": "Work Orders",

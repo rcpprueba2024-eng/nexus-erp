@@ -52,7 +52,9 @@
     "tecnicoAsignado": "Technicien assigné",
     "asesorAsignado": "Conseiller commercial assigné",
     "sinAsignar": "Non assigné",
-    "registrarOrden": "Enregistrer l'ordre"
+    "registrarOrden": "Enregistrer l'ordre",
+    "numeroOrden": "N° de commande",
+    "numeroOrdenAyuda": "confirmé à l'enregistrement"
   },
   "listado": {
     "titulo": "Ordres de travail",

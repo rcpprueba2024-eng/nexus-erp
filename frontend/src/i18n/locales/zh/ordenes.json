@@ -52,7 +52,9 @@
     "tecnicoAsignado": "指派技师",
     "asesorAsignado": "指派销售顾问",
     "sinAsignar": "未指派",
-    "registrarOrden": "登记工单"
+    "registrarOrden": "登记工单",
+    "numeroOrden": "工单号",
+    "numeroOrdenAyuda": "保存时确认"
   },
   "listado": {
     "titulo": "工单",
