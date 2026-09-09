@@ -105,6 +105,11 @@ MAPA_TECNICO = {
     "manolo": "MANOLO VALERIO OBANDO URBINA",
     "m. obando": "MANOLO VALERIO OBANDO URBINA",
     "obando": "MANOLO VALERIO OBANDO URBINA",
+    # La base de junio (copia 2) usa la etiqueta "Tecnico 1" en vez del
+    # nombre — es Manolo Obando (dato confirmado por RCP).
+    "tecnico 1": "MANOLO VALERIO OBANDO URBINA",
+    "técnico 1": "MANOLO VALERIO OBANDO URBINA",
+    "tecnico1": "MANOLO VALERIO OBANDO URBINA",
     "newman": "NEWMAN JOSE ORTIZ MARTINEZ",
     "tania": "TANIA PEREZ",
     "kevin": "KEVIN ORLANDO DE PAUL AYERDIS COREA",
@@ -147,7 +152,11 @@ def _numero_orden(cca_com_txt):
     return None
 
 
-def main(commit):
+def main(commit, ruta_excel=None, hoja=None):
+    ruta_excel = ruta_excel or RUTA_EXCEL
+    hoja = hoja or HOJA
+    print(f"Excel : {ruta_excel}")
+    print(f"Hoja  : {hoja}")
     from django.db import transaction
     from django.utils import timezone
     from ventas.models import Cliente, resolver_equipo
@@ -168,8 +177,8 @@ def main(commit):
         tecnico_cache[clave] = empleado
         return empleado
 
-    wb = openpyxl.load_workbook(RUTA_EXCEL, data_only=True, read_only=True)
-    ws = wb[HOJA]
+    wb = openpyxl.load_workbook(ruta_excel, data_only=True, read_only=True)
+    ws = wb[hoja]
 
     estados_sin_mapear = {}
     tipos_sin_mapear = {}
@@ -390,5 +399,7 @@ def main(commit):
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument("--commit", action="store_true")
+    parser.add_argument("--excel", default=None, help="Ruta al .xlsx (default: la de junio en el Escritorio)")
+    parser.add_argument("--hoja", default=None, help="Nombre de la hoja (default: 'JUNIO 2026')")
     args = parser.parse_args()
-    main(commit=args.commit)
+    main(commit=args.commit, ruta_excel=args.excel, hoja=args.hoja)
