@@ -115,11 +115,15 @@ function FacturarOts() {
     setGuardando(true)
     try {
       const ordenId = modalOrden.id
-      // Al confirmar la factura ya se completó el checklist de salida y la
-      // firma de "recibí conforme" — el equipo se está entregando en este
-      // mismo momento, así que la orden pasa directo a Entregado (ya no lo
-      // marca Taller, ver Taller.jsx).
-      await tallerApi.actualizarOrden(ordenId, { checklist_salida: checklistSalida, firma_cliente_entrega: firmaEntrega, estado: 'ENTREGADO' })
+      // Si ya estaba lista para entregar, facturar = se la están llevando
+      // ahora mismo, así que pasa directo a Entregado. Si todavía está en
+      // taller (se factura por adelantado, ej. un anticipo), se deja el
+      // estado como está — el técnico sigue trabajándola, no se la llevó
+      // nadie todavía.
+      const yaListaParaEntregar = modalOrden.estado === 'LISTO_ENTREGA' || modalOrden.estado === 'ENTREGADO'
+      const cambios = { checklist_salida: checklistSalida, firma_cliente_entrega: firmaEntrega }
+      if (yaListaParaEntregar) cambios.estado = 'ENTREGADO'
+      await tallerApi.actualizarOrden(ordenId, cambios)
       const pagosLimpios = pagos
         .filter((p) => Number(p.monto) > 0)
         .map((p) => ({
@@ -220,7 +224,10 @@ function FacturarOts() {
               </thead>
               <tbody>
                 {visibles.map((o) => {
-                  const invoiceable = o._estadoFact === 'LISTA_PARA_PAGAR'
+                  // Se puede facturar este en taller o listo para entregar — el
+                  // backend (facturar()) no exige ningun estado, solo que no
+                  // tenga ya una factura asociada.
+                  const invoiceable = o._estadoFact !== 'PAGADA'
                   return (
                     <tr key={o.id} onClick={() => invoiceable && abrirFacturar(o)}
                       className={`border-t border-line hover:bg-tint ${invoiceable ? 'cursor-pointer' : ''}`}>
