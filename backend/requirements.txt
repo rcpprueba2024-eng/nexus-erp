@@ -6,6 +6,9 @@ openpyxl==3.1.5
 reportlab==5.0.1
 python-escpos==3.1
 Pillow==12.3.0
+# Imagen de danos del equipo en el PDF de la orden (taller/orden_danos_img.py):
+pymupdf==1.28.2
+numpy==2.5.3
 waitress==3.0.2
 whitenoise==6.11.0
 
