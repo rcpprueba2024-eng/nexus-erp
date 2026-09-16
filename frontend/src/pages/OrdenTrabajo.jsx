@@ -106,7 +106,11 @@ function OrdenTrabajo() {
   const esNuevo = id === 'nueva'
   const navigate = useNavigate()
   const { user } = useAuth()
-  const esAdmin = user?.is_superuser || user?.rol === 'ADMIN'
+  // Jefe de Operaciones tiene el mismo alcance que Gerencia sobre ordenes en
+  // el backend (modulos_permitidos le otorga "ordenes"/"taller" por defecto,
+  // ver core.permissions.RolePermission) — se incluye aqui para que la
+  // pantalla no le bloquee algo que la API ya le permite.
+  const esAdmin = user?.is_superuser || user?.rol === 'ADMIN' || user?.rol === 'JEFE_OPERACIONES'
   const sinAccesoCliente = esRolSinAccesoCliente(user?.rol)
   const [orden, setOrden] = useState(esNuevo ? ORDEN_VACIA : null)
   const [cliente, setCliente] = useState(null)
@@ -395,7 +399,9 @@ function OrdenTrabajo() {
           </select>
           {!esNuevo && <button onClick={() => setPreviewAbierto(true)} className="rounded-lg border border-line px-3 py-1.5 text-xs font-medium text-muted hover:bg-subtle">{t('header.imprimirPdf')}</button>}
           {!esNuevo && !sinAccesoCliente && !esBackoffice && <button onClick={duplicarOrden} disabled={duplicando} className="rounded-lg border border-line px-3 py-1.5 text-xs font-medium text-muted hover:bg-subtle disabled:opacity-50">{duplicando ? t('botones.guardando', { ns: 'common' }) : t('header.duplicarOrden')}</button>}
-          {!esNuevo && esAdmin && (
+          {/* Eliminar queda estrictamente Gerencia (backend: perform_destroy exige rol=="ADMIN",
+              ni siquiera Jefe de Operaciones pasa esa regla) — no usar esAdmin aqui. */}
+          {!esNuevo && (user?.is_superuser || user?.rol === 'ADMIN') && (
             <button onClick={eliminarOrden} disabled={eliminando} className="rounded-lg border border-red-300 px-3 py-1.5 text-xs font-medium text-red-600 hover:bg-red-50 disabled:opacity-50">
               {eliminando ? t('botones.guardando', { ns: 'common' }) : t('header.eliminarOrden')}
             </button>
