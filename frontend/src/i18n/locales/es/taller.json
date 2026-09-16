@@ -2,7 +2,8 @@
   "titulo": "Taller",
   "subtitulo": "Órdenes de servicio, técnicos e insumos",
   "filtro": {
-    "todas": "Todas"
+    "todas": "Todas",
+    "buscarPlaceholder": "Buscar por número, cliente, equipo o técnico…"
   },
   "tablero": {
     "titulo": "Técnicos y pasantes",

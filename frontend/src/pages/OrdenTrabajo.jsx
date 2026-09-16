@@ -432,7 +432,13 @@ function OrdenTrabajo() {
                   value={orden.numero} onChange={(e) => set({ numero: e.target.value })}
                   title={t('titulo.numeroEditarAyuda')}
                 />
-                <span className="text-sm text-muted">· {t('titulo.recibidoLabel')} {orden.fecha_ingreso}</span>
+                <span className="text-sm text-muted">· {t('titulo.recibidoLabel')}</span>
+                <input
+                  type="date"
+                  className="w-36 rounded-md border border-line px-2 py-0.5 text-sm text-ink focus:border-brand focus:outline-none focus:ring-1 focus:ring-brand-500"
+                  value={orden.fecha_ingreso || ''} onChange={(e) => set({ fecha_ingreso: e.target.value })}
+                  title={t('titulo.fechaIngresoEditarAyuda')}
+                />
               </div>
             ) : (
               <p className="text-sm text-muted">{t('titulo.otNo')} <strong>{orden.numero}</strong> · {t('titulo.recibidoLabel')} {orden.fecha_ingreso}</p>

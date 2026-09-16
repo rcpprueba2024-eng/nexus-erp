@@ -81,6 +81,7 @@ function Taller() {
   const [insumosDisp, setInsumosDisp] = useState([])
   const [loading, setLoading] = useState(true)
   const [filtro, setFiltro] = useState('')
+  const [buscar, setBuscar] = useState('')
   const [pagina, setPagina] = useState(1)
   const [insumoForm, setInsumoForm] = useState(emptyInsumo)
   const [seleccionada, setSeleccionada] = useState(null)
@@ -205,10 +206,16 @@ function Taller() {
   // cortar a las N más recientes sin forma de ver el resto, se pagina de a
   // 15 (igual que el resto del sistema); el conteo de las pestañas de
   // arriba sigue contando todo, no solo la página visible.
-  const visiblesTotal = filtro ? ordenes.filter((o) => o.estado === filtro) : ordenes
+  const q = buscar.trim().toLowerCase()
+  const visiblesTotal = (filtro ? ordenes.filter((o) => o.estado === filtro) : ordenes)
+    .filter((o) => !q
+      || o.numero.toLowerCase().includes(q)
+      || (o.cliente_nombre || '').toLowerCase().includes(q)
+      || (o.equipo || '').toLowerCase().includes(q)
+      || (o.tecnico_nombre || '').toLowerCase().includes(q))
   const visibles = visiblesTotal.slice((pagina - 1) * PAGE_SIZE, pagina * PAGE_SIZE)
 
-  useEffect(() => { setPagina(1) }, [filtro])
+  useEffect(() => { setPagina(1) }, [filtro, buscar])
 
   const esCelularSeleccionada = seleccionada ? esCCA(seleccionada.categoria_equipo) : false
   const checklistItemsSeleccionada = seleccionada ? checklistSalidaPara(seleccionada.categoria_equipo) : []
@@ -240,6 +247,10 @@ function Taller() {
             <button type="submit">{t('insumo.registrar')}</button>
           </div>
         </form>
+      </div>
+
+      <div className="form-row" style={{ marginBottom: 10 }}>
+        <input value={buscar} onChange={(e) => setBuscar(e.target.value)} placeholder={t('filtro.buscarPlaceholder')} style={{ flex: '1 1 320px', maxWidth: 420 }} />
       </div>
 
       <div className="tabs">

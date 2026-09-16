@@ -123,6 +123,7 @@
     "otNo": "OT No:",
     "numeroAlGuardar": "El número de orden se asigna automáticamente al guardar.",
     "numeroEditarAyuda": "Solo Gerencia puede editar el consecutivo — útil para ingresar una orden antigua sin descuadrar la numeración actual.",
+    "fechaIngresoEditarAyuda": "Solo Gerencia puede corregir la fecha de ingreso — útil si la orden se cargó al sistema después de recibir el equipo.",
     "recibidoLabel": "Recibido:",
     "facturaLabel": "Factura:",
     "saldoPendiente": "(saldo pendiente: ${{monto}})",

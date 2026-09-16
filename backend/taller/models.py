@@ -43,11 +43,13 @@ class OrdenTaller(models.Model):
     # orden en el sistema.
     asesor = models.ForeignKey(Empleado, on_delete=models.SET_NULL, null=True, blank=True, related_name="ordenes_como_asesor")
     estado = models.CharField(max_length=30, choices=ESTADO_CHOICES, default="RECIBIDO")
-    fecha_ingreso = models.DateField(auto_now_add=True)
+    # default=date.today (no auto_now_add): arranca en hoy al crear la orden,
+    # pero Gerencia puede corregirla después (ej. una orden cargada tarde al
+    # sistema pero recibida antes).
+    fecha_ingreso = models.DateField(default=date.today)
     # Fecha/hora exacta de recepción del equipo — a diferencia de
-    # fecha_ingreso (auto_now_add, solo fecha, nunca editable), este campo
-    # sí lo captura/ajusta el usuario y sirve para medir tiempos reales de
-    # atención al técnico.
+    # fecha_ingreso (solo fecha), este campo sí la captura/ajusta el usuario
+    # y sirve para medir tiempos reales de atención al técnico.
     fecha_hora_recepcion = models.DateTimeField(null=True, blank=True)
     fecha_entrega_estimada = models.DateField(null=True, blank=True)
     fecha_entrega_real = models.DateField(null=True, blank=True)
