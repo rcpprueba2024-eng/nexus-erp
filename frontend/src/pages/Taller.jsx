@@ -112,7 +112,7 @@ function Taller() {
     ])
       .then(([o, t, p]) => {
         setOrdenes(o.data)
-        setTecnicos(t.data.filter((e) => (e.areas || []).some((a) => a === 'TALLER' || a === 'PASANTE')))
+        setTecnicos(t.data.filter((e) => e.activo && (e.areas || []).some((a) => a === 'TALLER' || a === 'PASANTE')))
         setInsumosDisp(p.data.filter((x) => x.subgrupo === 'INSUMO_TALLER'))
       })
       .finally(() => setLoading(false))
